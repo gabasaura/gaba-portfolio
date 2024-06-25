@@ -1,10 +1,12 @@
 import { Component } from "react";
-//import GridLayout from 'react-grid-layout';
-//import { Responsive as ResponsiveGridLayout } from 'react-grid-layout';
 import { Responsive, WidthProvider } from "react-grid-layout";
-import DemoComponent from "./components/GridStack";
+import GridLayout from "./components/GridLayout";
+import "react-grid-layout/css/styles.css";
+import "react-resizable/css/styles.css";
+
 const ResponsiveGridLayout = WidthProvider(Responsive);
-export default class App extends Component {
+
+class MyResponsiveGrid extends Component {
   constructor() {
     super();
     this.state = {
@@ -12,13 +14,15 @@ export default class App extends Component {
     };
     this.onHandle = this.onHandle.bind(this);
   }
+
   onHandle() {
     this.setState((prevState) => ({
       value: !prevState.value,
     }));
   }
+
   render() {
-    var layout = [
+    const layoutA = [
       { i: "a", x: 0, y: 0, w: 4, h: 1 },
       { i: "b", x: 4, y: 0, w: 4, h: 1 },
       { i: "c", x: 8, y: 0, w: 4, h: 1 },
@@ -26,7 +30,7 @@ export default class App extends Component {
       { i: "e", x: 4, y: 1, w: 4, h: 1 },
       { i: "f", x: 8, y: 1, w: 4, h: 1 },
     ];
-    var layout1 = [
+    const layoutB = [
       { i: "a", x: 0, y: 0, w: 6, h: 1 },
       { i: "b", x: 6, y: 0, w: 6, h: 1 },
       { i: "c", x: 0, y: 1, w: 6, h: 1 },
@@ -35,42 +39,43 @@ export default class App extends Component {
       { i: "f", x: 6, y: 2, w: 6, h: 1 },
     ];
 
-    var layout = { lg: this.state.value === true ? layout : layout1 };
+    const layouts = { lg: this.state.value ? layoutA : layoutB };
 
     return (
       <div>
         <button style={{ marginLeft: "45%" }} onClick={this.onHandle}>
-          {this.state.value === true ? "Increase" : "Decrease"} Grid by 2
-          columns
+          {this.state.value ? "Increase" : "Decrease"} Grid by 2 columns
         </button>
         <ResponsiveGridLayout
           className="layout"
-          layouts={layout}
-          breakpoints={{ lg: 1200 }}
-          cols={{ lg: 12 }}
+          layouts={layouts}
+          breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
+          cols={{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
           rowHeight={281}
           width={1200}
         >
           <div key="a" style={{ backgroundColor: "yellow" }}>
-            <DemoComponent color={"yellow"} />
+            <GridLayout color="yellow" />
           </div>
           <div key="b" style={{ backgroundColor: "green" }}>
-            <DemoComponent color={"green"} />
+            <GridLayout color="green" />
           </div>
           <div key="c" style={{ backgroundColor: "red" }}>
-            <DemoComponent color={"red"} />
+            <GridLayout color="red" />
           </div>
           <div key="d" style={{ backgroundColor: "blue" }}>
-            <DemoComponent color={"blue"} />
+            <GridLayout color="blue" />
           </div>
           <div key="e" style={{ backgroundColor: "violet" }}>
-            <DemoComponent color={"violet"} />
+            <GridLayout color="violet" />
           </div>
-         <div key="f" style={{ backgroundColor: "lemonchiffon" }}>
-            <DemoComponent color={"lemonchiffon"} />
+          <div key="f" style={{ backgroundColor: "lemonchiffon" }}>
+            <GridLayout color="lemonchiffon" />
           </div>
         </ResponsiveGridLayout>
       </div>
     );
   }
 }
+
+export default MyResponsiveGrid;
