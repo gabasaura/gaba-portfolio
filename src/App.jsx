@@ -1,6 +1,5 @@
 import { Component } from "react";
 import { Responsive, WidthProvider } from "react-grid-layout";
-import GridLayout from "./components/GridLayout";
 import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
 
@@ -43,34 +42,34 @@ class MyResponsiveGrid extends Component {
 
     return (
       <div>
-        <button style={{ marginLeft: "45%" }} onClick={this.onHandle}>
+        <button onClick={this.onHandle}>
           {this.state.value ? "Increase" : "Decrease"} Grid by 2 columns
         </button>
+        
         <ResponsiveGridLayout
           className="layout"
           layouts={layouts}
           breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
           cols={{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
           rowHeight={281}
-          width={1200}
         >
           <div key="a" style={{ backgroundColor: "yellow" }}>
-            <GridLayout color="yellow" />
+            1
           </div>
           <div key="b" style={{ backgroundColor: "green" }}>
-            <GridLayout color="green" />
+            2
           </div>
           <div key="c" style={{ backgroundColor: "red" }}>
-            <GridLayout color="red" />
+            3
           </div>
           <div key="d" style={{ backgroundColor: "blue" }}>
-            <GridLayout color="blue" />
+            4
           </div>
           <div key="e" style={{ backgroundColor: "violet" }}>
-            <GridLayout color="violet" />
+            5
           </div>
           <div key="f" style={{ backgroundColor: "lemonchiffon" }}>
-            <GridLayout color="lemonchiffon" />
+            6
           </div>
         </ResponsiveGridLayout>
       </div>
