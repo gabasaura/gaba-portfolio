@@ -7,85 +7,87 @@ import "react-resizable/css/styles.css";
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
 class MyResponsiveGrid extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      value: true,  // Initial state to toggle between layouts
+      selectedTag: "all", // Initial state for the selected tag
     };
-    this.onHandle = this.onHandle.bind(this); // Bind the method to ensure 'this' refers to the class instance
   }
 
-  // Method to toggle the grid layout
-  onHandle() {
-    this.setState((prevState) => ({
-      value: !prevState.value,  // Toggle the state value between true and false
-    }));
-  }
+  // Function to handle tag selection
+  handleTagChange = (tag) => {
+    this.setState({ selectedTag: tag });
+  };
 
   render() {
-    // Define layout A (default layout)
-    const layoutA = [
-      { i: "a", x: 0, y: 0, w: 4, h: 1 },
-      { i: "b", x: 4, y: 0, w: 4, h: 1 },
-      { i: "c", x: 8, y: 1, w: 4, h: 1 },
-      { i: "d", x: 0, y: 1, w: 4, h: 1 },
-      { i: "e", x: 4, y: 2, w: 4, h: 1 },
-      { i: "f", x: 8, y: 2, w: 4, h: 1 },
-    ];
-    
-    // Define layout B (alternative layout)
-    const layoutB = [
-      { i: "a", x: 0, y: 0, w: 6, h: 1 },
-      { i: "b", x: 6, y: 0, w: 6, h: 1 },
-      { i: "c", x: 0, y: 1, w: 6, h: 1 },
-      { i: "d", x: 6, y: 1, w: 6, h: 1 },
-      { i: "e", x: 0, y: 2, w: 6, h: 1 },
-      { i: "f", x: 6, y: 2, w: 6, h: 1 },
+    // Define the layout with tags
+    const layout = [
+      { i: "a", x: 0, y: 0, w: 1, h: 1, tag: "work" },
+      { i: "b", x: 1, y: 0, w: 1, h: 1, tag: "personal" },
+      { i: "c", x: 2, y: 0, w: 1, h: 1, tag: "work" },
+      { i: "d", x: 0, y: 1, w: 1, h: 1, tag: "personal" },
+      { i: "e", x: 1, y: 1, w: 1, h: 1, tag: "others" },
+      { i: "f", x: 2, y: 1, w: 1, h: 1, tag: "work" },
     ];
 
-    // Determine which layout to use based on the state
-    const layouts = { lg: this.state.value ? layoutA : layoutB };
+    // Filter layout based on the selected tag
+    const filteredLayout =
+      this.state.selectedTag === "all"
+        ? layout
+        : layout.filter((item) => item.tag === this.state.selectedTag);
+
+    const layouts = {
+      lg: filteredLayout,
+      md: filteredLayout,
+      sm: filteredLayout,
+      xs: filteredLayout,
+      xxs: filteredLayout,
+    };
 
     return (
       <div>
-        {/* Button to toggle the grid layout */}
-        <button onClick={this.onHandle}>
-          {this.state.value ? "Increase" : "Decrease"} Grid by 2 columns
-        </button>
+        {/* Buttons for selecting tags */}
+        <div>
+          <button onClick={() => this.handleTagChange("all")}>All</button>
+          <button onClick={() => this.handleTagChange("work")}>Work</button>
+          <button onClick={() => this.handleTagChange("personal")}>Personal</button>
+          <button onClick={() => this.handleTagChange("others")}>Others</button>
+        </div>
 
         {/* Container to center the grid and set the max width */}
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           {/* Responsive grid layout component */}
           <ResponsiveGridLayout
             className="layout"
-            layouts={layouts} // Pass the dynamic layouts based on state
+            layouts={layouts} // Use the filtered layout based on the selected tag
             breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }} // Define breakpoints for responsiveness
-            cols={{ lg: 12, md: 12, sm: 12, xs: 1, xxs: 1 }} // Define the number of columns per breakpoint
+            cols={{ lg: 3, md: 3, sm: 2, xs: 1, xxs: 1 }} // Adjust number of columns per breakpoint
             rowHeight={281} // Define the height of each row
           >
             {/* Grid items */}
-            <div key="a" style={{ backgroundColor: "yellow" }}>
-              1
-            </div>
-            <div key="b" style={{ backgroundColor: "green" }}>
-              2
-            </div>
-            <div key="c" style={{ backgroundColor: "red" }}>
-              3
-            </div>
-            <div key="d" style={{ backgroundColor: "blue" }}>
-              4
-            </div>
-            <div key="e" style={{ backgroundColor: "violet" }}>
-              5
-            </div>
-            <div key="f" style={{ backgroundColor: "lemonchiffon" }}>
-              6
-            </div>
+            {filteredLayout.map((item) => (
+              <div key={item.i} style={{ backgroundColor: this.getColor(item.tag) }}>
+                {item.i}
+              </div>
+            ))}
           </ResponsiveGridLayout>
         </div>
       </div>
     );
+  }
+
+  // Helper function to determine background color based on tag
+  getColor(tag) {
+    switch (tag) {
+      case "work":
+        return "yellow";
+      case "personal":
+        return "green";
+      case "others":
+        return "blue";
+      default:
+        return "gray";
+    }
   }
 }
 
