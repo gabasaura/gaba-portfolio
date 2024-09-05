@@ -1,0 +1,30 @@
+[
+    {
+      "id": "a",
+      "title": "Item A",
+      "description": "Details for item A",
+      "color": "yellow",
+      "imageUrl": "/images/image1.jpg",
+      "modalContent": "More information about item A",
+      "tag": "backend"
+    },
+    {
+      "id": "b",
+      "title": "Item B",
+      "description": "Details for item B",
+      "color": "green",
+      "imageUrl": "/images/image2.jpg",
+      "modalContent": "More information about item B",
+      "tag": "personal"
+    },
+    {
+      "id": "c",
+      "title": "Item C",
+      "description": "Details for item C",
+      "color": "blue",
+      "imageUrl": "/images/image3.jpg",
+      "modalContent": "More information about item C",
+      "tag": "frontend"
+    }
+  ]
+  
