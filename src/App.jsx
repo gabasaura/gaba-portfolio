@@ -3,7 +3,7 @@ import MyResponsiveGrid from "./components/MyResponsiveGrid";
 const App = () => {
   return (
     <div>
-      <h1>My Modular Grid Application</h1>
+      <h1>GABA PORTAFOLIO 1</h1>
       <MyResponsiveGrid />
     </div>
   );

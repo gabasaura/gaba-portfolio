@@ -8,63 +8,123 @@ import img6 from './img/6.gif';
 export const gridItemsData = [
     {
       i: "a",
-      title: "Item A",
-      description: "Details for item A",
+      title: "01 Hola",
+      description: "Soy GABA",
       imageUrl: img2,
-      modalContent: "More information about item A",
+      modalContent: "More information",
+      tag: "personal",
+      w: 1,
+      h: 3
+    },
+    {
+      i: "b",
+      title: "02 WeMeet",
+      description: "Proyecto Genera citas grupales colectivas",
+      imageUrl: img0,
+      modalContent: "More information",
       tag: "backend",
       w: 1,
       h: 1
     },
     {
-      i: "b",
-      title: "Item B",
-      description: "Details for item B",
-      imageUrl: img0,
-      modalContent: "More information about item B",
-      tag: "personal",
-      w: 1,
-      h: 1
-    },
-    {
       i: "c",
-      title: "Item C",
-      description: "Details for item C",
-      imageUrl: img3,
-      modalContent: "More information about item C",
+      title: "03 Tierlist",
+      description: "Proyecto Generar Tier List",
+      imageUrl: null,
+      modalContent: "More information",
       tag: "backend",
       w: 1,
       h: 1
     },
     {
       i: "d",
-      title: "Item D",
+      title: "04 Batalla Naval",
       description: "Details for item D",
       imageUrl: img4,
-      modalContent: "More information about item D",
-      tag: "personal",
-      w: 1,
-      h: 1
-    },
-    {
-      i: "e",
-      title: "Item E",
-      description: "Details for item E",
-      imageUrl: img5,
-      modalContent: "More information about item E",
+      modalContent: "More information",
       tag: "frontend",
       w: 1,
       h: 1
     },
     {
+      i: "e",
+      title: "05 Pipo App",
+      description: "Details for item E",
+      imageUrl: img5,
+      modalContent: "More information",
+      tag: "frontend",
+      w: 1,
+      h: 2
+    },
+    {
       i: "f",
-      title: "Item F",
+      title: "06 StoryBoard",
       description: "Details for item F",
       imageUrl: img6,
-      modalContent: "More information about item F",
+      modalContent: "More information",
       tag: "backend",
       w: 1,
       h: 1
-    }
+    },
+    {
+    i: "g",
+    title: "07 Postit Wall",
+    description: "Details for item F",
+    imageUrl: img6,
+    modalContent: "More information",
+    tag: "backend",
+    w: 1,
+    h: 1
+  },
+  {
+    i: "h",
+    title: "08 Postit Wall",
+    description: "Details for item F",
+    imageUrl: img6,
+    modalContent: "More information",
+    tag: "backend",
+    w: 1,
+    h: 1
+  },
+  {
+    i: "i",
+    title: "09 Postit Wall",
+    description: "Details for item F",
+    imageUrl: img6,
+    modalContent: "More information",
+    tag: "backend",
+    w: 1,
+    h: 2
+  },
+  {
+    i: "j",
+    title: "10 Nombre Proyecto",
+    description: "Details for item F",
+    imageUrl: null,
+    modalContent: "More information",
+    tag: "backend",
+    w: 1,
+    h: 1
+  },
+  {
+    i: "k",
+    title: "11 Nombre Proyecto",
+    description: "Details for item F",
+    imageUrl: null,
+    modalContent: "More information",
+    tag: "personal",
+    w: 1,
+    h: 1
+  },
+  {
+    i: "m",
+    title: "12 Nombre Proyecto",
+    description: "Details for item F",
+    imageUrl: img3,
+    modalContent: "More information",
+    tag: "frontend",
+    w: 1,
+    h: 1
+  }
   ];
   
