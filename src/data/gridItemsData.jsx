@@ -12,7 +12,7 @@ export const gridItemsData = [
       description: "Soy GABA",
       imageUrl: img2,
       modalContent: "More information",
-      tag: "personal",
+      tags: ["personal"],
       w: 1,
       h: 3
     },
@@ -22,7 +22,7 @@ export const gridItemsData = [
       description: "Proyecto Genera citas grupales colectivas",
       imageUrl: img0,
       modalContent: "More information",
-      tag: "backend",
+      tags: ["backend"],
       w: 1,
       h: 1
     },
@@ -32,7 +32,7 @@ export const gridItemsData = [
       description: "Proyecto Generar Tier List",
       imageUrl: null,
       modalContent: "More information",
-      tag: "backend",
+      tags: ["frontend"],
       w: 1,
       h: 1
     },
@@ -42,7 +42,7 @@ export const gridItemsData = [
       description: "Details for item D",
       imageUrl: img4,
       modalContent: "More information",
-      tag: "frontend",
+      tags: ["frontend", "backend"],
       w: 1,
       h: 1
     },
@@ -52,7 +52,7 @@ export const gridItemsData = [
       description: "Details for item E",
       imageUrl: img5,
       modalContent: "More information",
-      tag: "frontend",
+      tags: ["frontend", "backend"],
       w: 1,
       h: 2
     },
@@ -62,7 +62,7 @@ export const gridItemsData = [
       description: "Details for item F",
       imageUrl: img6,
       modalContent: "More information",
-      tag: "backend",
+      tags: ["personal"],
       w: 1,
       h: 1
     },
@@ -72,7 +72,7 @@ export const gridItemsData = [
     description: "Details for item F",
     imageUrl: img6,
     modalContent: "More information",
-    tag: "backend",
+    tags: ["frontend"],
     w: 1,
     h: 1
   },
@@ -82,7 +82,7 @@ export const gridItemsData = [
     description: "Details for item F",
     imageUrl: img6,
     modalContent: "More information",
-    tag: "backend",
+    tags: ["frontend", "backend"],
     w: 1,
     h: 1
   },
@@ -92,7 +92,7 @@ export const gridItemsData = [
     description: "Details for item F",
     imageUrl: img6,
     modalContent: "More information",
-    tag: "backend",
+    tags: ["backend"],
     w: 1,
     h: 2
   },
@@ -102,7 +102,7 @@ export const gridItemsData = [
     description: "Details for item F",
     imageUrl: null,
     modalContent: "More information",
-    tag: "backend",
+    tags: ["backend"],
     w: 1,
     h: 1
   },
@@ -112,7 +112,7 @@ export const gridItemsData = [
     description: "Details for item F",
     imageUrl: null,
     modalContent: "More information",
-    tag: "personal",
+    tags: ["personal"],
     w: 1,
     h: 1
   },
@@ -122,7 +122,7 @@ export const gridItemsData = [
     description: "Details for item F",
     imageUrl: img3,
     modalContent: "More information",
-    tag: "frontend",
+    tags: ["frontend"],
     w: 1,
     h: 1
   }

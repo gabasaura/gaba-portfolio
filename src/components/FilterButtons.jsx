@@ -1,19 +1,38 @@
 import PropTypes from "prop-types";
 
-const FilterButtons = ({ handleTagChange }) => {
+const FilterButtons = ({ selectedTag, handleTagChange }) => {
+  const tags = ["inicio", "backend", "frontend", "personal"];
+
+  const handleButtonClick = (tag) => {
+    handleTagChange(tag);  // Llama a la función para cambiar la etiqueta seleccionada
+  };
+
   return (
     <div>
-      <button onClick={() => handleTagChange("all")}>All</button>
-      <button onClick={() => handleTagChange("backend")}>Backend</button>
-      <button onClick={() => handleTagChange("frontend")}>Frontend</button>
-      <button onClick={() => handleTagChange("personal")}>Personal</button>
+      {tags.map((tag) => (
+        <button
+          key={tag}
+          onClick={() => handleButtonClick(tag)}
+          style={{
+            backgroundColor: selectedTag === tag ? "blue" : "gray", // Marca solo el tag seleccionado
+            color: "white",
+            margin: "5px",
+            padding: "10px",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+          }}
+        >
+          {tag}
+        </button>
+      ))}
     </div>
   );
 };
 
-// Validación de las props
 FilterButtons.propTypes = {
-  handleTagChange: PropTypes.func.isRequired, // handleTagChange debe ser una función y es requerida
+  selectedTag: PropTypes.string.isRequired, // Recibe una única etiqueta seleccionada
+  handleTagChange: PropTypes.func.isRequired
 };
 
 export default FilterButtons;
