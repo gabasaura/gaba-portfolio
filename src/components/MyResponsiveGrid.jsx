@@ -54,19 +54,23 @@ const MyResponsiveGrid = () => {
     });
   };
 
-  // Filter layout by selected tag
-  const filteredLayout =
-    selectedTag === "inicio"
-      ? layout
-      : layout.filter((item) => item.tags.includes(selectedTag)); // Ahora chequea si el ítem tiene más de un tag
+  // Reorganize layout so that selected tag items appear first and others have less opacity
+  const orderedLayout = layout.sort((a, b) => {
+    if (selectedTag === "inicio") return 0; // Si no se selecciona ningún tag, no se reordena
+
+    const aHasTag = a.tags.includes(selectedTag);
+    const bHasTag = b.tags.includes(selectedTag);
+
+    return aHasTag === bHasTag ? 0 : aHasTag ? -1 : 1;
+  });
 
   // Define the layout for different breakpoints
   const layouts = {
-    lg: generateLayout(filteredLayout, 3),
-    md: generateLayout(filteredLayout, 3),
-    sm: generateLayout(filteredLayout, 2),
-    xs: generateLayout(filteredLayout, 1),
-    xxs: generateLayout(filteredLayout, 1),
+    lg: generateLayout(orderedLayout, 3),
+    md: generateLayout(orderedLayout, 3),
+    sm: generateLayout(orderedLayout, 2),
+    xs: generateLayout(orderedLayout, 1),
+    xxs: generateLayout(orderedLayout, 1),
   };
 
   const handleTagChange = (tag) => setSelectedTag(tag);
@@ -85,8 +89,15 @@ const MyResponsiveGrid = () => {
           cols={{ lg: 3, md: 3, sm: 2, xs: 1, xxs: 1 }}
           rowHeight={281}
         >
-          {filteredLayout.map((item) => (
-            <div key={item.i} className={styles.gridItem}>
+           {orderedLayout.map((item) => (
+            <div
+              key={item.i}
+              className={styles.gridItem}
+              style={{
+                opacity: selectedTag === "inicio" || item.tags.includes(selectedTag) ? 1 : 0.3,
+                transition: "opacity 0.3s ease",
+              }}
+            >
               <img src={item.imageUrl} alt={item.title}/>
               <div className={styles.gridItemBox}>
                 <h3>{item.tags}</h3>
