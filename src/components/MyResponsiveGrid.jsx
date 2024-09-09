@@ -123,7 +123,6 @@ const MyResponsiveGrid = () => {
       <FilterButtons
         selectedTag={selectedTag}
         handleTagChange={handleTagChange}
-        className={styles.filterButtons} // Agrega la clase como prop
       />
 
       {/* Grid layout */}

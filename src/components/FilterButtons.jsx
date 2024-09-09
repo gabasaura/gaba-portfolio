@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import styles from "../styles/Buttons.module.css"
 
 
-const FilterButtons = ({ selectedTag, handleTagChange, className }) => {
+const FilterButtons = ({ selectedTag, handleTagChange }) => {
   const tags = ["inicio", "backend", "frontend", "personal"];
 
   const handleButtonClick = (tag) => {
@@ -10,7 +10,7 @@ const FilterButtons = ({ selectedTag, handleTagChange, className }) => {
   };
 
   return (
-    <div className={className}>
+    <div className={styles.filterButtons}>
       {tags.map((tag) => (
         <button
           key={tag}
