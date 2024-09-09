@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
+import styles from "../styles/Buttons.module.css"
 
-const FilterButtons = ({ selectedTag, handleTagChange }) => {
+
+const FilterButtons = ({ selectedTag, handleTagChange, className }) => {
   const tags = ["inicio", "backend", "frontend", "personal"];
 
   const handleButtonClick = (tag) => {
@@ -8,20 +10,12 @@ const FilterButtons = ({ selectedTag, handleTagChange }) => {
   };
 
   return (
-    <div>
+    <div className={className}>
       {tags.map((tag) => (
         <button
           key={tag}
           onClick={() => handleButtonClick(tag)}
-          style={{
-            backgroundColor: selectedTag === tag ? "blue" : "gray", // Marca solo el tag seleccionado
-            color: "white",
-            margin: "5px",
-            padding: "10px",
-            border: "none",
-            borderRadius: "5px",
-            cursor: "pointer",
-          }}
+          className={`${styles.tagButton} ${selectedTag === tag ? styles.active : ''}`}
         >
           {tag}
         </button>
@@ -32,7 +26,8 @@ const FilterButtons = ({ selectedTag, handleTagChange }) => {
 
 FilterButtons.propTypes = {
   selectedTag: PropTypes.string.isRequired, // Recibe una única etiqueta seleccionada
-  handleTagChange: PropTypes.func.isRequired
+  handleTagChange: PropTypes.func.isRequired,
+  className: PropTypes.string,
 };
 
 export default FilterButtons;

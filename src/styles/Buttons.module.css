@@ -1,0 +1,24 @@
+.filterButtons {
+    text-align: center;
+    font-size: 12px;
+    color: red;
+}
+
+.tagButton {
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tagButton:hover {
+    background-color: darkgray;
+  }
+  
+  .active {
+    background-color: blue;
+    color: white;
+  }

@@ -1,9 +1,10 @@
 import MyResponsiveGrid from "./components/MyResponsiveGrid";
+import styles from "./styles/App.module.css"
 
 const App = () => {
   return (
     <div>
-      <h1>GABA PORTAFOLIO 1</h1>
+      <h1 className="styles.title">GABA PORTAFOLIO 1</h1>
       <MyResponsiveGrid />
     </div>
   );

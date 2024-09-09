@@ -120,7 +120,11 @@ const MyResponsiveGrid = () => {
   return (
     <>
       {/* Buttons to select tag */}
-      <FilterButtons selectedTag={selectedTag} handleTagChange={handleTagChange} />
+      <FilterButtons
+        selectedTag={selectedTag}
+        handleTagChange={handleTagChange}
+        className={styles.filterButtons} // Agrega la clase como prop
+      />
 
       {/* Grid layout */}
       <div>

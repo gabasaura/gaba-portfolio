@@ -6,4 +6,6 @@ html {
     background-color: #fafdfd; /* Color de fondo claro */
     font-family: "Fira Sans", sans-serif;
     color: #1d262e;
+    max-width: 1280px;
+    margin: 0 auto;
 }
