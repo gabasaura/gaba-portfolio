@@ -19,3 +19,7 @@ display: block;  }
   color: green;
   font-weight: bold;
 }
+
+.ItemModalButton{
+  z-index: 1000;
+}

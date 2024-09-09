@@ -1,0 +1,42 @@
+/* Estilos para el fondo opaco que bloquea la interacción detrás del modal */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75); /* Capa de fondo con opacidad */
+  z-index: 1000; /* Asegúrate de que el overlay esté encima del contenido */
+}
+
+/* Estilos para el contenido del modal */
+.modalContent {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1100; /* Asegúrate de que el contenido esté por encima del overlay */
+  max-height: 90vh; /* Limita la altura del modal */
+  overflow-y: auto; /* Permite scroll si el contenido es más grande que la altura disponible */
+}
+
+/* Cuerpo del modal */
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Para el contenido adicional dentro del modal que puede necesitar scroll */
+.extraContent {
+  max-height: 50vh; /* Limita la altura del contenido extra para hacer scroll */
+  overflow-y: auto; /* Permite scroll solo dentro del área extra */
+}
+
+/* Bloquea el scroll de la página cuando el modal está abierto */
+.bodyModalOpen {
+  overflow: hidden;
+}

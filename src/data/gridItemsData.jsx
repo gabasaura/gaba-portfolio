@@ -15,7 +15,7 @@ export const gridItemsData = [
       tags: ["personal"],
       styleClass: "highlightText",
       w: 1,
-      h: 3
+      h: 2
     },
     {
       i: "b",

@@ -5,6 +5,7 @@ import "react-resizable/css/styles.css";
 import FilterButtons from "./FilterButtons";
 import { gridItemsData } from "../data/gridItemsData";
 import styles from "../styles/GridItem.module.css";
+import ItemModal from "./ItemModal";
 
 // Wrap Responsive with WidthProvider to automatically adjust to the container width
 const ResponsiveGridLayout = WidthProvider(Responsive);
@@ -13,11 +14,25 @@ const MyResponsiveGrid = () => {
   const [selectedTag, setSelectedTag] = useState("inicio");
   const [layout, setLayout] = useState([]);
   const [breakpoint, setBreakpoint] = useState("lg");
+  const [isModalOpen, setIsModalOpen] = useState(false); // Estado para controlar si el modal está abierto
+  const [selectedItem, setSelectedItem] = useState(null); // Estado para controlar el ítem seleccionado
+
 
   // Simulating fetch data from an API or static source
   useEffect(() => {
     setLayout(gridItemsData); // Carga los ítems con múltiples tags
   }, []);
+
+  // MODAL
+  const handleOpenModal = (item) => {
+    setSelectedItem(item);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedItem(null);
+  };
 
   // Update layout to force w = 1 for "sm" breakpoint (2 columns)
   const updateLayoutForTwoColumns = (currentLayout) => {
@@ -134,6 +149,8 @@ const MyResponsiveGrid = () => {
           cols={{ lg: 3, md: 3, sm: 2, xs: 1, xxs: 1 }}
           rowHeight={281}
           onBreakpointChange={onBreakpointChange} // Escucha cambios de breakpoints
+          isDraggable={false}
+          isResizable={false}
         >
           {orderedLayout.map((item) => (
             <div
@@ -142,6 +159,9 @@ const MyResponsiveGrid = () => {
               style={{
                 opacity: selectedTag === "inicio" || item.tags.includes(selectedTag) ? 1 : 0.3,
                 transition: "opacity 0.3s ease",
+              }}
+              onClick={() => {
+                handleOpenModal(item)
               }}
             >
               <img src={item.imageUrl} alt={item.title} />
@@ -153,6 +173,13 @@ const MyResponsiveGrid = () => {
             </div>
           ))}
         </ResponsiveGridLayout>
+
+        {/* ItemModal */}
+        <ItemModal
+          isOpen={isModalOpen}
+          onRequestClose={handleCloseModal}
+          item={selectedItem}
+        />
       </div>
     </>
   );
