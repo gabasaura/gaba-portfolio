@@ -13,6 +13,7 @@ export const gridItemsData = [
       imageUrl: img2,
       modalContent: "More information",
       tags: ["personal"],
+      styleClass: "highlightText",
       w: 1,
       h: 3
     },
@@ -43,7 +44,7 @@ export const gridItemsData = [
       imageUrl: img4,
       modalContent: "More information",
       tags: ["frontend", "backend"],
-      w: 1,
+      w: 2,
       h: 1
     },
     {

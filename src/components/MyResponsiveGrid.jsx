@@ -12,11 +12,24 @@ const ResponsiveGridLayout = WidthProvider(Responsive);
 const MyResponsiveGrid = () => {
   const [selectedTag, setSelectedTag] = useState("inicio");
   const [layout, setLayout] = useState([]);
+  const [breakpoint, setBreakpoint] = useState("lg");
 
   // Simulating fetch data from an API or static source
   useEffect(() => {
     setLayout(gridItemsData); // Carga los ítems con múltiples tags
   }, []);
+
+  // Update layout to force w = 1 for "sm" breakpoint (2 columns)
+  const updateLayoutForTwoColumns = (currentLayout) => {
+    // Forzamos el ancho w a 1 cuando estamos en el breakpoint 'sm'
+    if (breakpoint === "sm") {
+      return currentLayout.map(item => ({
+        ...item,
+        w: 1 // Fuerza el ancho a 1 para que cada ítem ocupe solo una columna
+      }));
+    }
+    return currentLayout;
+  };
 
   // GRID DINAMICA & RESPONSIVE MAGIC
   // Helper function to dynamically calculate the layout positions
@@ -92,31 +105,37 @@ const MyResponsiveGrid = () => {
   const layouts = {
     lg: generateLayout(orderedLayout, 3),
     md: generateLayout(orderedLayout, 3),
-    sm: generateLayout(orderedLayout, 2),
+    sm: generateLayout(updateLayoutForTwoColumns(orderedLayout), 2),
     xs: generateLayout(orderedLayout, 1),
     xxs: generateLayout(orderedLayout, 1),
+  };
+
+  // Update breakpoint state on change
+  const onBreakpointChange = (newBreakpoint) => {
+    setBreakpoint(newBreakpoint);
   };
 
   const handleTagChange = (tag) => setSelectedTag(tag);
 
   return (
-    <div>
+    <>
       {/* Buttons to select tag */}
       <FilterButtons selectedTag={selectedTag} handleTagChange={handleTagChange} />
 
       {/* Grid layout */}
-      <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+      <div>
         <ResponsiveGridLayout
           className="layout"
           layouts={layouts}
           breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
           cols={{ lg: 3, md: 3, sm: 2, xs: 1, xxs: 1 }}
           rowHeight={281}
+          onBreakpointChange={onBreakpointChange} // Escucha cambios de breakpoints
         >
           {orderedLayout.map((item) => (
             <div
               key={item.i}
-              className={styles.gridItem}
+              className={`${styles.gridItem} ${styles.defaultStyle} ${styles[item.styleClass]}`} // Aplicar clase dinámica
               style={{
                 opacity: selectedTag === "inicio" || item.tags.includes(selectedTag) ? 1 : 0.3,
                 transition: "opacity 0.3s ease",
@@ -132,7 +151,7 @@ const MyResponsiveGrid = () => {
           ))}
         </ResponsiveGridLayout>
       </div>
-    </div>
+    </>
   );
 };
 
