@@ -7,7 +7,7 @@ import { gridItemsData } from "../data/gridItemsData";
 import styles from "../styles/GridItem.module.css";
 import ItemModal from "./ItemModal";
 import { FaGithub } from "react-icons/fa";
-import { FiPlusCircle } from "react-icons/fi";
+import { FiPlus } from "react-icons/fi";
 
 
 
@@ -189,7 +189,8 @@ const MyResponsiveGrid = () => {
               <button className={styles.iconButton} onClick={() => {
                 handleOpenModal(item)
               }}>
-              <FiPlusCircle />
+              <FiPlus />
+
               </button>
 
 
