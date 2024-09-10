@@ -135,9 +135,9 @@
 
 /* BADGES STACK */
 .stackContainer {
-  display: flex;
-  gap: 8px; /* Espacio entre cada badge */
-  margin: 10px 0;
+  display: inline-block;
+  gap: 8px;
+  margin-bottom:  17px;
 }
 
 .badge {

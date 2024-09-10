@@ -18,11 +18,18 @@ export const gridItemsData = [
   {
     i: "b",
     title: "PIPO",
-    description: "Web app para listar baños de uso público.",
+    description: "Web app desarrollada en equipo. Mapa donde usuarios pueden listar baños de uso público.",
     stack: [
       { name: "JavaScript", color: "#f0db4f" },
       { name: "React", color: "#00d8ff" },
-      { name: "Flask", color: "#000000" }
+      { name: "Flask", color: "#000000" },
+      { name: "Booststrap", color: "#000000" },
+      { name: "Leaflet", color: "#000000" },
+      { name: "Toastify", color: "#000000" },
+      { name: "Python", color: "#000000" },
+      { name: "PostgresSQL", color: "#000000" },
+      { name: "JWT", color: "#000000" },
+      { name: "Docker", color: "#000000" },
     ],
     imageUrl: null,
     styleClass: "profilePic",
