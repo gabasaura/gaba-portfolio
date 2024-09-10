@@ -1,25 +1,79 @@
 .gridItem {
-    overflow: hidden;
-    background-color: yellow;
-  }
-  
-  .gridItem img {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .gridItemBox {
-margin: 0;
-display: block;  }
-
-.highlightText {
-  color: green;
-  font-weight: bold;
+  overflow: hidden;
+  border: .5px #312F2F solid;
+  border-radius: 20px;
 }
 
-.ItemModalButton{
+.gridItem img {
+  z-index: -1;
+  width: 100%;
+  height: fit-content;
+  margin: 0 auto;
+  display: block;
+}
+
+.gridItemBox {
+  margin: 20px;
+  display: block;
+}
+
+.profile {
+  border: none !important;
+  padding-top: 20px;
+}
+
+.profile img {
+  z-index: -1;
+  width: 60%;
+  height: fit-content;
+  margin: 0 auto;
+  display: block;
+}
+
+.profilePic img {
+  z-index: -1;
+  width: 100%;
+}
+
+.profile .tag {
+  position: absolute;
+  bottom: 20px;
+}
+
+.ItemModalButton {
   z-index: 1000;
+}
+
+.tag {
+  text-align: center;
+  font-size: 14px;
+  color: #312F2F;
+  display: inline-block;
+  padding: 5px 20px;
+  margin-right: 10px;
+  border: .5px #312F2F solid;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Puedes tener estilos específicos si es necesario */
+
+.tag-Frontend {
+  border: .5px solid #70D7C7;
+  color: #70D7C7;
+}
+
+.tag-Backend {
+  border: .5px solid #0D6496;
+  color: #0D6496;
+}
+
+.tag-Personal {
+  border: .5px solid #AD85A2;
+  color: #AD85A2;
+}
+
+.tag-Inicio {
+  border: .5px solid #312F2F;
+  color: #312F2F;
 }

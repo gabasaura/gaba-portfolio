@@ -11,7 +11,7 @@ import ItemModal from "./ItemModal";
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
 const MyResponsiveGrid = () => {
-  const [selectedTag, setSelectedTag] = useState("inicio");
+  const [selectedTag, setSelectedTag] = useState("Inicio");
   const [layout, setLayout] = useState([]);
   const [breakpoint, setBreakpoint] = useState("lg");
   const [isModalOpen, setIsModalOpen] = useState(false); // Estado para controlar si el modal está abierto
@@ -86,7 +86,7 @@ const MyResponsiveGrid = () => {
   // FILTER LAYOUT
   // Function to get ordered layout based on selected tag
   const getOrderedLayout = () => {
-    if (selectedTag === "inicio") {
+    if (selectedTag === "Inicio") {
       // Return items to their initial state
       return layout.map(item => ({
         ...item,
@@ -157,18 +157,25 @@ const MyResponsiveGrid = () => {
               key={item.i}
               className={`${styles.gridItem} ${styles.defaultStyle} ${styles[item.styleClass]}`} // Aplicar clase dinámica
               style={{
-                opacity: selectedTag === "inicio" || item.tags.includes(selectedTag) ? 1 : 0.3,
+                opacity: selectedTag === "Inicio" || item.tags.includes(selectedTag) ? 1 : 0.3,
                 transition: "opacity 0.3s ease",
               }}
               onClick={() => {
                 handleOpenModal(item)
               }}
             >
-              <img src={item.imageUrl} alt={item.title} />
+              <img src={item.imageUrl} />
               <div className={styles.gridItemBox}>
-                <h3>{item.tags}</h3>
-                <h3>{item.title}</h3>
+                <h2>{item.title}</h2>
                 <p>{item.description}</p>
+                <p>{item.itemUrl}</p>
+                <div>
+              {item.tags.map((tag, index) => (
+                <span key={index} className={`${styles.tag} ${styles['tag-' + tag]}`}>
+                  {tag}
+                </span>
+              ))}
+            </div>
               </div>
             </div>
           ))}

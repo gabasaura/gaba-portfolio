@@ -3,7 +3,7 @@ import styles from "../styles/Buttons.module.css"
 
 
 const FilterButtons = ({ selectedTag, handleTagChange }) => {
-  const tags = ["inicio", "backend", "frontend", "personal"];
+  const tags = ["Inicio", "Backend", "Frontend", "Personal"];
 
   const handleButtonClick = (tag) => {
     handleTagChange(tag);  // Llama a la función para cambiar la etiqueta seleccionada

@@ -1,131 +1,97 @@
-import img0 from './img/0.png';
-import img2 from './img/2.gif';
-import img3 from './img/3.gif';
-import img4 from './img/4.gif';
-import img5 from './img/5.gif';
-import img6 from './img/6.gif';
+import gaba from './img/gabanimate.gif'
 
 export const gridItemsData = [
-    {
-      i: "a",
-      title: "01 Hola",
-      description: "Soy GABA",
-      imageUrl: img2,
-      modalContent: "More information",
-      tags: ["personal"],
-      styleClass: "highlightText",
-      w: 1,
-      h: 2
-    },
-    {
-      i: "b",
-      title: "02 WeMeet",
-      description: "Proyecto Genera citas grupales colectivas",
-      imageUrl: img0,
-      modalContent: "More information",
-      tags: ["backend"],
-      w: 1,
-      h: 1
-    },
-    {
-      i: "c",
-      title: "03 Tierlist",
-      description: "Proyecto Generar Tier List",
-      imageUrl: null,
-      modalContent: "More information",
-      tags: ["frontend"],
-      w: 1,
-      h: 1
-    },
-    {
-      i: "d",
-      title: "04 Batalla Naval",
-      description: "Details for item D",
-      imageUrl: img4,
-      modalContent: "More information",
-      tags: ["frontend", "backend"],
-      w: 2,
-      h: 1
-    },
-    {
-      i: "e",
-      title: "05 Pipo App",
-      description: "Details for item E",
-      imageUrl: img5,
-      modalContent: "More information",
-      tags: ["frontend", "backend"],
-      w: 1,
-      h: 2
-    },
-    {
-      i: "f",
-      title: "06 StoryBoard",
-      description: "Details for item F",
-      imageUrl: img6,
-      modalContent: "More information",
-      tags: ["personal"],
-      w: 1,
-      h: 1
-    },
-    {
-    i: "g",
-    title: "07 Postit Wall",
-    description: "Details for item F",
-    imageUrl: img6,
-    modalContent: "More information",
-    tags: ["frontend"],
-    w: 1,
-    h: 1
-  },
   {
-    i: "h",
-    title: "08 Postit Wall",
-    description: "Details for item F",
-    imageUrl: img6,
+    i: "a",
+    title: "Full Stack Developer",
+    description: "",
+    itemUrl: "github",
+    imageUrl: gaba,
     modalContent: "More information",
-    tags: ["frontend", "backend"],
-    w: 1,
-    h: 1
-  },
-  {
-    i: "i",
-    title: "09 Postit Wall",
-    description: "Details for item F",
-    imageUrl: img6,
-    modalContent: "More information",
-    tags: ["backend"],
+    tags: ["Personal"],
+    styleClass: "profile",
     w: 1,
     h: 2
   },
   {
-    i: "j",
-    title: "10 Nombre Proyecto",
-    description: "Details for item F",
+    i: "b",
+    title: "PIPO",
+    description: "Web app para listar baños de uso público.",
+    imageUrl: null,
+    styleClass: "profilePic",
+    modalContent: "mas",
+    tags: ["Backend", "Frontend"],
+    w: 2,
+    h: 1
+  },
+  {
+    i: "c",
+    title: "TIERLIST",
+    description: "Generador de Listas, tipo Tierlist.",
     imageUrl: null,
     modalContent: "More information",
-    tags: ["backend"],
+    tags: ["Frontend", "Backend"],
+    w: 1,
+    h: 1
+  },
+  {
+    i: "d",
+    title: "WEMEET",
+    description: "Proyecto personal: Generador de reuniones grupales.",
+    imageUrl: null,
+    modalContent: "More information",
+    tags: ["Backend"],
+    w: 2,
+    h: 1
+  },
+  {
+    i: "e",
+    title: "BATALLA NAVAL",
+    description: "Juego Batalla Naval vs PC.",
+    imageUrl: null,
+    modalContent: "More information",
+    tags: ["Frontend"],
+    w: 1,
+    h: 1
+  },
+  {
+    i: "frontend",
+    title: "STORYBOARD",
+    description: "Proyecto Brainstorming para generar storyboards dínamicos.",
+    imageUrl: null,
+    modalContent: "More information",
+    tags: ["Personal"],
+    w: 1,
+    h: 1
+  },
+  {
+    i: "g",
+    title: "POST-IT WALL",
+    description: "Listas de pendientes en formato de bloques.",
+    imageUrl: null,
+    modalContent: "More information",
+    tags: ["Frontend"],
+    w: 1,
+    h: 1
+  },
+  {
+    i: "j",
+    title: "PLAYGROUND",
+    description: "Codes Experimentales",
+    imageUrl: null,
+    modalContent: "More information",
+    tags: ["Personal", "Frontend"],
     w: 1,
     h: 1
   },
   {
     i: "k",
-    title: "11 Nombre Proyecto",
-    description: "Details for item F",
+    title: "RRSS",
+    description: "En mi otra vida, dibujo.",
     imageUrl: null,
     modalContent: "More information",
-    tags: ["personal"],
+    tags: ["Personal"],
     w: 1,
     h: 1
   },
-  {
-    i: "m",
-    title: "12 Nombre Proyecto",
-    description: "Details for item F",
-    imageUrl: img3,
-    modalContent: "More information",
-    tags: ["frontend"],
-    w: 1,
-    h: 1
-  }
-  ];
-  
+];
