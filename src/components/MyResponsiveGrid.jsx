@@ -164,7 +164,7 @@ const MyResponsiveGrid = () => {
                 opacity: selectedTag === "Inicio" || item.tags.includes(selectedTag) ? 1 : 0.3,
                 transition: "opacity 0.3s ease",
               }}
-              
+
             >
               <img src={item.imageUrl} />
               <div className={styles.gridItemBox}>
@@ -186,11 +186,10 @@ const MyResponsiveGrid = () => {
               </div>
 
               {/* Botón con el ícono para abrir el modal */}
-              <button className={styles.iconButton} onClick={() => {
+              <button className={styles.plusIcon} onClick={() => {
                 handleOpenModal(item)
               }}>
-              <FiPlus />
-
+                <FiPlus />
               </button>
 
 

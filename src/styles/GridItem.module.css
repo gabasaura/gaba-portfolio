@@ -23,16 +23,17 @@
   padding-top: 20px;
 }
 
-.profile .title {
-  padding: 0 3%;
-}
-
 .profile img {
   z-index: -1;
   width: 60%;
   height: fit-content;
   margin: 0 auto;
   display: block;
+}
+
+.profile .plusIcon {
+  top: 2px;
+  left: 35px;
 }
 
 .profilePic img {
@@ -110,7 +111,7 @@
 }
 
 /* PLUS ICON */
-.iconButton{
+.plusIcon{
     font-size: 18px;
     position: absolute;
     bottom: 10px;
@@ -124,7 +125,7 @@
     height: 35px;
 
 }
-.iconButton:hover{
+.plusIcon:hover{
   color:#E3EAF2;
   background-color: #312F2F;
 }
