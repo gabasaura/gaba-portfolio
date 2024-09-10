@@ -6,6 +6,8 @@ import FilterButtons from "./FilterButtons";
 import { gridItemsData } from "../data/gridItemsData";
 import styles from "../styles/GridItem.module.css";
 import ItemModal from "./ItemModal";
+import { FaGithub } from "react-icons/fa";
+
 
 // Wrap Responsive with WidthProvider to automatically adjust to the container width
 const ResponsiveGridLayout = WidthProvider(Responsive);
@@ -168,6 +170,7 @@ const MyResponsiveGrid = () => {
               <div className={styles.gridItemBox}>
                 <h2>{item.title}</h2>
                 <p>{item.description}</p>
+                <a className={styles.gitIcon}>{item.gitProject}<FaGithub /></a>
                 <p>{item.itemUrl}</p>
                 <div>
               {item.tags.map((tag, index) => (

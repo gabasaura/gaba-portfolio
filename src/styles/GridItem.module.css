@@ -1,7 +1,8 @@
+
 .gridItem {
   overflow: hidden;
   border: .5px #312F2F solid;
-  border-radius: 20px;
+  border-radius: 40px;
 }
 
 .gridItem img {
@@ -13,7 +14,7 @@
 }
 
 .gridItemBox {
-  margin: 20px;
+  margin: 35px;
   display: block;
 }
 

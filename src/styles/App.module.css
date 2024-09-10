@@ -1,3 +1,17 @@
-.title{
+.cvbutton {
+    color: #312F2F;
+    padding: 5px 20px;
+    margin: 0 10px;
+    border-radius: 20px;
+    border: .5px #312F2F solid;
+    cursor: pointer;
+    background-color: #E3EAF2;
+    transition: background-color 0.3s ease;
     display: inline-flex;
-}
+    float: inline-end;
+  }
+
+  .cvbutton:hover {
+    background-color: #312F2F;
+    color: #E3EAF2;
+  }

@@ -3,10 +3,10 @@ import styles from "./styles/App.module.css"
 
 const App = () => {
   return (
-    <div>
-      <h1 className={styles.cv}>cv</h1>
+    <>
+      <button className={styles.cvbutton}>CV</button>
       <MyResponsiveGrid />
-    </div>
+    </>
   );
 };
 
