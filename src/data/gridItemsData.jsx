@@ -5,6 +5,7 @@ export const gridItemsData = [
     i: "a",
     title: "Full Stack Developer desde Santiago, Chile. En busca de un nuevo desafío como junior developer. Siempre en modo aprendizaje y lista para colaborar en proyectos.",
     description: "",
+    stack: [],
     itemUrl: "",
     imageUrl: gaba,
     modalContent: "MODAL",
@@ -18,6 +19,11 @@ export const gridItemsData = [
     i: "b",
     title: "PIPO",
     description: "Web app para listar baños de uso público.",
+    stack: [
+      { name: "JavaScript", color: "#f0db4f" },
+      { name: "React", color: "#00d8ff" },
+      { name: "Flask", color: "#000000" }
+    ],
     imageUrl: null,
     styleClass: "profilePic",
     modalContent: "MODAL",
@@ -30,6 +36,11 @@ export const gridItemsData = [
     i: "c",
     title: "TIERLIST",
     description: "Generador de Listas, tipo Tierlist.",
+    stack: [
+      { name: "JavaScript", color: "#f0db4f" },
+      { name: "React", color: "#00d8ff" },
+      { name: "Flask", color: "#000000" }
+    ],
     imageUrl: null,
     modalContent: "MODAL",
     gitProject: "https://github.com/gabasaura/api-rest_tierlist",
@@ -41,6 +52,11 @@ export const gridItemsData = [
     i: "d",
     title: "WEMEET",
     description: "Proyecto personal: Generador de reuniones grupales.",
+    stack: [
+      { name: "JavaScript", color: "#f0db4f" },
+      { name: "React", color: "#00d8ff" },
+      { name: "Flask", color: "#000000" }
+    ],
     imageUrl: null,
     modalContent: "MODAL",
     gitProject: "https://github.com/gabasaura/api-rest_collective-meetings",
@@ -52,6 +68,11 @@ export const gridItemsData = [
     i: "e",
     title: "BATALLA NAVAL",
     description: "Juego Batalla Naval vs PC.",
+    stack: [
+      { name: "JavaScript", color: "#f0db4f" },
+      { name: "React", color: "#00d8ff" },
+      { name: "Flask", color: "#000000" }
+    ],
     imageUrl: null,
     modalContent: "MODAL",
     gitProject: "https://github.com/gabasaura/reactjs-battleship",
@@ -63,10 +84,15 @@ export const gridItemsData = [
     i: "frontend",
     title: "STORYBOARD",
     description: "Proyecto Brainstorming para generar storyboards dínamicos.",
+    stack: [
+      { name: "JavaScript", color: "#f0db4f" },
+      { name: "React", color: "#00d8ff" },
+      { name: "Flask", color: "#000000" }
+    ],
     imageUrl: null,
     modalContent: "MODAL",
     gitProject: "https://github.com/gabasaura",
-    tags: ["Personal"],
+    tags: ["Backend"],
     w: 1,
     h: 1
   },
@@ -74,6 +100,11 @@ export const gridItemsData = [
     i: "g",
     title: "POST-IT WALL",
     description: "Listas de pendientes en formato de bloques.",
+    stack: [
+      { name: "JavaScript", color: "#f0db4f" },
+      { name: "React", color: "#00d8ff" },
+      { name: "Flask", color: "#000000" }
+    ],
     imageUrl: null,
     modalContent: "MODAL",
     gitProject: "https://github.com/gabasaura",
@@ -85,10 +116,11 @@ export const gridItemsData = [
     i: "j",
     title: "PLAYGROUND",
     description: "Codes Experimentales",
+    stack: [],
     imageUrl: null,
     modalContent: "MODAL",
     gitProject: "https://github.com/gabasaura",
-    tags: ["Personal", "Frontend"],
+    tags: ["Personal"],
     w: 1,
     h: 1
   },
@@ -96,6 +128,7 @@ export const gridItemsData = [
     i: "k",
     title: "RRSS",
     description: "En mi otra vida, dibujo.",
+    stack: [],
     imageUrl: null,
     modalContent: "MODAL",
     gitProject: null,

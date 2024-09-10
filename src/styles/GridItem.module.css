@@ -74,6 +74,9 @@
   color: #AD85A2;
 }
 
+.profile .title{
+  padding-bottom: 12px;
+}
 .tag-Inicio {
   border: .5px solid #312F2F;
   color: #312F2F;
@@ -128,4 +131,19 @@
 .plusIcon:hover{
   color:#E3EAF2;
   background-color: #312F2F;
+}
+
+/* BADGES STACK */
+.stackContainer {
+  display: flex;
+  gap: 8px; /* Espacio entre cada badge */
+  margin: 10px 0;
+}
+
+.badge {
+  padding: 5px 10px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
 }
