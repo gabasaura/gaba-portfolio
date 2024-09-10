@@ -15,7 +15,7 @@ const FilterButtons = ({ selectedTag, handleTagChange }) => {
         <button
           key={tag}
           onClick={() => handleButtonClick(tag)}
-          className={`${styles.tagButton} ${selectedTag === tag ? styles.active : ''}`}
+          className={`${styles.tagButton} ${styles[tag]} ${selectedTag === tag ? styles.active : ''}`}
         >
           {tag}
         </button>
