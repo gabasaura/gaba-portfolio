@@ -3,7 +3,7 @@ import gaba from './img/gabanimate.gif'
 export const gridItemsData = [
   {
     i: "a",
-    title: "Full Stack Developer desde Santiago, Chile. En busca de un nuevo desafío como junior developer. Siempre en modo aprendizaje y lista para colaborar en proyectos interesantes.",
+    title: "Full Stack Developer desde Santiago, Chile. En busca de un nuevo desafío como junior developer. Siempre en modo aprendizaje y lista para colaborar en proyectos.",
     description: "",
     itemUrl: "",
     imageUrl: gaba,

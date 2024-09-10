@@ -23,6 +23,10 @@
   padding-top: 20px;
 }
 
+.profile .title {
+  padding: 0 3%;
+}
+
 .profile img {
   z-index: -1;
   width: 60%;
@@ -34,11 +38,6 @@
 .profilePic img {
   z-index: -1;
   width: 100%;
-}
-
-.profile .tag {
-  position: absolute;
-  bottom: 20px;
 }
 
 .ItemModalButton {
@@ -77,4 +76,35 @@
 .tag-Inicio {
   border: .5px solid #312F2F;
   color: #312F2F;
+}
+
+.iconTags {
+  display: inline-flex;
+}
+
+/* GITHUB ICON */
+
+.gitIcon {
+  display: inline-block; 
+  font-size: 18px; 
+  background-color: transparent;
+  color: #312F2F;
+  border-radius: 20px;
+  text-decoration: none; 
+  margin-right: 15px; 
+  height: 28px;
+  width: 28px;
+  box-sizing: border-box;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.gitIcon:hover {
+  background-color: #312F2F;
+  color: #E3EAF2;
+}
+
+/* Si quieres asegurarte de que el texto del enlace no se muestre, aunque no debería */
+.gitIcon a {
+  visibility: hidden;
 }

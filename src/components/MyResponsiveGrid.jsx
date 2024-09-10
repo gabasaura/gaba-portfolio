@@ -168,17 +168,20 @@ const MyResponsiveGrid = () => {
             >
               <img src={item.imageUrl} />
               <div className={styles.gridItemBox}>
-                <h2>{item.title}</h2>
+                <h2 className={styles.title}>{item.title}</h2>
                 <p>{item.description}</p>
-                <a className={styles.gitIcon}>{item.gitProject}<FaGithub /></a>
-                <p>{item.itemUrl}</p>
-                <div>
-              {item.tags.map((tag, index) => (
-                <span key={index} className={`${styles.tag} ${styles['tag-' + tag]}`}>
-                  {tag}
-                </span>
-              ))}
-            </div>
+
+                <div className={styles.iconTags}>
+                <a href={item.gitProject} target="_blank" rel="noopener noreferrer" 
+                className={styles.gitIcon}>
+                  <FaGithub /></a>
+                
+                  {item.tags.map((tag, index) => (
+                    <span key={index} className={`${styles.tag} ${styles['tag-' + tag]}`}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
