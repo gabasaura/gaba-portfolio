@@ -7,6 +7,8 @@ import { gridItemsData } from "../data/gridItemsData";
 import styles from "../styles/GridItem.module.css";
 import ItemModal from "./ItemModal";
 import { FaGithub } from "react-icons/fa";
+import { FiPlusCircle } from "react-icons/fi";
+
 
 
 // Wrap Responsive with WidthProvider to automatically adjust to the container width
@@ -162,9 +164,7 @@ const MyResponsiveGrid = () => {
                 opacity: selectedTag === "Inicio" || item.tags.includes(selectedTag) ? 1 : 0.3,
                 transition: "opacity 0.3s ease",
               }}
-              onClick={() => {
-                handleOpenModal(item)
-              }}
+              
             >
               <img src={item.imageUrl} />
               <div className={styles.gridItemBox}>
@@ -172,17 +172,27 @@ const MyResponsiveGrid = () => {
                 <p>{item.description}</p>
 
                 <div className={styles.iconTags}>
-                <a href={item.gitProject} target="_blank" rel="noopener noreferrer" 
-                className={styles.gitIcon}>
-                  <FaGithub /></a>
-                
+                  <a href={item.gitProject} target="_blank" rel="noopener noreferrer"
+                    className={styles.gitIcon}>
+                    <FaGithub /></a>
+
                   {item.tags.map((tag, index) => (
                     <span key={index} className={`${styles.tag} ${styles['tag-' + tag]}`}>
                       {tag}
                     </span>
                   ))}
                 </div>
+
               </div>
+
+              {/* Botón con el ícono para abrir el modal */}
+              <button className={styles.iconButton} onClick={() => {
+                handleOpenModal(item)
+              }}>
+              <FiPlusCircle />
+              </button>
+
+
             </div>
           ))}
         </ResponsiveGridLayout>

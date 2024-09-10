@@ -108,3 +108,12 @@
 .gitIcon a {
   visibility: hidden;
 }
+
+/* PLUS ICON */
+.iconButton{
+    border: none;
+    font-size: 35px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}

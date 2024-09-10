@@ -21,6 +21,7 @@ export const gridItemsData = [
     imageUrl: null,
     styleClass: "profilePic",
     modalContent: "MODAL",
+    gitProject: "https://github.com/gabasaura/pipo-app-frontend",
     tags: ["Backend", "Frontend"],
     w: 2,
     h: 1
@@ -31,6 +32,7 @@ export const gridItemsData = [
     description: "Generador de Listas, tipo Tierlist.",
     imageUrl: null,
     modalContent: "MODAL",
+    gitProject: "https://github.com/gabasaura/api-rest_tierlist",
     tags: ["Frontend", "Backend"],
     w: 1,
     h: 1
@@ -41,6 +43,7 @@ export const gridItemsData = [
     description: "Proyecto personal: Generador de reuniones grupales.",
     imageUrl: null,
     modalContent: "MODAL",
+    gitProject: "https://github.com/gabasaura/api-rest_collective-meetings",
     tags: ["Backend"],
     w: 2,
     h: 1
@@ -51,6 +54,7 @@ export const gridItemsData = [
     description: "Juego Batalla Naval vs PC.",
     imageUrl: null,
     modalContent: "MODAL",
+    gitProject: "https://github.com/gabasaura/reactjs-battleship",
     tags: ["Frontend"],
     w: 1,
     h: 1
@@ -61,6 +65,7 @@ export const gridItemsData = [
     description: "Proyecto Brainstorming para generar storyboards dínamicos.",
     imageUrl: null,
     modalContent: "MODAL",
+    gitProject: "https://github.com/gabasaura",
     tags: ["Personal"],
     w: 1,
     h: 1
@@ -71,6 +76,7 @@ export const gridItemsData = [
     description: "Listas de pendientes en formato de bloques.",
     imageUrl: null,
     modalContent: "MODAL",
+    gitProject: "https://github.com/gabasaura",
     tags: ["Frontend"],
     w: 1,
     h: 1
@@ -81,6 +87,7 @@ export const gridItemsData = [
     description: "Codes Experimentales",
     imageUrl: null,
     modalContent: "MODAL",
+    gitProject: "https://github.com/gabasaura",
     tags: ["Personal", "Frontend"],
     w: 1,
     h: 1
@@ -91,6 +98,8 @@ export const gridItemsData = [
     description: "En mi otra vida, dibujo.",
     imageUrl: null,
     modalContent: "MODAL",
+    gitProject: null,
+    styleClass: "rrss",
     tags: ["Personal"],
     w: 1,
     h: 1
