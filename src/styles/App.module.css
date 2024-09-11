@@ -1,19 +1,19 @@
 .cvbutton {
-    color: #312F2F;
-    padding: 4px 10px;
+  color: #312F2F;
+  padding: 4px 10px;
   margin: 0px 2px;
-    border-radius: 20px;
-    border: .5px #312F2F solid;
-    cursor: pointer;
-    background-color: #E3EAF2;
-    transition: background-color 0.3s ease;
-    display: inline-flex;
-    float: inline-end;
-    text-decoration: none;
-    font-size: 14px;
-  }
+  border-radius: 20px;
+  border: .5px #312F2F solid;
+  cursor: pointer;
+  background-color: #E3EAF2;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  float: inline-end;
+  text-decoration: none;
+  font-size: 14px;
+}
 
-  .cvbutton:hover {
-    background-color: #312F2F;
-    color: #E3EAF2;
-  }
+.cvbutton:hover {
+  background-color: #312F2F;
+  color: #E3EAF2;
+}

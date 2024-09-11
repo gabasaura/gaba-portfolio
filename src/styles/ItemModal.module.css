@@ -13,18 +13,15 @@
 /* Estilos para el contenido del modal */
 .modalContent {
   position: relative;
-  width: 80%;
+  width: 60%;
   max-width: 600px;
-  margin: auto;
+  margin: 50px auto;
   background: white;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   z-index: 1100;
-  /* Asegúrate de que el contenido esté por encima del overlay */
-  max-height: 90vh;
-  /* Limita la altura del modal */
+  max-height: 70vh;
   overflow-y: auto;
-  /* Permite scroll si el contenido es más grande que la altura disponible */
 }
 
 /* Cuerpo del modal */
