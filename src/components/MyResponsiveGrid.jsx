@@ -4,10 +4,15 @@ import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
 import FilterButtons from "./FilterButtons";
 import { gridItemsData } from "../data/gridItemsData";
+
 import styles from "../styles/GridItem.module.css";
 import stylesStack from "../styles/Stack.module.css"
-import ItemModal from "./ItemModal";
+import stylesTags from "../styles/Tags.module.css"
+import stylesIcon from "../styles/Icons.module.css"
 import { FaGithub } from "react-icons/fa";
+
+
+import ItemModal from "./ItemModal";
 import { FiPlus } from "react-icons/fi";
 
 
@@ -170,7 +175,7 @@ const MyResponsiveGrid = () => {
               <img src={item.imageUrl} />
               <div className={styles.gridItemBox}>
                 <h2 className={styles.title}>{item.title}</h2>
-                
+
                 {/* Stack de lenguajes */}
                 <div className={stylesStack.stackContainer}>
                   {item.stack.map((tech, index) => (
@@ -188,11 +193,11 @@ const MyResponsiveGrid = () => {
 
                 <div className={styles.iconTags}>
                   <a href={item.gitProject} target="_blank" rel="noopener noreferrer"
-                    className={styles.gitIcon}>
+                    className={stylesIcon.gitIcon}>
                     <FaGithub /></a>
 
                   {item.tags.map((tag, index) => (
-                    <span key={index} className={`${styles.tag} ${styles['tag-' + tag]}`}>
+                    <span key={index} className={`${stylesTags.tag} ${stylesTags['tag-' + tag]}`}>
                       {tag}
                     </span>
                   ))}

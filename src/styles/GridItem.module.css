@@ -1,4 +1,3 @@
-
 .gridItem {
   overflow: hidden;
   border: .5px #312F2F solid;
@@ -46,95 +45,35 @@
   width: 100%;
 }
 
-.ItemModalButton {
-  z-index: 1000;
-}
-
-.tag {
-  text-align: center;
-  font-size: 12px;
-  color: #312F2F;
-  display: inline-block;
-  padding: 6px 20px;
-  margin-right: 10px;
-  border: .5px #312F2F solid;
-  border-radius: 20px;
-  transition: background-color 0.3s ease;
-  letter-spacing: 1px;
-}
-
-/* Puedes tener estilos específicos si es necesario */
-
-.tag-Frontend {
-  border: .5px solid #04d9ff;
-  color: #04d9ff;
-}
-
-.tag-Backend {
-  border: .5px solid #043ded;
-  color: #043ded;
-}
-
-.tag-Personal {
-  border: .5px solid #ff11ff;
-  color: #ff11ff;
-}
-
-.profile .title{
+.profile .title {
   padding-bottom: 12px;
-}
-.tag-Inicio {
-  border: .5px solid #312F2F;
-  color: #312F2F;
 }
 
 .iconTags {
   display: inline-flex;
 }
 
-/* GITHUB ICON */
-
-.gitIcon {
-  display: inline-block; 
-  font-size: 18px; 
-  background-color: transparent;
-  color: #312F2F;
-  border-radius: 20px;
-  text-decoration: none; 
-  margin-right: 15px; 
-  height: 28px;
-  width: 28px;
-  box-sizing: border-box;
-  padding: 5px;
-  cursor: pointer;
-}
-
-.gitIcon:hover {
-  background-color: #312F2F;
-  color: #E3EAF2;
-}
-
-/* Si quieres asegurarte de que el texto del enlace no se muestre, aunque no debería */
-.gitIcon a {
-  visibility: hidden;
+.ItemModalButton {
+  z-index: 1000;
 }
 
 /* PLUS ICON */
-.plusIcon{
-    font-size: 18px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    padding-top: 5px;
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 20px;
-    border: .5px solid #312F2F;
-    width: 35px;
-    height: 35px;
+.plusIcon {
+  font-size: 18px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding-top: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 20px;
+  border: .5px solid #312F2F;
+  width: 35px;
+  height: 35px;
 
 }
-.plusIcon:hover{
-  color:#E3EAF2;
+
+.plusIcon:hover {
+  color: #E3EAF2;
   background-color: #312F2F;
 }

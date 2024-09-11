@@ -14,15 +14,15 @@ export const gridItemsData = [
     },
     images: [
       {
-        src: "./img/1.gif",
+        src: "/modal/1.gif",
         caption: "Pantalla principal del proyecto",
       },
       {
-        src: "./img/4.gif",
+        src: "/modal/3.gif",
         caption: "Sección de detalles",
       },
       {
-        src: "./img/5.gif",
+        src: "/modal/6.gif",
         caption: "",
       }
     ],
@@ -58,15 +58,15 @@ export const gridItemsData = [
     },
     images: [
       {
-        src: "./img/1.gif",
+        src: "/modal/1.gif",
         caption: "Pantalla principal del proyecto",
       },
       {
-        src: "./img/4.gif",
+        src: "/modal/3.gif",
         caption: "Sección de detalles",
       },
       {
-        src: "./img/5.gif",
+        src: "/modal/6.gif",
         caption: "",
       }
     ],
@@ -91,15 +91,15 @@ export const gridItemsData = [
     },
     images: [
       {
-        src: "./img/1.gif",
+        src: "/modal/1.gif",
         caption: "Pantalla principal del proyecto",
       },
       {
-        src: "./img/4.gif",
+        src: "/modal/3.gif",
         caption: "Sección de detalles",
       },
       {
-        src: "./img/5.gif",
+        src: "/modal/6.gif",
         caption: "",
       }
     ],
@@ -124,15 +124,15 @@ export const gridItemsData = [
     },
     images: [
       {
-        src: "./img/1.gif",
+        src: "/modal/1.gif",
         caption: "Pantalla principal del proyecto",
       },
       {
-        src: "./img/4.gif",
+        src: "/modal/3.gif",
         caption: "Sección de detalles",
       },
       {
-        src: "./img/5.gif",
+        src: "/modal/6.gif",
         caption: "",
       }
     ],
@@ -157,15 +157,15 @@ export const gridItemsData = [
     },
     images: [
       {
-        src: "./img/1.gif",
+        src: "/modal/1.gif",
         caption: "Pantalla principal del proyecto",
       },
       {
-        src: "./img/4.gif",
+        src: "/modal/3.gif",
         caption: "Sección de detalles",
       },
       {
-        src: "./img/5.gif",
+        src: "/modal/6.gif",
         caption: "",
       }
     ],
@@ -190,15 +190,15 @@ export const gridItemsData = [
     },
     images: [
       {
-        src: "./img/1.gif",
+        src: "/modal/1.gif",
         caption: "Pantalla principal del proyecto",
       },
       {
-        src: "./img/4.gif",
+        src: "/modal/3.gif",
         caption: "Sección de detalles",
       },
       {
-        src: "./img/5.gif",
+        src: "/modal/6.gif",
         caption: "",
       }
     ],
@@ -225,15 +225,15 @@ export const gridItemsData = [
     },
     images: [
       {
-        src: "./img/1.gif",
+        src: "/modal/1.gif",
         caption: "Pantalla principal del proyecto",
       },
       {
-        src: "./img/4.gif",
+        src: "/modal/3.gif",
         caption: "Sección de detalles",
       },
       {
-        src: "./img/5.gif",
+        src: "/modal/6.gif",
         caption: "",
       }
     ],
@@ -254,15 +254,15 @@ export const gridItemsData = [
     },
     images: [
       {
-        src: "./img/1.gif",
+        src: "/modal/1.gif",
         caption: "Pantalla principal del proyecto",
       },
       {
-        src: "./img/4.gif",
+        src: "/modal/3.gif",
         caption: "Sección de detalles",
       },
       {
-        src: "./img/5.gif",
+        src: "/modal/6.gif",
         caption: "",
       }
     ],
@@ -283,15 +283,15 @@ export const gridItemsData = [
     },
     images: [
       {
-        src: "./img/1.gif",
+        src: "/modal/1.gif",
         caption: "Pantalla principal del proyecto",
       },
       {
-        src: "./img/4.gif",
+        src: "/modal/3.gif",
         caption: "Sección de detalles",
       },
       {
-        src: "./img/5.gif",
+        src: "/modal/6.gif",
         caption: "",
       }
     ],

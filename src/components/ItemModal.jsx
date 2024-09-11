@@ -2,6 +2,9 @@ import Modal from "react-modal";
 import PropTypes from "prop-types";
 import styles from "../styles/ItemModal.module.css";
 import stylesStack from "../styles/Stack.module.css";
+import stylesTags from "../styles/Tags.module.css";
+import stylesIcon from "../styles/Icons.module.css"
+import { FaGithub } from "react-icons/fa";
 import { FiPlus } from "react-icons/fi";
 
 
@@ -17,7 +20,26 @@ const ItemModal = ({ isOpen, onRequestClose, item }) => {
     >
       {item && (
         <>
-          <h2>{item.title}</h2>
+          <div className={styles.titleRow}>
+          <h2 className={styles.title}>Proyecto {item.title}</h2>
+          {/* LINKS */}
+          <div className={styles.projectLinks}>
+            {item.links.frontend && (
+              <a href={item.links.frontend} target="_blank" rel="noopener noreferrer"
+                    className={stylesIcon.gitIconFront}>
+                    <FaGithub /></a>
+            )}
+            {item.links.backend && (
+              <a href={item.links.backend} target="_blank" rel="noopener noreferrer"
+              className={stylesIcon.gitIconBack}>
+                    <FaGithub /></a>
+            )}
+            {item.links.deploy && (
+              <a href={item.links.deploy} className={styles.aHref} target="_blank" rel="noopener noreferrer">
+                Deployed
+              </a>
+            )}
+          </div></div>
 
           {/* STACK TECH */}
           <div className={stylesStack.stackContainer}>
@@ -32,40 +54,26 @@ const ItemModal = ({ isOpen, onRequestClose, item }) => {
             ))}
           </div>
 
-{/* LINKS */}
-          <div className={styles.projectLinks}>
-            {item.links.frontend && (
-              <a href={item.links.frontend} target="_blank" rel="noopener noreferrer">
-                Frontend Repo
-              </a>
-            )}
-            {item.links.backend && (
-              <a href={item.links.backend} target="_blank" rel="noopener noreferrer">
-                Backend Repo
-              </a>
-            )}
-            {item.links.deploy && (
-              <a href={item.links.deploy} target="_blank" rel="noopener noreferrer">
-                Deployed Project
-              </a>
-            )}
-          </div>
-
           <p>{item.description}</p>
 
-{/* IMGS */}
-          {item.images ? (
-            item.images.map((image, index) => (
-              <div key={index} className={styles.imageContainer}>
-                <img src={item.images.url} alt={image.caption} />
-                {item.images.caption && <p>{image.caption}</p>}
-              </div>
-            ))
-          ) : (
-            <img src={item.imageUrl} />
-          )}
+          {/* TAGS */}
 
-{/* BTN CLOSE */}
+          {item.tags.map((tag, index) => (
+            <span key={index} className={`${stylesTags.tag} ${stylesTags['tag-' + tag]}`}>
+              {tag}
+            </span>
+          ))}
+
+          {/* IMGS */}
+
+          {item.images.map((image, index) => (
+            <div key={index} className={styles.imageContainer}>
+              <img src={image.src} alt={image.caption} className={styles.imgModal} />
+              {image.caption && <p>{image.caption}</p>}
+            </div>
+          ))}
+
+          {/* BTN CLOSE */}
           <button onClick={onRequestClose} className={styles.closeModal}>
             <FiPlus />
           </button>
@@ -83,6 +91,7 @@ ItemModal.propTypes = {
     title: PropTypes.string, // Título del ítem
     description: PropTypes.string, // Descripción del ítem
     imageUrl: PropTypes.string, // URL de la imagen principal (opcional si hay múltiples imágenes)
+    tags: PropTypes.arrayOf(PropTypes.string),
     images: PropTypes.arrayOf(
       PropTypes.shape({
         url: PropTypes.string, // URL de cada imagen
