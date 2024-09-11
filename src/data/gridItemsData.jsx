@@ -2,8 +2,8 @@ import gaba from './img/gabanimate.gif'
 
 export const gridItemsData = [
   {
-    i: "a",
-    title: "Full Stack Developer desde Santiago, Chile. En busca de un nuevo desafío como junior developer. Siempre en modo aprendizaje y lista para colaborar en proyectos.",
+    i: "1",
+    title: "Full Stack Developer, buscando un nuevo desafío como junior developer. Siempre en modo aprendizaje y lista para colaborar en proyectos.",
     description: "",
     stack: [],
     itemUrl: "",
@@ -16,20 +16,22 @@ export const gridItemsData = [
     h: 2
   },
   {
-    i: "b",
-    title: "PIPO",
-    description: "Web app desarrollada en equipo. Mapa donde usuarios pueden listar baños de uso público.",
+    i: "2",
+    title: "Pipo",
+    description: "Aplicación web desarrollada en equipo que permite a los usuarios listar, localizar y rankear baños de uso público a través de un mapa interactivo.",
     stack: [
+      { name: "Leaflet", color: "#bbe469" },
       { name: "JavaScript", color: "#f0db4f" },
       { name: "React", color: "#00d8ff" },
-      { name: "Flask", color: "#000000" },
-      { name: "Booststrap", color: "#000000" },
-      { name: "Leaflet", color: "#000000" },
+      { name: "CSS3", color: "#2d53e5" },
+      { name: "Booststrap", color: "#4c0bce" },
       { name: "Toastify", color: "#000000" },
-      { name: "Python", color: "#000000" },
-      { name: "PostgresSQL", color: "#000000" },
-      { name: "JWT", color: "#000000" },
-      { name: "Docker", color: "#000000" },
+      { name: "HTML5", color: "#e3552e" },
+      { name: "JWT", color: "#fb1560" },
+      { name: "Flask", color: "#000000" },
+      { name: "Python", color: "#396d96" },
+      { name: "Docker", color: "#1771d8" },
+      { name: "PostgresSQL", color: "#3a6c94" },
     ],
     imageUrl: null,
     styleClass: "profilePic",
@@ -40,13 +42,13 @@ export const gridItemsData = [
     h: 1
   },
   {
-    i: "c",
-    title: "TIERLIST",
-    description: "Generador de Listas, tipo Tierlist.",
+    i: "3",
+    title: "Tierlist",
+    description: "Generador de listas estilo Tierlist, diseñado para clasificar y organizar elementos de manera personalizada según las preferencias del usuario.",
     stack: [
-      { name: "JavaScript", color: "#f0db4f" },
-      { name: "React", color: "#00d8ff" },
-      { name: "Flask", color: "#000000" }
+      { name: "Flask", color: "#000000" },
+      { name: "SQLite", color: "#0b425c" },
+      { name: "Python", color: "#396d96" },
     ],
     imageUrl: null,
     modalContent: "MODAL",
@@ -56,13 +58,13 @@ export const gridItemsData = [
     h: 1
   },
   {
-    i: "d",
-    title: "WEMEET",
-    description: "Proyecto personal: Generador de reuniones grupales.",
+    i: "4",
+    title: "Wemeet",
+    description: "Proyecto personal: Generador de reuniones grupales que facilita la coordinación de horarios entre participantes, optimizando la disponibilidad de todos los asistentes.",
     stack: [
-      { name: "JavaScript", color: "#f0db4f" },
-      { name: "React", color: "#00d8ff" },
-      { name: "Flask", color: "#000000" }
+      { name: "Flask", color: "#000000" },
+      { name: "SQLite", color: "#0b425c" },
+      { name: "Python", color: "#396d96" },
     ],
     imageUrl: null,
     modalContent: "MODAL",
@@ -72,13 +74,13 @@ export const gridItemsData = [
     h: 1
   },
   {
-    i: "e",
-    title: "BATALLA NAVAL",
-    description: "Juego Batalla Naval vs PC.",
+    i: "5",
+    title: "Battleship",
+    description: "Juego de Batalla Naval desarrollado para enfrentamientos jugador vs PC",
     stack: [
       { name: "JavaScript", color: "#f0db4f" },
       { name: "React", color: "#00d8ff" },
-      { name: "Flask", color: "#000000" }
+      { name: "CSS3", color: "#2d53e5" },
     ],
     imageUrl: null,
     modalContent: "MODAL",
@@ -88,13 +90,13 @@ export const gridItemsData = [
     h: 1
   },
   {
-    i: "frontend",
-    title: "STORYBOARD",
-    description: "Proyecto Brainstorming para generar storyboards dínamicos.",
+    i: "6",
+    title: "Storyboard",
+    description: "Proyecto de Brainstorming para la creación de storyboards dinámicos, diseñado para facilitar la visualización de ideas y mejorar la narrativa al permitir desarmar y reorganizar la historia.",
     stack: [
-      { name: "JavaScript", color: "#f0db4f" },
-      { name: "React", color: "#00d8ff" },
-      { name: "Flask", color: "#000000" }
+      { name: "Flask", color: "#000000" },
+      { name: "SQLite", color: "#0b425c" },
+      { name: "Python", color: "#396d96" },
     ],
     imageUrl: null,
     modalContent: "MODAL",
@@ -104,13 +106,15 @@ export const gridItemsData = [
     h: 1
   },
   {
-    i: "g",
-    title: "POST-IT WALL",
-    description: "Listas de pendientes en formato de bloques.",
+    i: "7",
+    title: "Post-it Wall",
+    description: "Listas de tareas pendientes en formato de bloques, similares a post-its, diseñadas para una visualización clara y una gestión eficiente de actividades.",
     stack: [
       { name: "JavaScript", color: "#f0db4f" },
+      { name: "HTML5", color: "#e3552e" },
+      { name: "CSS3", color: "#2d53e5" },
       { name: "React", color: "#00d8ff" },
-      { name: "Flask", color: "#000000" }
+      { name: "Toastify", color: "#000000" },
     ],
     imageUrl: null,
     modalContent: "MODAL",
@@ -120,9 +124,9 @@ export const gridItemsData = [
     h: 1
   },
   {
-    i: "j",
-    title: "PLAYGROUND",
-    description: "Codes Experimentales",
+    i: "8",
+    title: "Playground",
+    description: "Códigos experimentales para pruebas pequeñas, destinados a probar y evaluar funcionalidades específicas.",
     stack: [],
     imageUrl: null,
     modalContent: "MODAL",
@@ -132,9 +136,9 @@ export const gridItemsData = [
     h: 1
   },
   {
-    i: "k",
-    title: "RRSS",
-    description: "En mi otra vida, dibujo.",
+    i: "9",
+    title: "Doodling",
+    description: "En mi otra vida, dibujo. Redes sociales no relacionadas con la programación.",
     stack: [],
     imageUrl: null,
     modalContent: "MODAL",

@@ -8,34 +8,35 @@
 .tagButton {
     color: #312F2F;
     padding: 5px 20px;
-    margin: 0 10px;
+    margin: 0 2px;
     border-radius: 20px;
     cursor: pointer;
     background-color: #E3EAF2;
     transition: color 0.3s ease;
+    letter-spacing: 1px;
   }
   
   .Frontend {
-    border: .5px solid #70D7C7;
+    border: .5px solid #04d9ff;
   }
   .Backend{
-    border: .5px solid #0D6496;
+    border: .5px solid #043ded;
   }
   .Personal{
-    border: .5px solid #AD85A2;
+    border: .5px solid #ff11ff;
   }
   .Inicio{
     border: .5px solid #312F2F;
   }
 
   .Frontend:hover {
-    color: #70D7C7;
+    color: #04d9ff;
   }
   .Backend:hover {
-    color: #0D6496;
+    color: #043ded;
   }
   .Personal:hover {
-    color: #AD85A2;
+    color: #ff11ff;
   }
   .Inicio:hover {
     color: #312F2F;
@@ -43,15 +44,15 @@
 
   .Frontend.active {
     color: #E3EAF2;
-    background-color: #70D7C7;
+    background-color: #04d9ff;
   }
   .Backend.active {
     color: #E3EAF2;
-    background-color: #0D6496;
+    background-color: #043ded;
   }
   .Personal.active {
     color: #E3EAF2;
-    background-color: #AD85A2;
+    background-color: #ff11ff;
   }
   .Inicio.active {
     color: #E3EAF2;

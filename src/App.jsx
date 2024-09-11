@@ -4,7 +4,12 @@ import styles from "./styles/App.module.css"
 const App = () => {
   return (
     <>
-      <button className={styles.cvbutton}>CV</button>
+      <a href="/public/Gabriela-Garín-Palma-ES.pdf" target="_blank" className={styles.cvbutton}>
+        CV<b>ES</b>
+      </a>
+      <a href="/public/Gabriela-Garín-Palma-EN.pdf" target="_blank" className={styles.cvbutton}>
+      CV<b>EN</b>
+      </a>
       <MyResponsiveGrid />
     </>
   );

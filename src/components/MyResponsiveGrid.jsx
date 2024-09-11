@@ -169,8 +169,6 @@ const MyResponsiveGrid = () => {
               <img src={item.imageUrl} />
               <div className={styles.gridItemBox}>
                 <h2 className={styles.title}>{item.title}</h2>
-                <p>{item.description}</p>
-
                 {/* Stack de lenguajes */}
                 <div className={styles.stackContainer}>
                   {item.stack.map((tech, index) => (
@@ -183,6 +181,8 @@ const MyResponsiveGrid = () => {
                     </span>
                   ))}
                 </div>
+                <p>{item.description}</p>
+
 
                 <div className={styles.iconTags}>
                   <a href={item.gitProject} target="_blank" rel="noopener noreferrer"
