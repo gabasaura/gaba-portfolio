@@ -30,46 +30,30 @@ const ItemModal = ({ isOpen, onRequestClose, item }) => {
               </span>
             ))}
           </div>
+
+          {/* TITLE */}
           <div className={styles.titleRow}>
-            <h2 className={styles.title}>Proyecto {item.title}<BiLinkAlt /></h2>
-            
+            <h2 className={styles.title}>Proyecto {item.title}</h2>
+
             {/* LINKS */}
             <div className={styles.projectLinks}>
-                {item.links.backend && (
-                  <a href={item.links.backend} target="_blank" rel="noopener noreferrer"
+
+              {item.links.backend && (
+                <a href={item.links.backend} target="_blank" rel="noopener noreferrer"
                   className={stylesIcon.gitIconBack}>
-                    <FaGithub /></a>
-                )}
+                  <FaGithub /></a>
+              )}
               {item.links.frontend && (
                 <a href={item.links.frontend} target="_blank" rel="noopener noreferrer"
-                className={stylesIcon.gitIconFront}>
+                  className={stylesIcon.gitIconFront}>
                   <FaGithub /></a>
               )}
               {item.links.deploy && (
                 <a href={item.links.deploy} className={styles.aHref} target="_blank" rel="noopener noreferrer">
-                  Deployed
+                  <BiLinkAlt /> Deployed
                 </a>
               )}
             </div></div>
-            <p><span className="boldword">Descripción: </span>{item.description}</p>
-          
-          {/* STACK TECH */}
-          <div className={stylesStack.stackContainerModal}>
-            
-            {item.stack.map((tech, index) => (
-              
-              <span
-                key={index}
-                className={stylesStack.badgeModal}
-                style={{ color: tech.color }}
-              > 
-                {tech.name}
-              </span>
-            ))}
-          </div>
-
-
-
 
           {/* IMGS */}
 
@@ -79,6 +63,22 @@ const ItemModal = ({ isOpen, onRequestClose, item }) => {
               {image.caption && <p>{image.caption}</p>}
             </div>
           ))}
+
+          {/* STACK TECH */}
+
+          <div className={stylesStack.stackContainerModal}>
+
+            {item.stack.map((tech, index) => (
+
+              <span
+                key={index}
+                className={stylesStack.badgeModal}
+                style={{ color: tech.color }}
+              >
+                {tech.name}
+              </span>
+            ))}
+          </div>
 
           {/* BTN CLOSE */}
           <button onClick={onRequestClose} className={styles.closeModal}>
