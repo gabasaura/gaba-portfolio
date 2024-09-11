@@ -25,3 +25,6 @@ h2 {
     line-height: 12px;
     letter-spacing: 1px;
 }
+.boldword {
+    font-weight: 600;
+}

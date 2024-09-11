@@ -6,6 +6,8 @@ import stylesTags from "../styles/Tags.module.css";
 import stylesIcon from "../styles/Icons.module.css"
 import { FaGithub } from "react-icons/fa";
 import { FiPlus } from "react-icons/fi";
+import { BiLinkAlt } from "react-icons/bi";
+
 
 
 const ItemModal = ({ isOpen, onRequestClose, item }) => {
@@ -20,49 +22,54 @@ const ItemModal = ({ isOpen, onRequestClose, item }) => {
     >
       {item && (
         <>
+          {/* TAGS */}
+          <div className={styles.tags}>
+            {item.tags.map((tag, index) => (
+              <span key={index} className={`${stylesTags.tag} ${stylesTags['tag-' + tag]}`}>
+                {tag}
+              </span>
+            ))}
+          </div>
           <div className={styles.titleRow}>
-          <h2 className={styles.title}>Proyecto {item.title}</h2>
-          {/* LINKS */}
-          <div className={styles.projectLinks}>
-            {item.links.frontend && (
-              <a href={item.links.frontend} target="_blank" rel="noopener noreferrer"
-                    className={stylesIcon.gitIconFront}>
+            <h2 className={styles.title}>Proyecto {item.title}<BiLinkAlt /></h2>
+            
+            {/* LINKS */}
+            <div className={styles.projectLinks}>
+                {item.links.backend && (
+                  <a href={item.links.backend} target="_blank" rel="noopener noreferrer"
+                  className={stylesIcon.gitIconBack}>
                     <FaGithub /></a>
-            )}
-            {item.links.backend && (
-              <a href={item.links.backend} target="_blank" rel="noopener noreferrer"
-              className={stylesIcon.gitIconBack}>
-                    <FaGithub /></a>
-            )}
-            {item.links.deploy && (
-              <a href={item.links.deploy} className={styles.aHref} target="_blank" rel="noopener noreferrer">
-                Deployed
-              </a>
-            )}
-          </div></div>
-
+                )}
+              {item.links.frontend && (
+                <a href={item.links.frontend} target="_blank" rel="noopener noreferrer"
+                className={stylesIcon.gitIconFront}>
+                  <FaGithub /></a>
+              )}
+              {item.links.deploy && (
+                <a href={item.links.deploy} className={styles.aHref} target="_blank" rel="noopener noreferrer">
+                  Deployed
+                </a>
+              )}
+            </div></div>
+            <p><span className="boldword">Descripción: </span>{item.description}</p>
+          
           {/* STACK TECH */}
-          <div className={stylesStack.stackContainer}>
+          <div className={stylesStack.stackContainerModal}>
+            
             {item.stack.map((tech, index) => (
+              
               <span
                 key={index}
-                className={stylesStack.badge}
-                style={{ backgroundColor: tech.color }}
-              >
+                className={stylesStack.badgeModal}
+                style={{ color: tech.color }}
+              > 
                 {tech.name}
               </span>
             ))}
           </div>
 
-          <p>{item.description}</p>
 
-          {/* TAGS */}
 
-          {item.tags.map((tag, index) => (
-            <span key={index} className={`${stylesTags.tag} ${stylesTags['tag-' + tag]}`}>
-              {tag}
-            </span>
-          ))}
 
           {/* IMGS */}
 

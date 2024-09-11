@@ -27,7 +27,7 @@
 
 .gitIconFront {
     display: inline-block;
-    font-size: 18px;
+    font-size: 24px;
     background-color: transparent;
     color: #04d9ff;
     border-radius: 20px;
@@ -36,7 +36,7 @@
     height: 28px;
     width: 28px;
     box-sizing: border-box;
-    padding: 5px;
+    padding: 2px;
     cursor: pointer;
 }
 
@@ -52,7 +52,7 @@
 
 .gitIconBack {
     display: inline-block;
-    font-size: 18px;
+    font-size: 24px;
     background-color: transparent;
     color: #043ded;
     border-radius: 20px;
@@ -61,7 +61,7 @@
     height: 28px;
     width: 28px;
     box-sizing: border-box;
-    padding: 5px;
+    padding: 2px;
     cursor: pointer;
 }
 

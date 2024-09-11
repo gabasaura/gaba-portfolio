@@ -58,8 +58,8 @@
 .closeModal {
   font-size: 18px;
   position: absolute;
-  top: 38px;
-  right: 20px;
+  top: 17px;
+  left: 20px;
   padding-top: 5px;
   background-color: transparent;
   cursor: pointer;
@@ -82,9 +82,7 @@
   color: #312F2F;
   display: inline-block;
   padding: 6px 20px;
-  margin-right: 10px;
   border: .5px #312F2F solid;
-  border-radius: 20px;
   transition: background-color 0.3s ease;
   letter-spacing: 1px;
   text-decoration: none;
@@ -93,4 +91,20 @@
 .aHref:hover{
   color:#E3EAF2;
   background-color: #312F2F;
+}
+.tags {
+  text-align: right;
+  margin-right: -10px;
+}
+
+.titleRow {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.projectLinks {
+  align-items: center;
+  display: flex;
 }
