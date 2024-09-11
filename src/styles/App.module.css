@@ -8,7 +8,8 @@
   background-color: #E3EAF2;
   transition: background-color 0.3s ease;
   display: inline-flex;
-  float: inline-end;
+  letter-spacing: 1px;
+  
   text-decoration: none;
   font-size: 14px;
 }
@@ -16,4 +17,9 @@
 .cvbutton:hover {
   background-color: #312F2F;
   color: #E3EAF2;
+}
+.cvbuttonGroup{
+  float: inline-end;
+  margin-right: 8px;
+
 }

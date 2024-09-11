@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(255, 255, 255, 0.5);
   /* Capa de fondo con opacidad */
   z-index: 1000;
   /* Asegúrate de que el overlay esté encima del contenido */
@@ -16,7 +16,7 @@
   width: 60%;
   max-width: 600px;
   margin: 50px auto;
-  background: white;
+  background: #E3EAF2;
   padding: 20px;
   border-radius: 20px;
   z-index: 1100;
@@ -33,7 +33,7 @@
 
 /* Para el contenido adicional dentro del modal que puede necesitar scroll */
 .extraContent {
-  max-height: 50vh;
+  max-height: 80vh;
   /* Limita la altura del contenido extra para hacer scroll */
   overflow-y: auto;
   /* Permite scroll solo dentro del área extra */
@@ -42,4 +42,25 @@
 /* Bloquea el scroll de la página cuando el modal está abierto */
 .bodyModalOpen {
   overflow: hidden;
+}
+
+/* CLOSE BTN */
+.closeModal {
+  font-size: 18px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding-top: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 20px;
+  border: .5px solid #312F2F;
+  width: 35px;
+  height: 35px;
+
+}
+
+.closeModal:hover {
+  color: #E3EAF2;
+  background-color: #312F2F;
 }

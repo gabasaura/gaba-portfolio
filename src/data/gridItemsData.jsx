@@ -1,4 +1,4 @@
-import gaba from './img/gabanimate.gif'
+import gaba from '././img/gabanimate.gif'
 
 export const gridItemsData = [
   {
@@ -6,9 +6,26 @@ export const gridItemsData = [
     title: "Full Stack Developer, buscando un nuevo desafío como junior developer. Siempre en modo aprendizaje y lista para colaborar en proyectos.",
     description: "",
     stack: [],
-    itemUrl: "",
     imageUrl: gaba,
-    modalContent: "MODAL",
+    links: {
+      frontend: "https://github.com/user/frontend",
+      backend: "https://github.com/user/backend",
+      deploy: "https://deploy.example.com",
+    },
+    images: [
+      {
+        src: "./img/1.gif",
+        caption: "Pantalla principal del proyecto",
+      },
+      {
+        src: "./img/4.gif",
+        caption: "Sección de detalles",
+      },
+      {
+        src: "./img/5.gif",
+        caption: "",
+      }
+    ],
     gitProject: "https://github.com/gabasaura",
     tags: ["Personal"],
     styleClass: "profile",
@@ -33,9 +50,26 @@ export const gridItemsData = [
       { name: "Docker", color: "#1771d8" },
       { name: "PostgresSQL", color: "#3a6c94" },
     ],
-    imageUrl: null,
     styleClass: "profilePic",
-    modalContent: "MODAL",
+    links: {
+      frontend: "https://github.com/user/frontend",
+      backend: "https://github.com/user/backend",
+      deploy: "https://deploy.example.com",
+    },
+    images: [
+      {
+        src: "./img/1.gif",
+        caption: "Pantalla principal del proyecto",
+      },
+      {
+        src: "./img/4.gif",
+        caption: "Sección de detalles",
+      },
+      {
+        src: "./img/5.gif",
+        caption: "",
+      }
+    ],
     gitProject: "https://github.com/gabasaura/pipo-app-frontend",
     tags: ["Backend", "Frontend"],
     w: 2,
@@ -50,8 +84,25 @@ export const gridItemsData = [
       { name: "SQLite", color: "#0b425c" },
       { name: "Python", color: "#396d96" },
     ],
-    imageUrl: null,
-    modalContent: "MODAL",
+    links: {
+      frontend: "https://github.com/user/frontend",
+      backend: "https://github.com/user/backend",
+      deploy: "https://deploy.example.com",
+    },
+    images: [
+      {
+        src: "./img/1.gif",
+        caption: "Pantalla principal del proyecto",
+      },
+      {
+        src: "./img/4.gif",
+        caption: "Sección de detalles",
+      },
+      {
+        src: "./img/5.gif",
+        caption: "",
+      }
+    ],
     gitProject: "https://github.com/gabasaura/api-rest_tierlist",
     tags: ["Frontend", "Backend"],
     w: 1,
@@ -66,8 +117,25 @@ export const gridItemsData = [
       { name: "SQLite", color: "#0b425c" },
       { name: "Python", color: "#396d96" },
     ],
-    imageUrl: null,
-    modalContent: "MODAL",
+    links: {
+      frontend: "https://github.com/user/frontend",
+      backend: "https://github.com/user/backend",
+      deploy: "https://deploy.example.com",
+    },
+    images: [
+      {
+        src: "./img/1.gif",
+        caption: "Pantalla principal del proyecto",
+      },
+      {
+        src: "./img/4.gif",
+        caption: "Sección de detalles",
+      },
+      {
+        src: "./img/5.gif",
+        caption: "",
+      }
+    ],
     gitProject: "https://github.com/gabasaura/api-rest_collective-meetings",
     tags: ["Backend"],
     w: 2,
@@ -82,8 +150,25 @@ export const gridItemsData = [
       { name: "React", color: "#00d8ff" },
       { name: "CSS3", color: "#2d53e5" },
     ],
-    imageUrl: null,
-    modalContent: "MODAL",
+    links: {
+      frontend: "https://github.com/user/frontend",
+      backend: "https://github.com/user/backend",
+      deploy: "https://deploy.example.com",
+    },
+    images: [
+      {
+        src: "./img/1.gif",
+        caption: "Pantalla principal del proyecto",
+      },
+      {
+        src: "./img/4.gif",
+        caption: "Sección de detalles",
+      },
+      {
+        src: "./img/5.gif",
+        caption: "",
+      }
+    ],
     gitProject: "https://github.com/gabasaura/reactjs-battleship",
     tags: ["Frontend"],
     w: 1,
@@ -98,8 +183,25 @@ export const gridItemsData = [
       { name: "SQLite", color: "#0b425c" },
       { name: "Python", color: "#396d96" },
     ],
-    imageUrl: null,
-    modalContent: "MODAL",
+    links: {
+      frontend: "https://github.com/user/frontend",
+      backend: "https://github.com/user/backend",
+      deploy: "https://deploy.example.com",
+    },
+    images: [
+      {
+        src: "./img/1.gif",
+        caption: "Pantalla principal del proyecto",
+      },
+      {
+        src: "./img/4.gif",
+        caption: "Sección de detalles",
+      },
+      {
+        src: "./img/5.gif",
+        caption: "",
+      }
+    ],
     gitProject: "https://github.com/gabasaura",
     tags: ["Backend"],
     w: 1,
@@ -116,8 +218,25 @@ export const gridItemsData = [
       { name: "React", color: "#00d8ff" },
       { name: "Toastify", color: "#000000" },
     ],
-    imageUrl: null,
-    modalContent: "MODAL",
+    links: {
+      frontend: "https://github.com/user/frontend",
+      backend: "https://github.com/user/backend",
+      deploy: "https://deploy.example.com",
+    },
+    images: [
+      {
+        src: "./img/1.gif",
+        caption: "Pantalla principal del proyecto",
+      },
+      {
+        src: "./img/4.gif",
+        caption: "Sección de detalles",
+      },
+      {
+        src: "./img/5.gif",
+        caption: "",
+      }
+    ],
     gitProject: "https://github.com/gabasaura",
     tags: ["Frontend"],
     w: 1,
@@ -128,8 +247,25 @@ export const gridItemsData = [
     title: "Playground",
     description: "Códigos experimentales para pruebas pequeñas, destinados a probar y evaluar funcionalidades específicas.",
     stack: [],
-    imageUrl: null,
-    modalContent: "MODAL",
+    links: {
+      frontend: "https://github.com/user/frontend",
+      backend: "https://github.com/user/backend",
+      deploy: "https://deploy.example.com",
+    },
+    images: [
+      {
+        src: "./img/1.gif",
+        caption: "Pantalla principal del proyecto",
+      },
+      {
+        src: "./img/4.gif",
+        caption: "Sección de detalles",
+      },
+      {
+        src: "./img/5.gif",
+        caption: "",
+      }
+    ],
     gitProject: "https://github.com/gabasaura",
     tags: ["Personal"],
     w: 1,
@@ -140,8 +276,25 @@ export const gridItemsData = [
     title: "Doodling",
     description: "En mi otra vida, dibujo. Redes sociales no relacionadas con la programación.",
     stack: [],
-    imageUrl: null,
-    modalContent: "MODAL",
+    links: {
+      frontend: "https://github.com/user/frontend",
+      backend: "https://github.com/user/backend",
+      deploy: "https://deploy.example.com",
+    },
+    images: [
+      {
+        src: "./img/1.gif",
+        caption: "Pantalla principal del proyecto",
+      },
+      {
+        src: "./img/4.gif",
+        caption: "Sección de detalles",
+      },
+      {
+        src: "./img/5.gif",
+        caption: "",
+      }
+    ],
     gitProject: null,
     styleClass: "rrss",
     tags: ["Personal"],

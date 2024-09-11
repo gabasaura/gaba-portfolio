@@ -5,6 +5,7 @@ import "react-resizable/css/styles.css";
 import FilterButtons from "./FilterButtons";
 import { gridItemsData } from "../data/gridItemsData";
 import styles from "../styles/GridItem.module.css";
+import stylesStack from "../styles/Stack.module.css"
 import ItemModal from "./ItemModal";
 import { FaGithub } from "react-icons/fa";
 import { FiPlus } from "react-icons/fi";
@@ -169,12 +170,13 @@ const MyResponsiveGrid = () => {
               <img src={item.imageUrl} />
               <div className={styles.gridItemBox}>
                 <h2 className={styles.title}>{item.title}</h2>
+                
                 {/* Stack de lenguajes */}
-                <div className={styles.stackContainer}>
+                <div className={stylesStack.stackContainer}>
                   {item.stack.map((tech, index) => (
                     <span
                       key={index}
-                      className={styles.badge}
+                      className={stylesStack.badge}
                       style={{ backgroundColor: tech.color }}
                     >
                       {tech.name}
