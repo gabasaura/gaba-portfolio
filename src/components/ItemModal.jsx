@@ -4,6 +4,7 @@ import styles from "../styles/ItemModal.module.css";
 import stylesStack from "../styles/Stack.module.css";
 import stylesTags from "../styles/Tags.module.css";
 import stylesIcon from "../styles/Icons.module.css"
+import stylesLink from "../styles/Links.module.css"
 
 import { FaGithub } from "react-icons/fa";
 import { FiPlus } from "react-icons/fi";
@@ -39,7 +40,7 @@ const ItemModal = ({ isOpen, onRequestClose, item }) => {
             <h2 className={styles.title}>{item.title}</h2>
 
             {/* LINKS */}
-            <div className={stylesIcon.projectLinks}>
+            <div className={stylesLink.projectLinks}>
 
               {item.links.backend && (
                 <a href={item.links.backend} target="_blank" rel="noopener noreferrer"
@@ -60,9 +61,9 @@ const ItemModal = ({ isOpen, onRequestClose, item }) => {
               {/* EXTRA LINKS */}
 
               {item.extraLink.map((link, index) => (
-                <div key={index}>
-                  <a href={link.url} target="_blank" rel="noopener noreferrer">
-                    <BiLinkAlt />{link.title && <p>{link.title}</p>}
+                <div key={index} className={stylesLink.projectLinks}>
+                  <a href={link.url} className={stylesIcon.gitIcon} target="_blank" rel="noopener noreferrer">
+                    <BiLinkAlt />{link.title && <span>{link.title}</span>}
                   </a>
                 </div>
               ))}

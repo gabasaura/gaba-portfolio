@@ -1,0 +1,16 @@
+.projectLinks {
+    align-items: center;
+    display: flex;
+  }
+.extras {
+    font-size: 18px;
+  background-color: transparent;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-right: 15px;
+  width: 81px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+}
