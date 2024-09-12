@@ -8,14 +8,14 @@ export const gridItemsData = [
     stack: [],
     imageUrl: gaba,
     links: {
-      frontend: "https://github.com/user/frontend",
-      backend: "https://github.com/user/backend",
-      deploy: "https://deploy.example.com",
+      frontend: "",
+      backend: "",
+      deploy: "",
     },
     images: [
       {
         src: "/modal/1.gif",
-        caption: "Pantalla principal del proyecto",
+        caption: "",
       },
       {
         src: "/modal/3.gif",
@@ -26,7 +26,7 @@ export const gridItemsData = [
         caption: "",
       }
     ],
-    gitProject: "https://github.com/gabasaura",
+    extraLink: [],
     tags: ["Personal"],
     styleClass: "profile",
     w: 1,
@@ -34,7 +34,7 @@ export const gridItemsData = [
   },
   {
     i: "2",
-    title: "Pipo",
+    title: "Pipo Web API",
     description: "Aplicación web desarrollada en equipo que permite a los usuarios listar, localizar y rankear baños de uso público a través de un mapa interactivo.",
     stack: [
       { name: "Leaflet", color: "#bbe469" },
@@ -59,7 +59,7 @@ export const gridItemsData = [
     images: [
       {
         src: "/modal/1.gif",
-        caption: "Pantalla principal del proyecto",
+        caption: "No pude cortar el ensueño, con dolor lo desgarre de su espacio, con una pesadilla lo aplaste, la ansiedad lo atravesó mil veces, y el calor de la vergüenza en mis mejillas lo quemo lento. bajo acaros, piedrecillas, basura, lo que fuese, a la tierra y sin cajón, no hay tiempo. mas de 2 metros, le salte arriba para que no quedase aire y me fui. Las cenizas abrazaron el deseo como telarañas al rocio, años despues lo siento como un susurro. Habian germinados.",
       },
       {
         src: "/modal/3.gif",
@@ -70,7 +70,7 @@ export const gridItemsData = [
         caption: "",
       }
     ],
-    gitProject: "https://github.com/gabasaura/pipo-app-frontend",
+    extraLink: [],
     tags: ["Backend", "Frontend"],
     w: 2,
     h: 1
@@ -103,7 +103,7 @@ export const gridItemsData = [
         caption: "",
       }
     ],
-    gitProject: "https://github.com/gabasaura/api-rest_tierlist",
+    extraLink: [],
     tags: ["Frontend", "Backend"],
     w: 1,
     h: 1
@@ -111,16 +111,16 @@ export const gridItemsData = [
   {
     i: "4",
     title: "Wemeet",
-    description: "Proyecto personal: Generador de reuniones grupales que facilita la coordinación de horarios entre participantes, optimizando la disponibilidad de todos los asistentes.",
+    description: "Generador de reuniones grupales que facilita la coordinación de horarios entre participantes, optimizando la disponibilidad de todos los asistentes.",
     stack: [
       { name: "Flask", color: "#000000" },
       { name: "SQLite", color: "#0b425c" },
       { name: "Python", color: "#396d96" },
     ],
     links: {
-      frontend: "https://github.com/user/frontend",
+      frontend: "",
       backend: "https://github.com/user/backend",
-      deploy: "https://deploy.example.com",
+      deploy: "",
     },
     images: [
       {
@@ -136,7 +136,7 @@ export const gridItemsData = [
         caption: "",
       }
     ],
-    gitProject: "https://github.com/gabasaura/api-rest_collective-meetings",
+    extraLink: [],
     tags: ["Backend"],
     w: 2,
     h: 1
@@ -152,7 +152,7 @@ export const gridItemsData = [
     ],
     links: {
       frontend: "https://github.com/user/frontend",
-      backend: "https://github.com/user/backend",
+      backend: "",
       deploy: "https://deploy.example.com",
     },
     images: [
@@ -169,7 +169,7 @@ export const gridItemsData = [
         caption: "",
       }
     ],
-    gitProject: "https://github.com/gabasaura/reactjs-battleship",
+    extraLink: [],
     tags: ["Frontend"],
     w: 1,
     h: 1
@@ -184,9 +184,9 @@ export const gridItemsData = [
       { name: "Python", color: "#396d96" },
     ],
     links: {
-      frontend: "https://github.com/user/frontend",
+      frontend: "",
       backend: "https://github.com/user/backend",
-      deploy: "https://deploy.example.com",
+      deploy: "",
     },
     images: [
       {
@@ -202,7 +202,7 @@ export const gridItemsData = [
         caption: "",
       }
     ],
-    gitProject: "https://github.com/gabasaura",
+    extraLink: [],
     tags: ["Backend"],
     w: 1,
     h: 1
@@ -220,7 +220,7 @@ export const gridItemsData = [
     ],
     links: {
       frontend: "https://github.com/user/frontend",
-      backend: "https://github.com/user/backend",
+      backend: "",
       deploy: "https://deploy.example.com",
     },
     images: [
@@ -237,20 +237,20 @@ export const gridItemsData = [
         caption: "",
       }
     ],
-    gitProject: "https://github.com/gabasaura",
+    extraLink: [],
     tags: ["Frontend"],
     w: 1,
     h: 1
   },
   {
     i: "8",
-    title: "Playground",
-    description: "Códigos experimentales para pruebas pequeñas, destinados a probar y evaluar funcionalidades específicas.",
+    title: "Playground: Códigos experimentales para pruebas pequeñas, destinados a probar y evaluar funcionalidades específicas.",
+    description: "",
     stack: [],
     links: {
-      frontend: "https://github.com/user/frontend",
-      backend: "https://github.com/user/backend",
-      deploy: "https://deploy.example.com",
+      frontend: "",
+      backend: "",
+      deploy: "",
     },
     images: [
       {
@@ -266,20 +266,30 @@ export const gridItemsData = [
         caption: "",
       }
     ],
-    gitProject: "https://github.com/gabasaura",
+    extraLink: [
+      {
+      url: "#", 
+      title:"link 1", 
+    },
+    {
+      url:"#",
+      title:"link 2",
+    }
+  ],
+    styleClass: "personal",
     tags: ["Personal"],
     w: 1,
     h: 1
   },
   {
     i: "9",
-    title: "Doodling",
-    description: "En mi otra vida, dibujo. Redes sociales no relacionadas con la programación.",
+    title: "Doodling: En mi otra vida, dibujo. Contenido no relacionado a programación.",
+    description: "",
     stack: [],
     links: {
-      frontend: "https://github.com/user/frontend",
-      backend: "https://github.com/user/backend",
-      deploy: "https://deploy.example.com",
+      frontend: "",
+      backend: "",
+      deploy: "",
     },
     images: [
       {
@@ -295,8 +305,17 @@ export const gridItemsData = [
         caption: "",
       }
     ],
-    gitProject: null,
-    styleClass: "rrss",
+    extraLink: [
+      {
+      url: "#", 
+      title:"Artstation", 
+    },
+    {
+      url:"#",
+      title:"Behance",
+    }
+  ],
+    styleClass: "personal",
     tags: ["Personal"],
     w: 1,
     h: 1

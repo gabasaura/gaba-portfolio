@@ -22,7 +22,7 @@
   padding-top: 20px;
 }
 
-.profile h2 {
+.profile h2, .personal h2 {
   line-height: normal;
   letter-spacing: normal;
 }

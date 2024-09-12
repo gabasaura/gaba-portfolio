@@ -192,9 +192,21 @@ const MyResponsiveGrid = () => {
 
 
                 <div className={styles.iconTags}>
-                  <a href={item.gitProject} target="_blank" rel="noopener noreferrer"
-                    className={stylesIcon.gitIcon}>
-                    <FaGithub /></a>
+
+                  {/* LINKS */}
+                  <div className={stylesIcon.projectLinks}>
+
+                    {item.links.backend && (
+                      <a href={item.links.backend} target="_blank" rel="noopener noreferrer"
+                        className={stylesIcon.gitIconBack}>
+                        <FaGithub /></a>
+                    )}
+                    {item.links.frontend && (
+                      <a href={item.links.frontend} target="_blank" rel="noopener noreferrer"
+                        className={stylesIcon.gitIconFront}>
+                        <FaGithub /></a>
+                    )}
+                  </div>
 
                   {item.tags.map((tag, index) => (
                     <span key={index} className={`${stylesTags.tag} ${stylesTags['tag-' + tag]}`}>

@@ -4,6 +4,7 @@ import styles from "../styles/ItemModal.module.css";
 import stylesStack from "../styles/Stack.module.css";
 import stylesTags from "../styles/Tags.module.css";
 import stylesIcon from "../styles/Icons.module.css"
+
 import { FaGithub } from "react-icons/fa";
 import { FiPlus } from "react-icons/fi";
 import { BiLinkAlt } from "react-icons/bi";
@@ -21,7 +22,7 @@ const ItemModal = ({ isOpen, onRequestClose, item }) => {
       bodyOpenClassName={styles.bodyModalOpen}
     >
       {item && (
-        <>
+        <div className={styles[item.styleClass]} >
           {/* TAGS */}
           <div className={styles.tags}>
             {item.tags.map((tag, index) => (
@@ -31,12 +32,14 @@ const ItemModal = ({ isOpen, onRequestClose, item }) => {
             ))}
           </div>
 
+          <img src={item.imageUrl} className={styles.imgURL} />
+
           {/* TITLE */}
           <div className={styles.titleRow}>
-            <h2 className={styles.title}>Proyecto {item.title}</h2>
+            <h2 className={styles.title}>{item.title}</h2>
 
             {/* LINKS */}
-            <div className={styles.projectLinks}>
+            <div className={stylesIcon.projectLinks}>
 
               {item.links.backend && (
                 <a href={item.links.backend} target="_blank" rel="noopener noreferrer"
@@ -53,14 +56,27 @@ const ItemModal = ({ isOpen, onRequestClose, item }) => {
                   <BiLinkAlt /> Deployed
                 </a>
               )}
-            </div></div>
+
+              {/* EXTRA LINKS */}
+
+              {item.extraLink.map((link, index) => (
+                <div key={index}>
+                  <a href={link.url} target="_blank" rel="noopener noreferrer">
+                    <BiLinkAlt />{link.title && <p>{link.title}</p>}
+                  </a>
+                </div>
+              ))}
+
+            </div>
+
+          </div>
 
           {/* IMGS */}
 
           {item.images.map((image, index) => (
             <div key={index} className={styles.imageContainer}>
               <img src={image.src} alt={image.caption} className={styles.imgModal} />
-              {image.caption && <p>{image.caption}</p>}
+              {image.caption && <p className={styles.imgCaption}>{image.caption}</p>}
             </div>
           ))}
 
@@ -84,7 +100,7 @@ const ItemModal = ({ isOpen, onRequestClose, item }) => {
           <button onClick={onRequestClose} className={styles.closeModal}>
             <FiPlus />
           </button>
-        </>
+        </div>
       )}
     </Modal>
   );
@@ -99,6 +115,7 @@ ItemModal.propTypes = {
     description: PropTypes.string, // Descripción del ítem
     imageUrl: PropTypes.string, // URL de la imagen principal (opcional si hay múltiples imágenes)
     tags: PropTypes.arrayOf(PropTypes.string),
+    styleClass: PropTypes.string,
     images: PropTypes.arrayOf(
       PropTypes.shape({
         url: PropTypes.string, // URL de cada imagen
@@ -116,6 +133,12 @@ ItemModal.propTypes = {
       backend: PropTypes.string,
       deploy: PropTypes.string,
     }),
+    extraLink: PropTypes.arrayOf(
+      PropTypes.shape({
+        url: PropTypes.string, // URL de cada imagen
+        title: PropTypes.string, // Pie de imagen para la explicación (opcional)
+      })
+    ),
   }), // Estructura del objeto ítem
 };
 
