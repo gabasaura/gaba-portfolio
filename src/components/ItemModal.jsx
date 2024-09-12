@@ -40,37 +40,40 @@ const ItemModal = ({ isOpen, onRequestClose, item }) => {
             <h2 className={styles.title}>{item.title}</h2>
 
             {/* LINKS */}
-            <div className={stylesLink.projectLinks}>
-
-              {item.links.backend && (
-                <a href={item.links.backend} target="_blank" rel="noopener noreferrer"
-                  className={stylesIcon.gitIconBack}>
-                  <FaGithub /></a>
-              )}
-              {item.links.frontend && (
-                <a href={item.links.frontend} target="_blank" rel="noopener noreferrer"
-                  className={stylesIcon.gitIconFront}>
-                  <FaGithub /></a>
-              )}
-              {item.links.deploy && (
-                <a href={item.links.deploy} className={styles.aHref} target="_blank" rel="noopener noreferrer">
-                  <BiLinkAlt /> Deployed
-                </a>
-              )}
-
-              {/* EXTRA LINKS */}
-
-              {item.extraLink.map((link, index) => (
-                <div key={index} className={stylesLink.projectLinks}>
-                  <a href={link.url} className={stylesIcon.gitIcon} target="_blank" rel="noopener noreferrer">
-                    <BiLinkAlt />{link.title && <span>{link.title}</span>}
+            {item.links.deploy || item.links.backend || item.links.frontend ? (
+              <div className={stylesLink.projectLinks}>
+                {item.links.deploy && (
+                  <a href={item.links.deploy} className={stylesIcon.Icon} target="_blank" rel="noopener noreferrer">
+                    <BiLinkAlt />
                   </a>
-                </div>
-              ))}
+                )}
+                {item.links.backend && (
+                  <a href={item.links.backend} target="_blank" rel="noopener noreferrer" className={stylesIcon.gitIconBack}>
+                    <FaGithub />
+                  </a>
+                )}
+                {item.links.frontend && (
+                  <a href={item.links.frontend} target="_blank" rel="noopener noreferrer" className={stylesIcon.gitIconFront}>
+                    <FaGithub />
+                  </a>
+                )}
+              </div>
+            ) : null}
 
-            </div>
-
+            {/* EXTRA LINKS */}
+            {item.extraLink.length > 0 && (
+              <div className={stylesLink.projectExtraLinks}>
+                {item.extraLink.map((link, index) => (
+                  <div key={index} className={stylesLink.extraLink}>
+                    <a href={link.url} className={stylesLink.extraIcon} target="_blank" rel="noopener noreferrer">
+                      <BiLinkAlt /> {link.title && <span className={stylesLink.extraLinkTitle}>{link.title}</span>}
+                    </a>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
+
 
           {/* IMGS */}
 

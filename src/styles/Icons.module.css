@@ -1,49 +1,49 @@
-
 /* GITHUB ICONS */
 
-.gitIcon {
+.Icon {
     display: inline-block;
     font-size: 18px;
-    background-color: transparent;
-    color: #312F2F;
+    color: #E3EAF2;
+    background-color: #312F2F;
     border-radius: 20px;
     text-decoration: none;
-    margin-right: 15px;
+    margin: 15px;
     height: 28px;
     width: 28px;
     box-sizing: border-box;
     padding: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+
 }
 
-.gitIcon:hover {
-    background-color: #312F2F;
+.Icon:hover {
+    background-color: #ff11ff;
     color: #E3EAF2;
 }
 
 /* Si quieres asegurarte de que el texto del enlace no se muestre, aunque no debería */
-.gitIcon a {
+.Icon a {
     visibility: hidden;
 }
 
 .gitIconFront {
     display: inline-block;
-    font-size: 24px;
+    font-size: 29px;
     background-color: transparent;
     color: #04d9ff;
     border-radius: 20px;
     text-decoration: none;
-    margin-right: 15px;
+    margin: 15px;
     height: 28px;
     width: 28px;
     box-sizing: border-box;
-    padding: 2px;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .gitIconFront:hover {
-    background-color: #04d9ff;
-    color: #E3EAF2;
+    color: #312F2F;
 }
 
 /* Si quieres asegurarte de que el texto del enlace no se muestre, aunque no debería */
@@ -53,22 +53,21 @@
 
 .gitIconBack {
     display: inline-block;
-    font-size: 24px;
+    font-size: 29px;
     background-color: transparent;
     color: #043ded;
     border-radius: 20px;
     text-decoration: none;
-    margin-right: 15px;
+    margin: 15px;
     height: 28px;
     width: 28px;
     box-sizing: border-box;
-    padding: 2px;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .gitIconBack:hover {
-    background-color: #043ded;
-    color: #E3EAF2;
+    color: #312F2F;
 }
 
 /* Si quieres asegurarte de que el texto del enlace no se muestre, aunque no debería */

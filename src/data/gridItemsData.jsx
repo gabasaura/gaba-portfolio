@@ -26,7 +26,20 @@ export const gridItemsData = [
         caption: "",
       }
     ],
-    extraLink: [],
+    extraLink: [
+      {
+      url: "#", 
+      title:"Linkedin", 
+    },
+    {
+      url:"#",
+      title:"Github",
+    },
+    {
+      url:"#",
+      title:"Email",
+    }
+  ],
     tags: ["Personal"],
     styleClass: "profile",
     w: 1,
@@ -269,12 +282,8 @@ export const gridItemsData = [
     extraLink: [
       {
       url: "#", 
-      title:"link 1", 
+      title:"Playground", 
     },
-    {
-      url:"#",
-      title:"link 2",
-    }
   ],
     styleClass: "personal",
     tags: ["Personal"],
@@ -308,11 +317,15 @@ export const gridItemsData = [
     extraLink: [
       {
       url: "#", 
-      title:"Artstation", 
+      title:"Ilustraciones_ Artstation", 
     },
     {
       url:"#",
-      title:"Behance",
+      title:"Diseño_ Behance",
+    },
+    {
+      url:"#",
+      title:"Instragram_ Gabasaura",
     }
   ],
     styleClass: "personal",
