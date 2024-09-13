@@ -1,5 +1,4 @@
 import gaba from '././img/gabanimate.gif'
-import wemeet from '././img/w4.png'
 import pipo from '././img/grid-pipo.png'
 
 
@@ -51,7 +50,7 @@ export const gridItemsData = [
   {
     i: "2",
     title: "Wemeet",
-    imageUrl: wemeet,
+    imageUrl: pipo,
     description: "Generador de reuniones grupales que facilita la coordinación de horarios entre participantes, optimizando la disponibilidad de todos los asistentes.",
     stack: [
       { name: "Flask", color: "#000000" },
@@ -65,7 +64,7 @@ export const gridItemsData = [
     },
     images: [
       {
-        src: "/modal/1.gif",
+        src: "/modal/01_pipo/01-pipo.png",
         caption: "Pantalla principal del proyecto",
       },
       {
@@ -79,7 +78,7 @@ export const gridItemsData = [
     ],
     extraLink: [],
     tags: ["Backend"],
-    styleClass: "hero",
+    styleClass: "hero-w",
     w: 2,
     h: 1,
   },
@@ -120,7 +119,6 @@ export const gridItemsData = [
     i: "4",
     title: "Pipo Web API",
     imageUrl: pipo,
-    description: "Aplicación web desarrollada en equipo que permite a los usuarios listar, localizar y rankear baños de uso público a través de un mapa interactivo.",
     stack: [
       { name: "Leaflet", color: "#bbe469" },
       { name: "JavaScript", color: "#f0db4f" },
@@ -143,15 +141,19 @@ export const gridItemsData = [
     images: [
       {
         src: "/modal/01_pipo/01-pipo.png",
-        caption: "La Pipo App es una aplicación web pensada para ayudar a los usuarios a encontrar baños públicos cercanos, dejar comentarios, calificarlos y agregar nuevas ubicaciones. Es ideal para quienes visitan una ciudad por primera vez, especialmente turistas extranjeros, brindándoles una forma sencilla y rápida de localizar servicios sanitarios mientras exploran el lugar.",
+        caption: "La Pipo App es una aplicación web desarrollada en equipo como proyecto final del Fullstack Developer Bootcamp de 4Geeks Academy. Es una API/REST cuyo MVP (Producto Mínimo Viable) permite a los usuarios registrados listar, localizar y rankear baños de uso público a través de un mapa interactivo.",
       },
       {
-        src: "/modal/3.gif",
-        caption: "Sección de detalles",
+        src: "/modal/01_pipo/04-pipo.png",
+        caption: "Un vistazo al Backend. Pipo también ofrece la posibilidad de dejar comentarios, calificar los baños y agregar nuevas ubicaciones. Es especialmente útil para turistas extranjeros que exploran la ciudad, ya que brinda una solución rápida y práctica para localizar servicios sanitarios mientras disfrutan de su visita. El mapa interactivo utiliza GPS para rastrear la ubicación del usuario, facilitando así la búsqueda de opciones cercanas a su posición actual.",
       },
       {
-        src: "/modal/6.gif",
-        caption: "Diagrama con posibilidades de crecimiento.",
+        src: "/modal/01_pipo/02-pipo.png",
+        caption: "Aunque el proyecto es bastante ambicioso, este diagrama representa la primera etapa o MVP (Producto Mínimo Viable). En esta fase inicial, nos centramos en ofrecer las funcionalidades clave que permiten a los usuarios interactuar con la aplicación de manera eficiente, mientras continuamos desarrollando y expandiendo las características para futuras versiones.",
+      },
+      {
+        src: "/modal/01_pipo/03-pipo.png",
+        caption: "Utilizamos metodologías ágiles para la realización del proyecto, lo que nos permitió adaptar rápidamente los cambios. Para gestionar las historias de usuario y el flujo de trabajo, usamos el kanban de GitHub, lo que facilitó la organización y seguimiento de las tareas como equipo.",
       }
     ],
     extraLink: [],

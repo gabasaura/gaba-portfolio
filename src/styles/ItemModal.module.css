@@ -136,6 +136,39 @@
   align-self: center;
 }
 
+.hero-w .titleRow {
+  margin-top: 300px;
+}
+
+.hero-w .tags {
+  text-align: center;
+  padding-top: 20px;
+  z-index: 9999;
+  position: absolute;
+  display: block;
+  width: 75%;
+  max-width: 800px;
+  min-width: 500px;
+}
+
+.hero-w .imgURLbox {
+  position: absolute;
+  top: 0;
+  width: 75%;
+  max-width: 800px;
+  min-width: 500px;
+  margin: 0 auto;
+  height: 300px;
+  overflow: hidden;
+}
+
+.hero-w .imgURL {
+  width: fit-content;
+  height: auto;
+  max-width: 800px;
+  align-self: center;
+}
+
 /* Media query para pantallas de xxs a sm */
 @media only screen and (max-width: 784px) {
   .modalContent {
