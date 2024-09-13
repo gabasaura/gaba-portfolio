@@ -149,7 +149,7 @@ export const gridItemsData = [
       },
       {
         src: "/modal/01_pipo/02-pipo.png",
-        caption: "Aunque el proyecto es bastante ambicioso, este diagrama representa la primera etapa o MVP (Producto Mínimo Viable). En esta fase inicial, nos centramos en ofrecer las funcionalidades clave que permiten a los usuarios interactuar con la aplicación de manera eficiente, mientras continuamos desarrollando y expandiendo las características para futuras versiones.",
+        caption: "Aunque el proyecto es bastante ambicioso, este diagrama representa la primera etapa o MVP. En esta fase inicial, nos centramos en ofrecer las funcionalidades clave que permiten a los usuarios interactuar con la aplicación de manera eficiente, mientras continuamos desarrollando y expandiendo las características para futuras versiones.",
       },
       {
         src: "/modal/01_pipo/03-pipo.png",
