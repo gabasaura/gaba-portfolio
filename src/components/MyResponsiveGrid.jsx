@@ -8,6 +8,7 @@ import { gridItemsData } from "../data/gridItemsData";
 import styles from "../styles/GridItem.module.css";
 import stylesStack from "../styles/Stack.module.css"
 import stylesTags from "../styles/Tags.module.css"
+import stylesLink from "../styles/Links.module.css"
 import stylesIcon from "../styles/Icons.module.css"
 import { FaGithub } from "react-icons/fa";
 
@@ -172,7 +173,9 @@ const MyResponsiveGrid = () => {
               }}
 
             >
-              <img src={item.imageUrl} />
+              {item.imageUrl ? (<span className={styles.imgURLbox}><img src={item.imageUrl} className={styles.imgURL} /></span>) : null}
+
+
               <div className={styles.gridItemBox}>
                 <h2 className={styles.title}>{item.title}</h2>
 
@@ -194,7 +197,7 @@ const MyResponsiveGrid = () => {
                 <div className={styles.iconTags}>
 
                   {/* LINKS */}
-                  <div className={stylesIcon.projectLinks}>
+                  <div className={stylesLink.gridLinks}>
 
                     {item.links.backend && (
                       <a href={item.links.backend} target="_blank" rel="noopener noreferrer"

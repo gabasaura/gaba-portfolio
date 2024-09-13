@@ -1,3 +1,7 @@
+.gridLinks {
+    display: inline-flex;
+    align-items: center;
+}
 .projectLinks {
     align-items: center;
     display: flex;
@@ -13,7 +17,7 @@
     border-radius: 20px 0 0 20px;
     border-right: none;
     padding: 10px;
-    margin-left: 2%;
+    margin-left: 3%;
 }
 
 .extraLink {

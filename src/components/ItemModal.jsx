@@ -33,7 +33,10 @@ const ItemModal = ({ isOpen, onRequestClose, item }) => {
             ))}
           </div>
 
-          <img src={item.imageUrl} className={styles.imgURL} />
+          {item.imageUrl ? (
+            <span className={styles.imgURLbox}><img src={item.imageUrl} className={styles.imgURL} /></span>
+          ) : null}
+
 
           {/* TITLE */}
           <div className={styles.titleRow}>
@@ -86,19 +89,21 @@ const ItemModal = ({ isOpen, onRequestClose, item }) => {
 
           {/* STACK TECH */}
 
-          <div className={stylesStack.stackContainerModal}>
+          {item.stack && item.stack.length > 0 ? (
+            <div className={stylesStack.stackContainerModal}>
+              {item.stack.map((tech, index) => (
+                <span
+                  key={index}
+                  className={stylesStack.badgeModal}
+                  style={{ color: tech.color || '#000' }}  // Color por defecto si tech.color no está definido
+                >
+                  {tech.name || 'Unnamed'}
+                </span>
+              ))}
+            </div>
+          ) : <span style={{ display: 'inline-block', width: '30px', height: '30px' }}></span>
+          }
 
-            {item.stack.map((tech, index) => (
-
-              <span
-                key={index}
-                className={stylesStack.badgeModal}
-                style={{ color: tech.color }}
-              >
-                {tech.name}
-              </span>
-            ))}
-          </div>
 
           {/* BTN CLOSE */}
           <button onClick={onRequestClose} className={styles.closeModal}>

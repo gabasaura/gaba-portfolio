@@ -1,4 +1,5 @@
 import gaba from '././img/gabanimate.gif'
+import wemeet from '././img/w4.png'
 
 export const gridItemsData = [
   {
@@ -28,18 +29,18 @@ export const gridItemsData = [
     ],
     extraLink: [
       {
-      url: "#", 
-      title:"Linkedin", 
-    },
-    {
-      url:"#",
-      title:"Github",
-    },
-    {
-      url:"#",
-      title:"Email",
-    }
-  ],
+        url: "#",
+        title: "Linkedin",
+      },
+      {
+        url: "#",
+        title: "Github",
+      },
+      {
+        url: "#",
+        title: "Email",
+      }
+    ],
     tags: ["Personal"],
     styleClass: "profile",
     w: 1,
@@ -63,16 +64,15 @@ export const gridItemsData = [
       { name: "Docker", color: "#1771d8" },
       { name: "PostgresSQL", color: "#3a6c94" },
     ],
-    styleClass: "profilePic",
     links: {
-      frontend: "https://github.com/user/frontend",
-      backend: "https://github.com/user/backend",
-      deploy: "https://deploy.example.com",
+      frontend: "https://github.com/gabasaura/pipo-app-frontend",
+      backend: "https://github.com/nguzm4n/pipo-app-backend",
+      deploy: "https://pipo-app-frontend.onrender.com/",
     },
     images: [
       {
         src: "/modal/1.gif",
-        caption: "No pude cortar el ensueño, con dolor lo desgarre de su espacio, con una pesadilla lo aplaste, la ansiedad lo atravesó mil veces, y el calor de la vergüenza en mis mejillas lo quemo lento. bajo acaros, piedrecillas, basura, lo que fuese, a la tierra y sin cajón, no hay tiempo. mas de 2 metros, le salte arriba para que no quedase aire y me fui. Las cenizas abrazaron el deseo como telarañas al rocio, años despues lo siento como un susurro. Habian germinados.",
+        caption: "La Pipo App es una aplicación web pensada para ayudar a los usuarios a encontrar baños públicos cercanos, dejar comentarios, calificarlos y agregar nuevas ubicaciones. Es ideal para quienes visitan una ciudad por primera vez, especialmente turistas extranjeros, brindándoles una forma sencilla y rápida de localizar servicios sanitarios mientras exploran el lugar.",
       },
       {
         src: "/modal/3.gif",
@@ -80,13 +80,13 @@ export const gridItemsData = [
       },
       {
         src: "/modal/6.gif",
-        caption: "",
+        caption: "Diagrama con posibilidades de crecimiento.",
       }
     ],
     extraLink: [],
     tags: ["Backend", "Frontend"],
     w: 2,
-    h: 1
+    h: 1,
   },
   {
     i: "3",
@@ -124,6 +124,7 @@ export const gridItemsData = [
   {
     i: "4",
     title: "Wemeet",
+    imageUrl: wemeet,
     description: "Generador de reuniones grupales que facilita la coordinación de horarios entre participantes, optimizando la disponibilidad de todos los asistentes.",
     stack: [
       { name: "Flask", color: "#000000" },
@@ -151,8 +152,9 @@ export const gridItemsData = [
     ],
     extraLink: [],
     tags: ["Backend"],
-    w: 2,
-    h: 1
+    styleClass: "hero",
+    w: 1,
+    h: 2
   },
   {
     i: "5",
@@ -257,7 +259,7 @@ export const gridItemsData = [
   },
   {
     i: "8",
-    title: "Playground: Códigos experimentales para pruebas pequeñas, destinados a probar y evaluar funcionalidades específicas.",
+    title: "Playground: Códigos experimentales para pruebas pequeñas, destinados a aprender y documentar.",
     description: "",
     stack: [],
     links: {
@@ -281,10 +283,10 @@ export const gridItemsData = [
     ],
     extraLink: [
       {
-      url: "#", 
-      title:"Playground", 
-    },
-  ],
+        url: "#",
+        title: "Playground",
+      },
+    ],
     styleClass: "personal",
     tags: ["Personal"],
     w: 1,
@@ -316,18 +318,18 @@ export const gridItemsData = [
     ],
     extraLink: [
       {
-      url: "#", 
-      title:"Ilustraciones_ Artstation", 
-    },
-    {
-      url:"#",
-      title:"Diseño_ Behance",
-    },
-    {
-      url:"#",
-      title:"Instragram_ Gabasaura",
-    }
-  ],
+        url: "#",
+        title: "Ilustraciones_ Artstation",
+      },
+      {
+        url: "#",
+        title: "Diseño_ Behance",
+      },
+      {
+        url: "#",
+        title: "Instragram_ Gabasaura",
+      }
+    ],
     styleClass: "personal",
     tags: ["Personal"],
     w: 1,

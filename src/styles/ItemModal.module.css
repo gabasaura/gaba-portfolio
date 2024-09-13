@@ -85,10 +85,12 @@
   width: 100%;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 30px 0 20px 10%;
+  padding: 30px 0 50px 10%;
   box-sizing: border-box;
   align-items: center;
 }
+
+/* styleClasses */
 
 .profile .imgURL {
   width: 200px;
@@ -99,4 +101,53 @@
 .profile .title,
 .personal .title {
   text-align: center;
+}
+
+.hero .titleRow {
+  margin-top: 300px;
+}
+
+.hero .tags {
+  text-align: center;
+  padding-top: 20px;
+  z-index: 9999;
+  position: absolute;
+  display: block;
+  width: 75%;
+  max-width: 800px;
+  min-width: 500px;
+}
+
+.hero .imgURLbox {
+  position: absolute;
+  top: 0;
+  width: 75%;
+  max-width: 800px;
+  min-width: 500px;
+  margin: 0 auto;
+  height: 300px;
+  overflow: hidden;
+}
+
+.hero .imgURL {
+  width: fit-content;
+  height: auto;
+  max-width: 800px;
+  align-self: center;
+}
+
+/* Media query para pantallas de xxs a sm */
+@media only screen and (max-width: 784px) {
+  .modalContent {
+    width: 90%;
+  }
+
+  .closeModal {
+    right: 40px;
+    z-index: 9999;
+  }
+
+  .hero .imgURLbox, .hero .tags {
+    width: 90%;
+  }
 }
