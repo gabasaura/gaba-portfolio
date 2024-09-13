@@ -1,5 +1,7 @@
 import gaba from '././img/gabanimate.gif'
 import wemeet from '././img/w4.png'
+import pipo from '././img/grid-pipo.png'
+
 
 export const gridItemsData = [
   {
@@ -48,31 +50,23 @@ export const gridItemsData = [
   },
   {
     i: "2",
-    title: "Pipo Web API",
-    description: "Aplicación web desarrollada en equipo que permite a los usuarios listar, localizar y rankear baños de uso público a través de un mapa interactivo.",
+    title: "Wemeet",
+    imageUrl: wemeet,
+    description: "Generador de reuniones grupales que facilita la coordinación de horarios entre participantes, optimizando la disponibilidad de todos los asistentes.",
     stack: [
-      { name: "Leaflet", color: "#bbe469" },
-      { name: "JavaScript", color: "#f0db4f" },
-      { name: "React", color: "#00d8ff" },
-      { name: "CSS3", color: "#2d53e5" },
-      { name: "Booststrap", color: "#4c0bce" },
-      { name: "Toastify", color: "#000000" },
-      { name: "HTML5", color: "#e3552e" },
-      { name: "JWT", color: "#fb1560" },
       { name: "Flask", color: "#000000" },
+      { name: "SQLite", color: "#0b425c" },
       { name: "Python", color: "#396d96" },
-      { name: "Docker", color: "#1771d8" },
-      { name: "PostgresSQL", color: "#3a6c94" },
     ],
     links: {
-      frontend: "https://github.com/gabasaura/pipo-app-frontend",
-      backend: "https://github.com/nguzm4n/pipo-app-backend",
-      deploy: "https://pipo-app-frontend.onrender.com/",
+      frontend: "",
+      backend: "https://github.com/user/backend",
+      deploy: "",
     },
     images: [
       {
         src: "/modal/1.gif",
-        caption: "La Pipo App es una aplicación web pensada para ayudar a los usuarios a encontrar baños públicos cercanos, dejar comentarios, calificarlos y agregar nuevas ubicaciones. Es ideal para quienes visitan una ciudad por primera vez, especialmente turistas extranjeros, brindándoles una forma sencilla y rápida de localizar servicios sanitarios mientras exploran el lugar.",
+        caption: "Pantalla principal del proyecto",
       },
       {
         src: "/modal/3.gif",
@@ -80,11 +74,12 @@ export const gridItemsData = [
       },
       {
         src: "/modal/6.gif",
-        caption: "Diagrama con posibilidades de crecimiento.",
+        caption: "",
       }
     ],
     extraLink: [],
-    tags: ["Backend", "Frontend"],
+    tags: ["Backend"],
+    styleClass: "hero",
     w: 2,
     h: 1,
   },
@@ -123,23 +118,32 @@ export const gridItemsData = [
   },
   {
     i: "4",
-    title: "Wemeet",
-    imageUrl: wemeet,
-    description: "Generador de reuniones grupales que facilita la coordinación de horarios entre participantes, optimizando la disponibilidad de todos los asistentes.",
+    title: "Pipo Web API",
+    imageUrl: pipo,
+    description: "Aplicación web desarrollada en equipo que permite a los usuarios listar, localizar y rankear baños de uso público a través de un mapa interactivo.",
     stack: [
+      { name: "Leaflet", color: "#bbe469" },
+      { name: "JavaScript", color: "#f0db4f" },
+      { name: "React", color: "#00d8ff" },
+      { name: "CSS3", color: "#2d53e5" },
+      { name: "Booststrap", color: "#4c0bce" },
+      { name: "Toastify", color: "#000000" },
+      { name: "HTML5", color: "#e3552e" },
+      { name: "JWT", color: "#fb1560" },
       { name: "Flask", color: "#000000" },
-      { name: "SQLite", color: "#0b425c" },
       { name: "Python", color: "#396d96" },
+      { name: "Docker", color: "#1771d8" },
+      { name: "PostgresSQL", color: "#3a6c94" },
     ],
     links: {
-      frontend: "",
-      backend: "https://github.com/user/backend",
-      deploy: "",
+      frontend: "https://github.com/gabasaura/pipo-app-frontend",
+      backend: "https://github.com/nguzm4n/pipo-app-backend",
+      deploy: "https://pipo-app-frontend.onrender.com/",
     },
     images: [
       {
-        src: "/modal/1.gif",
-        caption: "Pantalla principal del proyecto",
+        src: "/modal/01_pipo/01-pipo.png",
+        caption: "La Pipo App es una aplicación web pensada para ayudar a los usuarios a encontrar baños públicos cercanos, dejar comentarios, calificarlos y agregar nuevas ubicaciones. Es ideal para quienes visitan una ciudad por primera vez, especialmente turistas extranjeros, brindándoles una forma sencilla y rápida de localizar servicios sanitarios mientras exploran el lugar.",
       },
       {
         src: "/modal/3.gif",
@@ -147,14 +151,14 @@ export const gridItemsData = [
       },
       {
         src: "/modal/6.gif",
-        caption: "",
+        caption: "Diagrama con posibilidades de crecimiento.",
       }
     ],
     extraLink: [],
-    tags: ["Backend"],
+    tags: ["Backend", "Frontend"],
     styleClass: "hero",
     w: 1,
-    h: 2
+    h: 2,
   },
   {
     i: "5",
