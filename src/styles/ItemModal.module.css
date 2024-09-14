@@ -93,10 +93,13 @@
 /* styleClasses */
 
 .profile .imgURL {
-  width: 200px;
-  height: 200px;
+  width: 100%; /* Se asegura que la imagen se ajuste a su contenedor */
+  max-width: 200px; /* Ancho máximo deseado */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-height: 200px; /* Altura máxima */
   display: block;
   margin: 20px auto 0;
+  object-fit: cover; /* Asegura que la imagen llene el contenedor sin distorsionarse */
 }
 
 .profile .title,
