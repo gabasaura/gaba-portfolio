@@ -34,18 +34,30 @@
 
 /* PLUS ICON */
 .plusIcon {
-  font-size: 18px;
+  font-size: x-large;
   position: absolute;
   bottom: 10px;
   right: 10px;
-  padding-top: 5px;
   background-color: transparent;
   cursor: pointer;
   border-radius: 20px;
-  border: .5px solid #312F2F;
+  border: 0.5px solid #312F2F;
   width: 35px;
   height: 35px;
+  display: flex; /* Centrado con flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
+.plusIcon span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  line-height: 1;  /* Asegura que el símbolo no se desplace verticalmente */
+padding: auto;
+margin: auto;
 }
 
 .plusIcon:hover {

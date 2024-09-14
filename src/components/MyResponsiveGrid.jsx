@@ -14,7 +14,7 @@ import { FaGithub } from "react-icons/fa";
 
 
 import ItemModal from "./ItemModal";
-import { FiPlus } from "react-icons/fi";
+import { FaCirclePlus } from "react-icons/fa6";
 
 
 
@@ -224,7 +224,8 @@ const MyResponsiveGrid = () => {
               <button className={styles.plusIcon} onClick={() => {
                 handleOpenModal(item)
               }}>
-                <FiPlus />
+                <FaCirclePlus />
+
               </button>
 
 
