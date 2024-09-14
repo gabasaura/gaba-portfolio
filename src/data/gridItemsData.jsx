@@ -141,7 +141,7 @@ export const gridItemsData = [
     images: [
       {
         src: "/modal/01_pipo/01-pipo.png",
-        caption: "La Pipo App es una aplicación web desarrollada en equipo como proyecto final del Fullstack Developer Bootcamp de 4Geeks Academy. Es una API/REST cuyo MVP (Producto Mínimo Viable) permite a los usuarios registrados listar, localizar y rankear baños de uso público a través de un mapa interactivo.",
+        caption: "La 📍Pipo App es una aplicación web desarrollada en equipo como proyecto final del Fullstack Developer Bootcamp de 4Geeks Academy. Es una API/REST cuyo MVP (Producto Mínimo Viable) permite a los usuarios registrados listar, localizar y rankear 🚽 baños de uso público a través de un mapa interactivo.",
       },
       {
         src: "/modal/01_pipo/04-pipo.png",
@@ -149,7 +149,7 @@ export const gridItemsData = [
       },
       {
         src: "/modal/01_pipo/02-pipo.png",
-        caption: "Aunque el proyecto es bastante ambicioso, este diagrama representa la primera etapa o MVP. En esta fase inicial, nos centramos en ofrecer las funcionalidades clave que permiten a los usuarios interactuar con la aplicación de manera eficiente, mientras continuamos desarrollando y expandiendo las características para futuras versiones.",
+        caption: "Aunque el proyecto es bastante ambicioso, este diagrama representa la primera etapa o MVP. En esta fase inicial, nos centramos en ofrecer las funcionalidades clave, está en nuestros planes seguir desarrollando y expandiendo las características para futuras versiones ✨.",
       },
       {
         src: "/modal/01_pipo/03-pipo.png",
@@ -165,30 +165,22 @@ export const gridItemsData = [
   {
     i: "5",
     title: "Battleship",
-    description: "Juego de Batalla Naval desarrollado para enfrentamientos jugador vs PC",
+    description: "Juego de Batalla Naval desarrollado para enfrentamientos jugador vs PC.",
     stack: [
       { name: "JavaScript", color: "#f0db4f" },
       { name: "React", color: "#00d8ff" },
       { name: "CSS3", color: "#2d53e5" },
     ],
     links: {
-      frontend: "https://github.com/user/frontend",
+      frontend: "https://github.com/gabasaura/reactjs-battleship",
       backend: "",
-      deploy: "https://deploy.example.com",
+      deploy: "https://gabasaura.github.io/reactjs-battleship/",
     },
     images: [
       {
-        src: "/modal/1.gif",
-        caption: "Pantalla principal del proyecto",
+        src: "/modal/05_battleship/01-battleship.png",
+        caption: "Desarrollo en React de Juego Batalla Naval, entre jugador vs PC.",
       },
-      {
-        src: "/modal/3.gif",
-        caption: "Sección de detalles",
-      },
-      {
-        src: "/modal/6.gif",
-        caption: "",
-      }
     ],
     extraLink: [],
     tags: ["Frontend"],
