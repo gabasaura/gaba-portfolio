@@ -50,8 +50,8 @@ export const gridItemsData = [
   {
     i: "2",
     title: "Wemeet",
-    imageUrl: pipo,
-    description: "Generador de reuniones grupales que facilita la coordinación de horarios entre participantes, optimizando la disponibilidad de todos los asistentes.",
+    imageUrl: "",
+    description: "API/REST Generador de reuniones grupales que facilita la coordinación de horarios entre participantes, optimizando la disponibilidad de todos los asistentes.",
     stack: [
       { name: "Flask", color: "#000000" },
       { name: "SQLite", color: "#0b425c" },
@@ -59,59 +59,43 @@ export const gridItemsData = [
     ],
     links: {
       frontend: "",
-      backend: "https://github.com/user/backend",
+      backend: "https://github.com/gabasaura/api-rest_collective-meetings",
       deploy: "",
     },
     images: [
       {
-        src: "/modal/01_pipo/01-pipo.png",
-        caption: "Pantalla principal del proyecto",
+        src: "/modal/02_wemeet/01-wemeet.png",
+        caption: "Este proyecto es una API diseñada para facilitar la programación de reuniones, recopilando la disponibilidad de varios participantes y sugiriendo los mejores horarios según sus preferencias. Está construida con Flask y sigue principios RESTful.",
       },
-      {
-        src: "/modal/3.gif",
-        caption: "Sección de detalles",
-      },
-      {
-        src: "/modal/6.gif",
-        caption: "",
-      }
     ],
     extraLink: [],
     tags: ["Backend"],
-    styleClass: "hero-w",
-    w: 2,
+    styleClass: "",
+    w: 1,
     h: 1,
   },
   {
     i: "3",
     title: "Tierlist",
-    description: "Generador de listas estilo Tierlist, diseñado para clasificar y organizar elementos de manera personalizada según las preferencias del usuario.",
+    description: "API/REST generador de listas estilo Tierlist, diseñado para clasificar y organizar elementos de manera personalizada según las preferencias del usuario.",
     stack: [
       { name: "Flask", color: "#000000" },
       { name: "SQLite", color: "#0b425c" },
       { name: "Python", color: "#396d96" },
     ],
     links: {
-      frontend: "https://github.com/user/frontend",
-      backend: "https://github.com/user/backend",
-      deploy: "https://deploy.example.com",
+      frontend: "",
+      backend: "https://github.com/gabasaura/api-rest_tierlist",
+      deploy: "",
     },
     images: [
       {
-        src: "/modal/1.gif",
-        caption: "Pantalla principal del proyecto",
+        src: "/modal/03_tierlist/01-tierlist.png",
+        caption: "Este proyecto proporciona una API/REST para que los usuarios creen y compartan tier lists. ✨Características: CRUD de USUARIO / TIER LIST / CATEGORÍAS / ELEMENTOS",
       },
-      {
-        src: "/modal/3.gif",
-        caption: "Sección de detalles",
-      },
-      {
-        src: "/modal/6.gif",
-        caption: "",
-      }
     ],
     extraLink: [],
-    tags: ["Frontend", "Backend"],
+    tags: ["Backend"],
     w: 1,
     h: 1
   },
@@ -221,76 +205,6 @@ export const gridItemsData = [
     h: 1
   },
   {
-    i: "7",
-    title: "Post-it Wall",
-    description: "Listas de tareas pendientes en formato de bloques, similares a post-its, diseñadas para una visualización clara y una gestión eficiente de actividades.",
-    stack: [
-      { name: "JavaScript", color: "#f0db4f" },
-      { name: "HTML5", color: "#e3552e" },
-      { name: "CSS3", color: "#2d53e5" },
-      { name: "React", color: "#00d8ff" },
-      { name: "Toastify", color: "#000000" },
-    ],
-    links: {
-      frontend: "https://github.com/user/frontend",
-      backend: "",
-      deploy: "https://deploy.example.com",
-    },
-    images: [
-      {
-        src: "/modal/1.gif",
-        caption: "Pantalla principal del proyecto",
-      },
-      {
-        src: "/modal/3.gif",
-        caption: "Sección de detalles",
-      },
-      {
-        src: "/modal/6.gif",
-        caption: "",
-      }
-    ],
-    extraLink: [],
-    tags: ["Frontend"],
-    w: 1,
-    h: 1
-  },
-  {
-    i: "8",
-    title: "Playground: Códigos experimentales para pruebas pequeñas, destinados a aprender y documentar.",
-    description: "",
-    stack: [],
-    links: {
-      frontend: "",
-      backend: "",
-      deploy: "",
-    },
-    images: [
-      {
-        src: "/modal/1.gif",
-        caption: "Pantalla principal del proyecto",
-      },
-      {
-        src: "/modal/3.gif",
-        caption: "Sección de detalles",
-      },
-      {
-        src: "/modal/6.gif",
-        caption: "",
-      }
-    ],
-    extraLink: [
-      {
-        url: "#",
-        title: "Playground",
-      },
-    ],
-    styleClass: "personal",
-    tags: ["Personal"],
-    w: 1,
-    h: 1
-  },
-  {
     i: "9",
     title: "Doodling: En mi otra vida, dibujo. Contenido no relacionado a programación.",
     description: "",
@@ -302,31 +216,23 @@ export const gridItemsData = [
     },
     images: [
       {
-        src: "/modal/1.gif",
-        caption: "Pantalla principal del proyecto",
+        src: "/modal/09_personal/01-personal.png",
+        caption: "Te invito a revisar mis dibujos.",
       },
-      {
-        src: "/modal/3.gif",
-        caption: "Sección de detalles",
-      },
-      {
-        src: "/modal/6.gif",
-        caption: "",
-      }
     ],
     extraLink: [
       {
-        url: "#",
-        title: "Ilustraciones_ Artstation",
+        url: "https://www.instagram.com/gabasaura",
+        title: "Instragram_ Gabasaura",
       },
       {
-        url: "#",
+        url: "https://www.behance.net/ggaabbaa",
         title: "Diseño_ Behance",
       },
       {
-        url: "#",
-        title: "Instragram_ Gabasaura",
-      }
+        url: "https://www.artstation.com/gaba",
+        title: "Ilustraciones_ Artstation",
+      },
     ],
     styleClass: "personal",
     tags: ["Personal"],
