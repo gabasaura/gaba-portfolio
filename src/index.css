@@ -12,6 +12,7 @@ html {
     margin: 0;
     padding: 0;
     width: 100vw;
+    -webkit-text-size-adjust: 100%;
 }
 body {
     max-width: 1280px;
