@@ -223,15 +223,15 @@ export const gridItemsData = [
     extraLink: [
       {
         url: "https://www.instagram.com/gabasaura",
-        title: "Instragram_ Gabasaura",
+        title: "Instragram",
       },
       {
         url: "https://www.behance.net/ggaabbaa",
-        title: "Diseño_ Behance",
+        title: "Behance",
       },
       {
         url: "https://www.artstation.com/gaba",
-        title: "Ilustraciones_ Artstation",
+        title: "Artstation",
       },
     ],
     styleClass: "personal",

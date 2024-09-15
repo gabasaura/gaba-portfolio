@@ -3,7 +3,6 @@ import { Responsive, WidthProvider } from "react-grid-layout";
 import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
 import { FaGithub } from "react-icons/fa";
-import { FaPlusCircle } from "react-icons/fa";
 import FilterButtons from "./FilterButtons";
 import { gridItemsData } from "../data/gridItemsData";
 import styles from "../styles/GridItem.module.css";
@@ -222,7 +221,7 @@ const MyResponsiveGrid = () => {
               <button className={styles.plusIcon} onClick={() => {
                 handleOpenModal(item)
               }}>
-                <FaPlusCircle />
+                👁️
 
 
               </button>

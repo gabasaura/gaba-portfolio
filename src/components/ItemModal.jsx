@@ -7,7 +7,6 @@ import stylesIcon from "../styles/Icons.module.css"
 import stylesLink from "../styles/Links.module.css"
 
 import { FaGithub } from "react-icons/fa";
-import { FiPlus } from "react-icons/fi";
 import { BiLinkAlt } from "react-icons/bi";
 
 
@@ -107,7 +106,7 @@ const ItemModal = ({ isOpen, onRequestClose, item }) => {
 
           {/* BTN CLOSE */}
           <button onClick={onRequestClose} className={styles.closeModal}>
-            <FiPlus />
+            <span>✦</span>
           </button>
         </div>
       )}

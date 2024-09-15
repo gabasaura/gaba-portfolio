@@ -165,30 +165,34 @@ h2 {
   }
 }
 
-  @media only screen and (max-width: 784px) {
-    .profile {
-      margin-top: 46px;
-    }
-
-    .profile .gridItemBox {
-      padding: 0px 7%;
-    }
-
-
+@media only screen and (max-width: 784px) {
+  .profile {
+    margin-top: 46px;
   }
 
-  /* Media query para pantallas de xxs a sm */
-  @media only screen and (max-width: 421px) {
-    .gridItemBox {
-      padding: 0 8%;
-    }
-
-    .profile .gridItemBox {
-      padding: 0px;
-    }
-
-    .profile h2 {
-      font-size: 1.375rem;
-    }
-
+  .profile .gridItemBox {
+    padding: 0px 7%;
   }
+
+
+}
+
+/* Media query para pantallas de xxs a sm */
+@media only screen and (max-width: 421px) {
+  .gridItemBox {
+    padding: 0 8%;
+  }
+
+  .profile .gridItemBox {
+    padding: 0px;
+  }
+
+  .profile h2 {
+    font-size: 1.375rem;
+  }
+
+  .profile .plusIcon {
+    top: 14px;
+    left: 14px;
+  }
+}
