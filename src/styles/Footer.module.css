@@ -1,6 +1,6 @@
 .footer {
   color: #312F2F;
-  padding: 0 10%;
+  padding: 0;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -83,16 +83,19 @@
   padding: 5px 10px;
   margin: 0px 3px;
   border-radius: 20px;
-  border: .5px #312F2F solid;
+  border: 0.5px #312F2F solid;
   cursor: pointer;
   background-color: #E3EAF2;
   transition: background-color 0.3s ease;
   display: inline-flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Asegura que el texto esté centrado horizontalmente */
   letter-spacing: 1px;
   text-decoration: none;
   font-size: 14px;
   height: 28px;
   box-sizing: border-box;
+  line-height: 1;
 }
 
 .cvLink:hover {
