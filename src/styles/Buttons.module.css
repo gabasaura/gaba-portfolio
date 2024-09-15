@@ -72,3 +72,20 @@
   color: #E3EAF2;
   background-color: #312F2F;
 }
+
+/* RESPONSIVE */
+
+/* Media query para pantallas de xxs a sm */
+@media only screen and (max-width: 784px) {
+  .filterButtons{
+  width: 100%;
+  display: block;
+  position: fixed;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  z-index: 999;
+  }
+
+}

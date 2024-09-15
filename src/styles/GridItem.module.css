@@ -149,7 +149,7 @@
 /* Media query para pantallas de xxs a sm */
 @media only screen and (max-width: 421px) {
   .gridItemBox {
-    padding: 35px 8%;
+    padding: 0 8%;
   }
 
 }
@@ -165,5 +165,14 @@
     margin: 0;
     width: 100%;
     box-sizing: border-box;
+  }
+
+  @media only screen and (max-width: 784px) {
+    .profile {
+      margin-top: 46px;
+    }
+    .profile .gridItemBox{
+      padding: 0px 9%;
+    }
   }
 }
