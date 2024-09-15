@@ -1,23 +1,33 @@
 .filterButtons {
   display: inline-block;
   text-align: center;
-  font-size: 0.75rem; /* Ajustado a rem en vez de px */
-  margin-bottom: 1.25rem; /* Ajuste relativo para el margen inferior */
-  margin-left: 0.5rem; /* Ajuste relativo para el margen izquierdo */
+  font-size: 0.75rem;
+  /* Ajustado a rem en vez de px */
+  margin-bottom: 1.25rem;
+  /* Ajuste relativo para el margen inferior */
+  margin-left: 0.5rem;
+  /* Ajuste relativo para el margen izquierdo */
 }
 
 .tagButton {
   color: #312F2F;
-  padding: 0.3125rem 1.125rem; /* Usar rem para padding */
-  margin: 0 0.125rem; /* Ajustar el margen en rem */
-  border-radius: 1.25rem; /* Borde redondeado con rem */
+  padding: 0.3125rem 1.125rem;
+  /* Usar rem para padding */
+  margin: 0 0.125rem;
+  /* Ajustar el margen en rem */
+  border-radius: 1.25rem;
+  /* Borde redondeado con rem */
   cursor: pointer;
   background-color: #E3EAF2;
   transition: color 0.3s ease;
-  letter-spacing: 0.0625rem; /* Espaciado entre letras con rem */
+  letter-spacing: 0.0625rem;
+  /* Espaciado entre letras con rem */
 }
-.tagButton svg {  /* Si estás usando íconos de font-awesome o similares */
-  color: #312F2F !important; /* Fuerza el color a mantenerse constante */
+
+.tagButton svg {
+  /* Si estás usando íconos de font-awesome o similares */
+  color: #312F2F !important;
+  /* Fuerza el color a mantenerse constante */
   transition: color 0.3s ease;
 }
 
@@ -77,15 +87,22 @@
 
 /* Media query para pantallas de xxs a sm */
 @media only screen and (max-width: 784px) {
-  .filterButtons{
-  width: 100%;
-  display: block;
-  position: fixed;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  z-index: 999;
+  .filterButtons {
+    width: 100%;
+    display: block;
+    position: fixed;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    z-index: 999;
+  }
+}
+
+@media only screen and (max-width: 421px) {
+  .tagButton {
+    padding: 0.3125rem 3%;
+    margin: 0;
   }
 
 }

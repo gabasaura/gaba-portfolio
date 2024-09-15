@@ -9,7 +9,7 @@
   transition: background-color 0.3s ease;
   display: inline-flex;
   letter-spacing: 1px;
-  
+
   text-decoration: none;
   font-size: 14px;
 }
@@ -18,7 +18,8 @@
   background-color: #312F2F;
   color: #E3EAF2;
 }
-.cvbuttonGroup{
+
+.cvbuttonGroup {
   float: inline-end;
   margin-right: 8px;
 
@@ -28,7 +29,7 @@
 
 /* Media query para pantallas de xxs a sm */
 @media only screen and (max-width: 784px) {
-  
+
   .cvbuttonGroup {
     margin: 0 auto;
     margin-bottom: 0px;
