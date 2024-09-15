@@ -2,19 +2,17 @@ import { useState, useEffect } from "react";
 import { Responsive, WidthProvider } from "react-grid-layout";
 import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
+import { FaGithub } from "react-icons/fa";
+import { FaPlusCircle } from "react-icons/fa";
 import FilterButtons from "./FilterButtons";
 import { gridItemsData } from "../data/gridItemsData";
-
 import styles from "../styles/GridItem.module.css";
 import stylesStack from "../styles/Stack.module.css"
 import stylesTags from "../styles/Tags.module.css"
 import stylesLink from "../styles/Links.module.css"
 import stylesIcon from "../styles/Icons.module.css"
-import { FaGithub } from "react-icons/fa";
-
-
 import ItemModal from "./ItemModal";
-import { FaPlusCircle } from "react-icons/fa";
+
 
 
 

@@ -10,13 +10,14 @@ html {
     font-family: "Fira Sans", sans-serif;
     color: #312F2F;
     margin: 0;
-    padding: 0;
+    padding: 0 4%;
+box-sizing: border-box;
     width: 100vw;
     -webkit-text-size-adjust: 100%;
 }
 body {
     max-width: 1280px;
-    min-width: 550px;
+    /*min-width: 550px;*/
     margin: 15px auto 20px;
   }
 
