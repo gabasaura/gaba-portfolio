@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import MyResponsiveGrid from "./components/MyResponsiveGrid";
 import styles from "./styles/App.module.css"
 
@@ -13,6 +14,7 @@ const App = () => {
       </a>
       </div>
       <MyResponsiveGrid />
+      <Footer/>
     </>
   );
 };

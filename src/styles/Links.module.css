@@ -2,6 +2,7 @@
     display: inline-flex;
     align-items: center;
 }
+
 .projectLinks {
     align-items: center;
     display: flex;
@@ -83,7 +84,7 @@
 .extras {
     font-size: 18px;
     background-color: transparent;
-    color: white;
+    color: #fafbfc;
     border-radius: 20px;
     text-decoration: none;
     margin-right: 15px;
@@ -119,42 +120,46 @@
 @media only screen and (max-width: 784px) {
 
 
-.projectLinks {
-    height: 53px;
-  border-right: none;
-  padding: 3px 10px;
-  width: fit-content;
-  position: absolute;
-  right: 5%;
-  top: 59px;
-  background-color: #fafbfc;
-  border-radius: 20px 0 0 20px;
-  border: none;
-}
+    .projectLinks {
+        height: 46px;
+        border-right: none;
+        padding: 3px 0;
+        width: fit-content;
+        position: absolute;
+        right: 0;
+        top: 59px;
+        background-color: #fafbfc;
+        border-radius: 20px 0 0 20px;
+        border: none;
+        width: 100%;
+        justify-content: center;
+    }
 
-.projectExtraLinks {
-    display: inline-block;
-  position: absolute;
-  top: 2px;
-  right: 5%;
-  border: none;
-}
-.projectExtraLinks .personal {
-    display: inline-block;
-  position: absolute;
-  top: 90px;
-  right: 5%;
-  border: none;
-}
+    .projectExtraLinks {
+        display: inline-block;
+        position: absolute;
+        top: 2px;
+        right: 5%;
+        border: none;
+    }
 
-.extraIcon {
-    color: white;
-  width: 36px;
-  padding: 10px;
-}
-.extraLinkTitle{
-    visibility: visible;
-  opacity: 1;
-}
+    .projectExtraLinks .personal {
+        display: inline-block;
+        position: absolute;
+        top: 90px;
+        right: 5%;
+        border: none;
+    }
+
+    .extraIcon {
+        color: #fafbfc;
+        width: 36px;
+        padding: 10px;
+    }
+
+    .extraLinkTitle {
+        visibility: visible;
+        opacity: 1;
+    }
 
 }

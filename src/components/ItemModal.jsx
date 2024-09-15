@@ -106,7 +106,7 @@ const ItemModal = ({ isOpen, onRequestClose, item }) => {
 
           {/* BTN CLOSE */}
           <button onClick={onRequestClose} className={styles.closeModal}>
-            <span>✦</span>
+            <span>✕</span>
           </button>
         </div>
       )}

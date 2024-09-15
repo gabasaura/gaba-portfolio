@@ -1,0 +1,133 @@
+.footer {
+  color: #312F2F;
+  padding: 0 10%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 4em auto 1em;
+  box-sizing: border-box;
+}
+
+.footerRow {
+  display: flex;
+  align-items: center;
+}
+
+.footerInline{
+  display: contents;
+}
+.footerBloc {
+  display: flex;
+  align-items: center;
+}
+
+
+.iconLink {
+  font-size: 18px;
+  background-color: #E3EAF2;
+  color: #312F2F;
+  border: .5px solid #312F2F;
+  border-radius: 20px;
+  text-decoration: none;
+  height: 28px;
+  width: 28px;
+  box-sizing: border-box;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1999;
+  position: relative;
+  align-items: center;
+  display: flex;
+  margin: 0 3px;
+}
+
+.iconLink:hover {
+  background-color: #312F2F;
+  color: #E3EAF2;
+}
+
+.iconLinkTitle {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  right: auto;
+  top: -34px;
+  white-space: nowrap;
+  background-color: #312F2F;
+  border: .5px solid #312F2F;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+  z-index: -1;
+  font-size: 12px;
+  height: 28px;
+  box-sizing: border-box;
+  display: inline-flex;
+  float: inline-end;
+  left: 0;
+}
+
+.iconLink:hover>.iconLinkTitle {
+  visibility: visible;
+  opacity: 1;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #312F2F;
+}
+
+.cvLink {
+  color: #312F2F;
+  padding: 5px 10px;
+  margin: 0px 3px;
+  border-radius: 20px;
+  border: .5px #312F2F solid;
+  cursor: pointer;
+  background-color: #E3EAF2;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 14px;
+  height: 28px;
+  box-sizing: border-box;
+}
+
+.cvLink:hover {
+  background-color: #312F2F;
+  color: #E3EAF2;
+}
+
+.cvLinkGroup {
+  float: inline-end;
+  margin-right: 8px;
+
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 421px) {
+  .footer {
+    margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  }
+  .footerRow {
+    display: inline-flex;
+  }
+  .footerInline{
+    display: inline-flex;
+    margin: 2em 0 0;
+  }
+  .footerBloc {
+    display: block;
+    align-items: center;
+  }
+  .copyright {
+    width: 100%;
+  display: inline-block;
+  padding: 1em 0 0;
+  }
+}

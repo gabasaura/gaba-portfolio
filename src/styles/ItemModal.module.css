@@ -59,14 +59,12 @@
   position: fixed;
   top: 17px;
   right: 20px;
-  padding-top: 5px;
   background-color: #E3EAF2;
   cursor: pointer;
   border-radius: 20px;
   border: none;
   width: 35px;
   height: 35px;
-  transform: rotate(45deg);
   transition: background-color 0.3s ease;
 }
 
@@ -93,13 +91,18 @@
 /* styleClasses */
 
 .profile .imgURL {
-  width: 100%; /* Se asegura que la imagen se ajuste a su contenedor */
-  max-width: 200px; /* Ancho máximo deseado */
-  height: auto; /* Mantiene la proporción de la imagen */
-  max-height: 200px; /* Altura máxima */
+  width: 100%;
+  /* Se asegura que la imagen se ajuste a su contenedor */
+  max-width: 200px;
+  /* Ancho máximo deseado */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+  max-height: 200px;
+  /* Altura máxima */
   display: block;
   margin: 20px auto 0;
-  object-fit: cover; /* Asegura que la imagen llene el contenedor sin distorsionarse */
+  object-fit: cover;
+  /* Asegura que la imagen llene el contenedor sin distorsionarse */
 }
 
 .profile .title,
@@ -176,40 +179,50 @@
   }
 
   .closeModal {
-  position: relative;
-  right: 0;
-  padding: 0;
-  border-radius: 0;
-  transform: none;
-  font-size: 18px;
-  border: none;
-  height: 40px;
-  text-align: center;
-  display: inline-block;
-  width: 100%;
-  z-index: 9999;
+    position: relative;
+    right: 0;
+    padding: 0;
+    border-radius: 0;
+    transform: none;
+    font-size: 18px;
+    border: none;
+    height: 46px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    z-index: 9999;
   }
+
+  .closeModal:hover {
+    color: #312F2F;
+    background-color: #fafbfc;
+  }
+
+
   .titleRow {
     display: block;
-  width: 100%;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 50px 0 15px;
-  box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 85px 0 30px;
+    box-sizing: border-box;
   }
+
   .title {
     text-align: center;
   }
+
   .profile .titleRow {
     padding-top: 20px;
   }
 
   .profile .title,
-.personal .title {
-  padding: 0 15%;
-}
+  .personal .title {
+    padding: 0 15%;
+  }
 
-  .hero .imgURLbox, .hero .tags {
+  .hero .imgURLbox,
+  .hero .tags {
     width: 90%;
   }
 }
