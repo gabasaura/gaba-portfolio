@@ -13,7 +13,7 @@
 }
 
 .gridItemBox {
-    padding: 35px 9%;
+  padding: 35px 9%;
   display: block;
 }
 
@@ -44,9 +44,12 @@
   border: 0.5px solid #312F2F;
   width: 35px;
   height: 35px;
-  display: flex; /* Centrado con flexbox */
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  display: flex;
+  /* Centrado con flexbox */
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente */
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -55,9 +58,10 @@
   justify-content: center;
   align-items: center;
   display: inline-block;
-  line-height: 1;  /* Asegura que el símbolo no se desplace verticalmente */
-padding: auto;
-margin: auto;
+  line-height: 1;
+  /* Asegura que el símbolo no se desplace verticalmente */
+  padding: auto;
+  margin: auto;
 }
 
 .plusIcon:hover {
@@ -79,13 +83,18 @@ margin: auto;
 }
 
 .profile img {
-  width: 100%; /* Se asegura que la imagen se ajuste a su contenedor */
-  max-width: 250px; /* Ancho máximo deseado */
-  height: auto; /* Mantiene la proporción de la imagen */
-  max-height: 250px; /* Altura máxima */
+  width: 100%;
+  /* Se asegura que la imagen se ajuste a su contenedor */
+  max-width: 250px;
+  /* Ancho máximo deseado */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+  max-height: 250px;
+  /* Altura máxima */
   display: block;
   margin: 0 auto;
-  object-fit: cover; /* Asegura que la imagen llene el contenedor sin distorsionarse */
+  object-fit: cover;
+  /* Asegura que la imagen llene el contenedor sin distorsionarse */
   z-index: -1;
 }
 
@@ -117,7 +126,7 @@ margin: auto;
 }
 
 .hero-w .gridItemBox {
-    padding: 35px 9%;
+  padding: 35px 9%;
   margin: 0;
   width: 50%;
   box-sizing: border-box;
@@ -138,17 +147,21 @@ margin: auto;
 }
 
 /* Media query para pantallas de xxs a sm */
-@media only screen and (max-width: 784px) {
-  
+@media only screen and (max-width: 421px) {
+  .gridItemBox {
+    padding: 35px 8%;
+  }
+
 }
 
 /* Media query para pantallas de xxs a sm */
 @media only screen and (max-width: 1012px) {
   .hero-w .imgURLbox {
     display: none;
-  }  
+  }
+
   .hero-w .gridItemBox {
-      padding: 35px 9%;
+    padding: 35px 9%;
     margin: 0;
     width: 100%;
     box-sizing: border-box;

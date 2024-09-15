@@ -111,3 +111,50 @@
 .aHref svg {
     vertical-align: text-top;
 }
+
+
+/* RESPONSIVE */
+
+/* Media query para pantallas de xxs a sm */
+@media only screen and (max-width: 784px) {
+
+
+.projectLinks {
+    height: 53px;
+  border-right: none;
+  padding: 3px 10px;
+  width: fit-content;
+  position: absolute;
+  right: 5%;
+  top: 59px;
+  background-color: #fafbfc;
+  border-radius: 20px 0 0 20px;
+  border: none;
+}
+
+.projectExtraLinks {
+    display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 5%;
+  border: none;
+}
+.projectExtraLinks .personal {
+    display: inline-block;
+  position: absolute;
+  top: 90px;
+  right: 5%;
+  border: none;
+}
+
+.extraIcon {
+    color: white;
+  width: 36px;
+  padding: 10px;
+}
+.extraLinkTitle{
+    visibility: visible;
+  opacity: 1;
+}
+
+}

@@ -119,7 +119,6 @@
   display: block;
   width: 75%;
   max-width: 800px;
-  min-width: 500px;
 }
 
 .hero .imgURLbox {
@@ -127,7 +126,6 @@
   top: 0;
   width: 75%;
   max-width: 800px;
-  min-width: 500px;
   margin: 0 auto;
   height: 300px;
   overflow: hidden;
@@ -152,7 +150,6 @@
   display: block;
   width: 75%;
   max-width: 800px;
-  min-width: 500px;
 }
 
 .hero-w .imgURLbox {
@@ -160,7 +157,6 @@
   top: 0;
   width: 75%;
   max-width: 800px;
-  min-width: 500px;
   margin: 0 auto;
   height: 300px;
   overflow: hidden;
@@ -180,9 +176,38 @@
   }
 
   .closeModal {
-    right: 6%;
-    z-index: 9999;
+  position: relative;
+  right: 0;
+  padding: 0;
+  border-radius: 0;
+  transform: none;
+  font-size: 18px;
+  border: none;
+  height: 40px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  z-index: 9999;
   }
+  .titleRow {
+    display: block;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 50px 0 15px;
+  box-sizing: border-box;
+  }
+  .title {
+    text-align: center;
+  }
+  .profile .titleRow {
+    padding-top: 20px;
+  }
+
+  .profile .title,
+.personal .title {
+  padding: 0 15%;
+}
 
   .hero .imgURLbox, .hero .tags {
     width: 90%;
