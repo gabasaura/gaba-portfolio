@@ -69,6 +69,10 @@
   background-color: #312F2F;
 }
 
+h2 {
+  line-height: 30px;
+}
+
 /* styleClasses */
 
 .profile {
@@ -170,7 +174,7 @@
       padding: 0px 7%;
     }
 
-    
+
   }
 
   /* Media query para pantallas de xxs a sm */
