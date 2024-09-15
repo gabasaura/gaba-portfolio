@@ -11,15 +11,16 @@ html {
     color: #312F2F;
     margin: 0;
     padding: 0 4%;
-box-sizing: border-box;
+    box-sizing: border-box;
     width: 100vw;
     -webkit-text-size-adjust: 100%;
 }
+
 body {
     max-width: 1280px;
     /*min-width: 550px;*/
     margin: 15px auto 20px;
-  }
+}
 
 p {
     font-size: 14px;
@@ -32,6 +33,7 @@ h2 {
     line-height: 12px;
     letter-spacing: 1px;
 }
+
 .boldword {
     font-weight: 600;
 }
