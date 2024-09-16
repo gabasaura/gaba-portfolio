@@ -17,7 +17,7 @@ export const gridItemsData = [
     images: [
       {
         src: "/modal/00_profile/09-profile.png",
-        caption: "Soy diseñadora gráfica e ilustradora de profesión, con estudios en artes visuales y multimediales. Después de mucho trabajo y dedicación, he recopilado mis proyectos y experiencias más recientes en un solo lugar. En mi portafolio, podrán ver una muestra de mi trabajo en desarrollo web y programación.",
+        caption: "Soy diseñadora gráfica e ilustradora de profesión, con estudios en artes visuales y multimediales. Aquí he recopilado proyectos en desarrollo web y programación más recientes.",
       },
       {
         src: "/modal/00_profile/05-profile.png",
@@ -41,7 +41,7 @@ export const gridItemsData = [
       },
       {
         src: "/modal/00_profile/02-profile.png",
-        caption: "El computador siempre fue un compañero cercano, y lo extrañaba mientras estudiaba artes visuales. Esta necesidad de volver a lo digital me llevó a cambiar a multimediales, donde pude combinar mi amor por las plásticas con la programación. Aquí descubrí un nuevo camino que me permitió integrar la creatividad visual con la lógica del código. Entonces comencé dedicar más tiempo a la programación, viendo en ella un terreno fértil para seguir desarrollando.",
+        caption: "El computador siempre fue un compañero cercano, y lo extrañaba mientras estudiaba artes visuales. Esta necesidad de volver a lo digital me llevó a cambiar a multimediales, donde pude combinar mi amor por las artes plásticas con la programación. Aquí descubrí un nuevo camino que me permitió integrar la creatividad visual con la lógica del código. Entonces comencé dedicar más tiempo a la programación, viendo en ella un terreno fértil para seguir desarrollando.",
       },
       {
         src: "/modal/00_profile/03-profile.png",
