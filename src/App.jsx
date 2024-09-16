@@ -6,10 +6,10 @@ const App = () => {
   return (
     <>
     <div className={styles.cvbuttonGroup}>
-      <a href="/gabriela-garin__ES.pdf" target="_blank" className={styles.cvbutton}>
+      <a href="/gabriela-garin__es.pdf" target="_blank" className={styles.cvbutton}>
         CV<b>ES</b>
       </a>
-      <a href="/Gabriela-Garín-Palma-EN.pdf" target="_blank" className={styles.cvbutton}>
+      <a href="/gabriela-garin__en.pdf" target="_blank" className={styles.cvbutton}>
       CV<b>EN</b>
       </a>
       </div>

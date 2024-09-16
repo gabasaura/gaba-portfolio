@@ -19,10 +19,10 @@ const Footer = () => {
                     <a href="mailto:gabriela.garin@gmail.com" className={styles.cvLink}>
                         💌
                     </a>
-                    <a href="/gabriela-garin__ES.pdf" target="_blank" className={styles.cvLink}>
+                    <a href="/gabriela-garin__es.pdf" target="_blank" className={styles.cvLink}>
                         CV<b> ES</b>
                     </a>
-                    <a href="/Gabriela-Garín-Palma-EN.pdf" target="_blank" className={styles.cvLink}>
+                    <a href="/gabriela-garin__en.pdf" target="_blank" className={styles.cvLink}>
                         CV<b> EN</b>
                     </a>
                 </div>

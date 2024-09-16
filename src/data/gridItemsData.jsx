@@ -66,8 +66,12 @@ export const gridItemsData = [
         title: "Behance",
       },
       {
-        url: "mailto:gabriela.garin@gmail.com",
-        title: "Email",
+        url: "/gabriela-garin__es.pdf",
+        title: "CV ES",
+      },
+      {
+        url: "/gabriela-garin__en.pdf",
+        title: "CV EN",
       }
     ],
     tags: ["Personal"],
