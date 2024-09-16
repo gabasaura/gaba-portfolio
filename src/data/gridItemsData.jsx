@@ -16,6 +16,10 @@ export const gridItemsData = [
     },
     images: [
       {
+        src: "/modal/00_profile/09-profile.png",
+        caption: "Soy diseñadora gráfica e ilustradora de profesión, con estudios en artes visuales y multimediales. Después de mucho trabajo y dedicación, he recopilado mis proyectos y experiencias más recientes en un solo lugar. En mi portafolio, podrán ver una muestra de mi trabajo en desarrollo web y programación.",
+      },
+      {
         src: "/modal/00_profile/05-profile.png",
         caption: "Finalización de estudios en 4Geeks Academy, donde se profundizó en lenguajes como JavaScript y Python, cubriendo el desarrollo de APIs desde el backend hasta el frontend.",
       },
