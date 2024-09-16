@@ -198,33 +198,30 @@ const MyResponsiveGrid = () => {
 
                     {item.links.backend && (
                       <a href={item.links.backend} target="_blank" rel="noopener noreferrer"
-                        className={stylesIcon.gitIconBack}>
+                        className={stylesIcon.gitIconBackGI}>
                         <FaGithub /></a>
                     )}
                     {item.links.frontend && (
                       <a href={item.links.frontend} target="_blank" rel="noopener noreferrer"
-                        className={stylesIcon.gitIconFront}>
+                        className={stylesIcon.gitIconFrontGI}>
                         <FaGithub /></a>
                     )}
                   </div>
 
-                  {item.tags.map((tag, index) => (
-                    <span key={index} className={`${stylesTags.tag} ${stylesTags['tag-' + tag]}`}>
-                      {tag}
-                    </span>
-                  ))}
+                  <div className={styles.gridTags}>
+                    {item.tags.map((tag, index) => (
+                      <span key={index} className={`${stylesTags.tag} ${stylesTags['tag-' + tag]}`}>
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-
               </div>
 
               {/* Botón con el ícono para abrir el modal */}
               <button className={styles.plusIcon} onClick={() => {
                 handleOpenModal(item)
-              }}>
-                👁️
-
-
-              </button>
+              }}>👁️</button>
 
 
             </div>

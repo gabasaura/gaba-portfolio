@@ -5,7 +5,7 @@
   color: #312F2F;
   display: inline-block;
   padding: 6px 10px;
-  margin: 0 5px;
+  margin: 0;
   border: .5px #312F2F solid;
   border-radius: 20px;
   transition: background-color 0.3s ease;

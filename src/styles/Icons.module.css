@@ -26,7 +26,55 @@
 .Icon a {
     visibility: hidden;
 }
+/* GRID ITEM */
+.gitIconFrontGI {
+    display: inline-block;
+    font-size: 29px;
+    background-color: transparent;
+    color: #04d9ff;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 0;
+    height: 28px;
+    width: 28px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
 
+.gitIconFrontGI:hover {
+    color: #312F2F;
+}
+
+/* Si quieres asegurarte de que el texto del enlace no se muestre, aunque no debería */
+.gitIconFrontGI a {
+    visibility: hidden;
+}
+
+.gitIconBackGI {
+    display: inline-block;
+    font-size: 29px;
+    background-color: transparent;
+    color: #043ded;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 0;
+    height: 28px;
+    width: 28px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.gitIconBackGI:hover {
+    color: #312F2F;
+}
+
+/* Si quieres asegurarte de que el texto del enlace no se muestre, aunque no debería */
+.gitIconBackGI a {
+    visibility: hidden;
+}
+/* MODAL */
 .gitIconFront {
     display: inline-block;
     font-size: 29px;
@@ -102,5 +150,5 @@
         padding: 11px;
     
     }
-    @media only screen and (max-width: 421px) {}
 }
+    @media only screen and (max-width: 421px) {}

@@ -13,7 +13,7 @@
 }
 
 .gridItemBox {
-  padding: 35px 9%;
+  padding: 20px 9%;
   display: block;
 }
 
@@ -23,9 +23,16 @@
 }
 
 .iconTags {
-  display: inline-flex;
   height: 28px;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  
+}
+
+.gridTags{
+  display: inline-flex;
+  gap: 10px;
 }
 
 .ItemModalButton {
