@@ -66,11 +66,11 @@ export const gridItemsData = [
         title: "Behance",
       },
       {
-        url: "/gabriela-garin__es.pdf",
+        url: "public/gabriela-garin__es.pdf",
         title: "CV ES",
       },
       {
-        url: "/gabriela-garin__en.pdf",
+        url: "public/gabriela-garin__en.pdf",
         title: "CV EN",
       }
     ],
