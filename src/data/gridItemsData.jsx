@@ -5,7 +5,7 @@ import pipo from '././img/grid-pipo.png'
 export const gridItemsData = [
   {
     i: "1",
-    title: "Full Stack Developer, buscando un nuevo desafío como junior developer. Siempre en modo aprendizaje y lista para colaborar en proyectos.",
+    title: "Hola, soy Gaba, Full Stack Developer, motivada por el aprendizaje continuo y por contribuir a proyectos interesantes.",
     description: "",
     stack: [],
     imageUrl: gaba,
@@ -16,29 +16,53 @@ export const gridItemsData = [
     },
     images: [
       {
-        src: "/modal/1.gif",
-        caption: "",
+        src: "/modal/00_profile/05-profile.png",
+        caption: "Finalización de estudios en 4Geeks Academy, donde se profundizó en lenguajes como JavaScript y Python, cubriendo el desarrollo de APIs desde el backend hasta el frontend.",
       },
       {
-        src: "/modal/3.gif",
-        caption: "Sección de detalles",
+        src: "/modal/00_profile/06-profile.png",
+        caption: "Primer lugar en CodeJam 1.0.0-SS de PEC de Equifax, Julio 2024.",
       },
       {
-        src: "/modal/6.gif",
-        caption: "",
-      }
+        src: "/modal/00_profile/07-profile.png",
+        caption: "Desarrollo con HTML5, CSS3, jQuery y JavaScript. Integración de WordPress con conocimientos básicos en PHP.",
+      },
+      {
+        src: "/modal/00_profile/08-profile.png",
+        caption: "Diseño web, maquetación y diagramación de contenido usando ActionScript 2, HTML y JavaScript. Uso de Dreamweaver, Fireworks y Flash. Manejo de softwares Adobe como Illustrator y Photoshop.",
+      },
+      {
+        src: "/modal/00_profile/01-profile.png",
+        caption: "Desde pequeña, siempre me atrajeron la ilustración y las historias. Leía todo lo que encontraba a mi alcance: mangas japoneses, cómics y novelas gráficas. Esta pasión por lo visual me llevó a estudiar diseño gráfico, donde aprendí sobre la relación entre el usuario y el producto, además de dominar herramientas gráficas y teorías de diagramación. Al cursar arte, profundicé en composición, color, formas y dibujo, lo que amplió y enriqueció mi visión creativa.",
+      },
+      {
+        src: "/modal/00_profile/02-profile.png",
+        caption: "El computador siempre fue un compañero cercano, y lo extrañaba mientras estudiaba artes visuales. Esta necesidad de volver a lo digital me llevó a cambiar a multimediales, donde pude combinar mi amor por las plásticas con la programación. Aquí descubrí un nuevo camino que me permitió integrar la creatividad visual con la lógica del código. Entonces comencé dedicar más tiempo a la programación, viendo en ella un terreno fértil para seguir desarrollando.",
+      },
+      {
+        src: "/modal/00_profile/03-profile.png",
+        caption: "Desarrollar una API, para mí, es como contar una historia. Es necesario pensar en el usuario, estructurar cada paso, y los lenguajes de programación como herramientas para construir la mejor experiencia posible. Programar me permite resolver problemas, enfrentar desafíos constantes y aplicar tanto mi lógica como mi creatividad en cada proyecto.",
+      },
+      {
+        src: "/modal/00_profile/04-profile.png",
+        caption: "Lo que más disfruto de la programación es la posibilidad de explorar soluciones diferentes, investigar nuevas herramientas y aplicarlas sin miedo al fallo. Siento que todo lo que he aprendido hasta ahora se retroalimenta muchísimo de la programación, y a su vez, la lógica de programación potencia mi capacidad para enfrentar cada nuevo desafío con una perspectiva enriquecida.",
+      },
     ],
     extraLink: [
       {
-        url: "#",
+        url: "https://www.linkedin.com/in/gabriela-garin/",
         title: "Linkedin",
       },
       {
-        url: "#",
+        url: "https://github.com/gabasaura",
         title: "Github",
       },
       {
-        url: "#",
+        url: "https://www.behance.net/ggaabbaa",
+        title: "Behance",
+      },
+      {
+        url: "mailto:gabriela.garin@gmail.com",
         title: "Email",
       }
     ],
@@ -66,6 +90,10 @@ export const gridItemsData = [
       {
         src: "/modal/02_wemeet/01-wemeet.png",
         caption: "Este proyecto es una API diseñada para facilitar la programación de reuniones, recopilando la disponibilidad de varios participantes y sugiriendo los mejores horarios según sus preferencias. Está construida con Flask y sigue principios RESTful.",
+      },
+      {
+        src: "/modal/02_wemeet/02-wemeet.png",
+        caption: "Imagen referencia apuntes de proyecto. Un objetivo clave es gamificar la experiencia del usuario, haciéndola más dinámica y divertida. Para lograr esto, se busca simplificar los procesos y hacerlos más accesibles. Un desafío importante ha sido garantizar la privacidad de cada reunión sin recurrir a un registro largo y complejo. La siguiente etapa es avanzar con el desarrollo del front-end y crear un MVP para testear la experiencia del usuario y realizar los ajustes necesarios.",
       },
     ],
     extraLink: [],
@@ -172,41 +200,8 @@ export const gridItemsData = [
     h: 1
   },
   {
-    i: "6",
-    title: "Storyboard",
-    description: "Proyecto de Brainstorming para la creación de storyboards dinámicos, diseñado para facilitar la visualización de ideas y mejorar la narrativa al permitir desarmar y reorganizar la historia.",
-    stack: [
-      { name: "Flask", color: "#000000" },
-      { name: "SQLite", color: "#0b425c" },
-      { name: "Python", color: "#396d96" },
-    ],
-    links: {
-      frontend: "",
-      backend: "https://github.com/user/backend",
-      deploy: "",
-    },
-    images: [
-      {
-        src: "/modal/1.gif",
-        caption: "Pantalla principal del proyecto",
-      },
-      {
-        src: "/modal/3.gif",
-        caption: "Sección de detalles",
-      },
-      {
-        src: "/modal/6.gif",
-        caption: "",
-      }
-    ],
-    extraLink: [],
-    tags: ["Backend"],
-    w: 1,
-    h: 1
-  },
-  {
     i: "9",
-    title: "Doodling: En mi otra vida, dibujo. Contenido no relacionado a programación.",
+    title: "Doodlings: Contenido no relacionado a programación.",
     description: "",
     stack: [],
     links: {
@@ -217,14 +212,10 @@ export const gridItemsData = [
     images: [
       {
         src: "/modal/09_personal/01-personal.png",
-        caption: "Te invito a revisar mis dibujos.",
+        caption: "El dibujo, para mí, es como otro lenguaje. Es una práctica diaria de observación, algo más personal y difícil de compartir. Es una actividad que sigo realizando y seguramente haré siempre, pero sin la presión de plazos o metas. No quiero estructurarlo ni limitarlo, prefiero que mantenga su libertad y espontaneidad.",
       },
     ],
     extraLink: [
-      {
-        url: "https://www.instagram.com/gabasaura",
-        title: "Instragram",
-      },
       {
         url: "https://www.behance.net/ggaabbaa",
         title: "Behance",
@@ -232,6 +223,10 @@ export const gridItemsData = [
       {
         url: "https://www.artstation.com/gaba",
         title: "Artstation",
+      },
+      {
+        url: "https://www.instagram.com/gabasaura",
+        title: "Instragram",
       },
     ],
     styleClass: "personal",

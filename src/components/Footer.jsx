@@ -7,10 +7,10 @@ const Footer = () => {
 
             <div className={styles.footerInline}>
                 <div className={styles.footerRow}>
-                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
+                    <a href="https://github.com/gabasaura" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
                         <FaGithub /><span className={styles.iconLinkTitle}>Github</span>
                     </a>
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
+                    <a href="https://www.linkedin.com/in/gabriela-garin/" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
                         <FaLinkedin /><span className={styles.iconLinkTitle}>Linkedin</span>
                     </a>
                 </div>

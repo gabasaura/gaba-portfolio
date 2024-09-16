@@ -74,8 +74,10 @@
 }
 
 .tags {
-  text-align: center;
+  gap: 10px;
+  justify-content: center;
   padding-top: 20px;
+  display: flex;
 }
 
 .titleRow {
@@ -119,9 +121,11 @@
   padding-top: 20px;
   z-index: 9999;
   position: absolute;
-  display: block;
+  display: flex;
   width: 75%;
   max-width: 800px;
+  gap: 10px;
+  justify-content: center;
 }
 
 .hero .imgURLbox {
