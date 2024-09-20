@@ -174,7 +174,7 @@ const MyResponsiveGrid = () => {
 
 
               <div className={styles.gridItemBox}>
-                <h2 className={styles.title}>{item.title}</h2>
+                <h2 className={styles.title} onClick={() => {handleOpenModal(item)}}>{item.title}</h2>
 
                 {/* Stack de lenguajes */}
                 <div className={stylesStack.stackContainer}>

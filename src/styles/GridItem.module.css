@@ -35,6 +35,10 @@
   gap: 10px;
 }
 
+.title {
+  cursor: pointer;
+}
+
 .ItemModalButton {
   z-index: 1000;
 }
@@ -117,6 +121,7 @@ h2 {
 
 .profile .title {
   padding-bottom: 12px;
+
 }
 
 .hero .imgURLbox {
