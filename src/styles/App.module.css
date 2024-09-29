@@ -1,11 +1,11 @@
 .cvbutton {
-  color: #312F2F;
+  color: #1d262e;
   padding: 4px 10px;
   margin: 0px 2px;
   border-radius: 20px;
-  border: .5px #312F2F solid;
+  border: .5px #1d262e solid;
   cursor: pointer;
-  background-color: #E3EAF2;
+  background-color: #fafdfd;
   transition: background-color 0.3s ease;
   display: inline-flex;
   letter-spacing: 1px;
@@ -15,8 +15,8 @@
 }
 
 .cvbutton:hover {
-  background-color: #312F2F;
-  color: #E3EAF2;
+  background-color: #1d262e;
+  color: #fafdfd;
 }
 
 .cvbuttonGroup {

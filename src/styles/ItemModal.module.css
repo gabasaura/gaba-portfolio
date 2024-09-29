@@ -15,7 +15,7 @@
   max-width: 800px;
   min-height: 100vh;
   margin: 0 auto;
-  background: #E3EAF2;
+  background: #fafdfd;
   z-index: 1100;
 }
 
@@ -59,7 +59,7 @@
   position: fixed;
   top: 17px;
   right: 20px;
-  background-color: #E3EAF2;
+  background-color: #fafdfd;
   cursor: pointer;
   border-radius: 20px;
   border: none;
@@ -69,8 +69,8 @@
 }
 
 .closeModal:hover {
-  color: #E3EAF2;
-  background-color: #312F2F;
+  color: #fafdfd;
+  background-color: #1d262e;
 }
 
 .tags {
@@ -198,7 +198,7 @@
   }
 
   .closeModal:hover {
-    color: #312F2F;
+    color: #1d262e;
     background-color: #fafbfc;
   }
 

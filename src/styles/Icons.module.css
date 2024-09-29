@@ -3,8 +3,8 @@
 .Icon {
     display: inline-block;
     font-size: 18px;
-    color: #E3EAF2;
-    background-color: #312F2F;
+    color: #fafdfd;
+    background-color: #1d262e;
     border-radius: 20px;
     text-decoration: none;
     margin: 15px;
@@ -18,8 +18,8 @@
 }
 
 .Icon:hover {
-    background-color: #ff11ff;
-    color: #E3EAF2;
+    background-color: #fc440f;
+    color: #fafdfd;
 }
 
 /* Si quieres asegurarte de que el texto del enlace no se muestre, aunque no debería */
@@ -31,7 +31,7 @@
     display: inline-block;
     font-size: 29px;
     background-color: transparent;
-    color: #04d9ff;
+    color: #f62dae;
     border-radius: 20px;
     text-decoration: none;
     margin: 0;
@@ -43,7 +43,7 @@
 }
 
 .gitIconFrontGI:hover {
-    color: #312F2F;
+    color: #1d262e;
 }
 
 /* Si quieres asegurarte de que el texto del enlace no se muestre, aunque no debería */
@@ -55,7 +55,7 @@
     display: inline-block;
     font-size: 29px;
     background-color: transparent;
-    color: #043ded;
+    color: #3185fc;
     border-radius: 20px;
     text-decoration: none;
     margin: 0;
@@ -67,7 +67,7 @@
 }
 
 .gitIconBackGI:hover {
-    color: #312F2F;
+    color: #1d262e;
 }
 
 /* Si quieres asegurarte de que el texto del enlace no se muestre, aunque no debería */
@@ -79,7 +79,7 @@
     display: inline-block;
     font-size: 29px;
     background-color: transparent;
-    color: #04d9ff;
+    color: #f62dae;
     border-radius: 20px;
     text-decoration: none;
     margin: 15px;
@@ -91,7 +91,7 @@
 }
 
 .gitIconFront:hover {
-    color: #312F2F;
+    color: #1d262e;
 }
 
 /* Si quieres asegurarte de que el texto del enlace no se muestre, aunque no debería */
@@ -103,7 +103,7 @@
     display: inline-block;
     font-size: 29px;
     background-color: transparent;
-    color: #043ded;
+    color: #3185fc;
     border-radius: 20px;
     text-decoration: none;
     margin: 15px;
@@ -115,7 +115,7 @@
 }
 
 .gitIconBack:hover {
-    color: #312F2F;
+    color: #1d262e;
 }
 
 /* Si quieres asegurarte de que el texto del enlace no se muestre, aunque no debería */

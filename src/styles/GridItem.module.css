@@ -1,6 +1,6 @@
 .gridItem {
   overflow: hidden;
-  border: .5px #312F2F solid;
+  border: .5px #1d262e solid;
   border-radius: 40px;
 }
 
@@ -52,7 +52,7 @@
   background-color: transparent;
   cursor: pointer;
   border-radius: 20px;
-  border: 0.5px solid #312F2F;
+  border: 0.5px solid #1d262e;
   width: 35px;
   height: 35px;
   display: flex;
@@ -76,8 +76,8 @@
 }
 
 .plusIcon:hover {
-  color: #E3EAF2;
-  background-color: #312F2F;
+  color: #fafdfd;
+  background-color: #1d262e;
 }
 
 h2 {

@@ -16,39 +16,39 @@ export const gridItemsData = [
     },
     images: [
       {
-        src: "/modal/00_profile/09-profile.png",
+        src: "/modal/00_profile/01-profile.png",
         caption: "Soy diseñadora gráfica e ilustradora de profesión, con estudios en artes visuales y multimediales. Aquí he recopilado proyectos en desarrollo web y programación más recientes.",
       },
       {
-        src: "/modal/00_profile/05-profile.png",
+        src: "/modal/00_profile/02-profile.png",
         caption: "Finalización de estudios en 4Geeks Academy, donde se profundizó en lenguajes como JavaScript y Python, cubriendo el desarrollo de APIs desde el backend hasta el frontend.",
       },
       {
-        src: "/modal/00_profile/06-profile.png",
+        src: "/modal/00_profile/03-profile.png",
         caption: "Primer lugar en CodeJam 1.0.0-SS de PEC de Equifax, Julio 2024.",
       },
       {
-        src: "/modal/00_profile/07-profile.png",
+        src: "/modal/00_profile/04-profile.png",
         caption: "Desarrollo con HTML5, CSS3, jQuery y JavaScript. Integración de WordPress con conocimientos básicos en PHP.",
       },
       {
-        src: "/modal/00_profile/08-profile.png",
+        src: "/modal/00_profile/05-profile.png",
         caption: "Diseño web, maquetación y diagramación de contenido usando ActionScript 2, HTML y JavaScript. Uso de Dreamweaver, Fireworks y Flash. Manejo de softwares Adobe como Illustrator y Photoshop.",
       },
       {
-        src: "/modal/00_profile/01-profile.png",
+        src: "/modal/00_profile/06-profile.png",
         caption: "Desde pequeña, siempre me atrajeron la ilustración y las historias. Leía todo lo que encontraba a mi alcance: mangas japoneses, cómics y novelas gráficas. Esta pasión por lo visual me llevó a estudiar diseño gráfico, donde aprendí sobre la relación entre el usuario y el producto, además de dominar herramientas gráficas y teorías de diagramación. Al cursar arte, profundicé en composición, color, formas y dibujo, lo que amplió y enriqueció mi visión creativa.",
       },
       {
-        src: "/modal/00_profile/02-profile.png",
+        src: "/modal/00_profile/07-profile.png",
         caption: "El computador siempre fue un compañero cercano, y lo extrañaba mientras estudiaba artes visuales. Esta necesidad de volver a lo digital me llevó a cambiar a multimediales, donde pude combinar mi amor por las artes plásticas con la programación. Aquí descubrí un nuevo camino que me permitió integrar la creatividad visual con la lógica del código. Entonces comencé dedicar más tiempo a la programación, viendo en ella un terreno fértil para seguir desarrollando.",
       },
       {
-        src: "/modal/00_profile/03-profile.png",
+        src: "/modal/00_profile/08-profile.png",
         caption: "Desarrollar una API, para mí, es como contar una historia. Es necesario pensar en el usuario, estructurar cada paso, y los lenguajes de programación como herramientas para construir la mejor experiencia posible. Programar me permite resolver problemas, enfrentar desafíos constantes y aplicar tanto mi lógica como mi creatividad en cada proyecto.",
       },
       {
-        src: "/modal/00_profile/04-profile.png",
+        src: "/modal/00_profile/09-profile.png",
         caption: "Lo que más disfruto de la programación es la posibilidad de explorar soluciones diferentes, investigar nuevas herramientas y aplicarlas sin miedo al fallo. Siento que todo lo que he aprendido hasta ahora se retroalimenta muchísimo de la programación, y a su vez, la lógica de programación potencia mi capacidad para enfrentar cada nuevo desafío con una perspectiva enriquecida.",
       },
     ],

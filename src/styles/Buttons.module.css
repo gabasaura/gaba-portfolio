@@ -10,7 +10,7 @@
 }
 
 .tagButton {
-  color: #312F2F;
+  color: #1d262e;
   padding: 0.3125rem 1.125rem;
   /* Usar rem para padding */
   margin: 0 0.125rem;
@@ -18,7 +18,7 @@
   border-radius: 1.25rem;
   /* Borde redondeado con rem */
   cursor: pointer;
-  background-color: #E3EAF2;
+  background-color: #fafdfd;
   transition: color 0.3s ease;
   letter-spacing: 0.0625rem;
   /* Espaciado entre letras con rem */
@@ -26,61 +26,61 @@
 
 .tagButton svg {
   /* Si estás usando íconos de font-awesome o similares */
-  color: #312F2F !important;
+  color: #1d262e !important;
   /* Fuerza el color a mantenerse constante */
   transition: color 0.3s ease;
 }
 
 .Frontend {
-  border: .5px solid #04d9ff;
+  border: .5px solid #f62dae;
 }
 
 .Backend {
-  border: .5px solid #043ded;
+  border: .5px solid #3185fc;
 }
 
 .Personal {
-  border: .5px solid #ff11ff;
+  border: .5px solid #fc440f;
 }
 
 .Inicio {
-  border: .5px solid #312F2F;
+  border: .5px solid #1d262e;
 }
 
 .Frontend:hover {
-  color: #04d9ff;
+  color: #f62dae;
 }
 
 .Backend:hover {
-  color: #043ded;
+  color: #3185fc;
 }
 
 .Personal:hover {
-  color: #ff11ff;
+  color: #fc440f;
 }
 
 .Inicio:hover {
-  color: #312F2F;
+  color: #1d262e;
 }
 
 .Frontend.active {
-  color: #E3EAF2;
-  background-color: #04d9ff;
+  color: #fafdfd;
+  background-color: #f62dae;
 }
 
 .Backend.active {
-  color: #E3EAF2;
-  background-color: #043ded;
+  color: #fafdfd;
+  background-color: #3185fc;
 }
 
 .Personal.active {
-  color: #E3EAF2;
-  background-color: #ff11ff;
+  color: #fafdfd;
+  background-color: #fc440f;
 }
 
 .Inicio.active {
-  color: #E3EAF2;
-  background-color: #312F2F;
+  color: #fafdfd;
+  background-color: #1d262e;
 }
 
 /* RESPONSIVE */

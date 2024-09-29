@@ -2,11 +2,11 @@
 .tag {
   text-align: center;
   font-size: 12px;
-  color: #312F2F;
+  color: #1d262e;
   display: inline-block;
   padding: 6px 10px;
   margin: 0;
-  border: .5px #312F2F solid;
+  border: .5px #1d262e solid;
   border-radius: 20px;
   transition: background-color 0.3s ease;
   /*letter-spacing: 1px;*/
@@ -15,23 +15,23 @@
 /* Puedes tener estilos específicos si es necesario */
 
 .tag-Frontend {
-  border: .5px solid #04d9ff;
-  color: #04d9ff;
+  border: .5px solid #f62dae;
+  color: #f62dae;
 }
 
 .tag-Backend {
-  border: .5px solid #043ded;
-  color: #043ded;
+  border: .5px solid #3185fc;
+  color: #3185fc;
 }
 
 .tag-Personal {
-  border: .5px solid #ff11ff;
-  color: #ff11ff;
+  border: .5px solid #fc440f;
+  color: #fc440f;
 }
 
 .tag-Inicio {
-  border: .5px solid #312F2F;
-  color: #312F2F;
+  border: .5px solid #1d262e;
+  color: #1d262e;
 }
 
 /* styleClasses */

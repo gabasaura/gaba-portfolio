@@ -1,5 +1,5 @@
 .footer {
-  color: #312F2F;
+  color: #1d262e;
   padding: 0;
   display: flex;
   width: 100%;
@@ -24,9 +24,9 @@
 
 .iconLink {
   font-size: 18px;
-  background-color: #E3EAF2;
-  color: #312F2F;
-  border: .5px solid #312F2F;
+  background-color: #fafdfd;
+  color: #1d262e;
+  border: .5px solid #1d262e;
   border-radius: 20px;
   text-decoration: none;
   height: 28px;
@@ -42,8 +42,8 @@
 }
 
 .iconLink:hover {
-  background-color: #312F2F;
-  color: #E3EAF2;
+  background-color: #1d262e;
+  color: #fafdfd;
 }
 
 .iconLinkTitle {
@@ -53,8 +53,8 @@
   right: auto;
   top: -34px;
   white-space: nowrap;
-  background-color: #312F2F;
-  border: .5px solid #312F2F;
+  background-color: #1d262e;
+  border: .5px solid #1d262e;
   padding: 5px 10px;
   border-radius: 20px;
   transition: visibility 0s, opacity 0.3s ease-in-out;
@@ -73,17 +73,17 @@
 
 .copyright {
   font-size: 14px;
-  color: #312F2F;
+  color: #1d262e;
 }
 
 .cvLink {
-  color: #312F2F;
+  color: #1d262e;
   padding: 5px 10px;
   margin: 0px 3px;
   border-radius: 20px;
-  border: 0.5px #312F2F solid;
+  border: 0.5px #1d262e solid;
   cursor: pointer;
-  background-color: #E3EAF2;
+  background-color: #fafdfd;
   transition: background-color 0.3s ease;
   display: inline-flex;
   align-items: center; /* Centra verticalmente */
@@ -97,8 +97,8 @@
 }
 
 .cvLink:hover {
-  background-color: #312F2F;
-  color: #E3EAF2;
+  background-color: #1d262e;
+  color: #fafdfd;
 }
 
 .cvLinkGroup {
