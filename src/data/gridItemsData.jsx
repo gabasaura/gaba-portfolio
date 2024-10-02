@@ -5,7 +5,7 @@ import pipo from '././img/grid-pipo.png'
 export const gridItemsData = [
   {
     i: "1",
-    title: "Hola, soy Gaba, Full Stack Developer, motivada por el aprendizaje continuo y por contribuir a proyectos interesantes.",
+    title: "Hola, soy Gaba, Full Stack Developer. Este es mi portafolio, aquí está mi historia, proyectos y aprendizajes.",
     description: "",
     stack: [],
     imageUrl: gaba,
